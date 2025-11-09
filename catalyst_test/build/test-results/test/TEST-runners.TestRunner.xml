@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runners.TestRunner" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-11-09T18:26:41" hostname="SURFACE_GO" time="10.101">
+  <properties/>
+  <testcase name="Open homepage and verify title" classname="runners.TestRunner" time="10.101"/>
+  <system-out><![CDATA[
+Scenario: Open homepage and verify title                                                               ?[90m# features/LaunchCatalyst.feature:3?[0m
+13:26:47.522 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+13:26:48.075 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution firefox=144 in cache (valid until 14:04:39 09/11/2025 EST)
+13:26:48.077 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution firefox144=0.36.0 in cache (valid until 13:04:39 10/11/2025 EST)
+13:26:48.077 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.36.0 (resolved driver for Firefox 144)
+13:26:48.124 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver geckodriver 0.36.0 found in cache
+13:26:48.133 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\sdini\.cache\selenium\geckodriver\win64\0.36.0\geckodriver.exe
+  ?[32mGiven ?[0m?[32mthe user launches the Catalyst Legal Nurse website?[0m                                             ?[90m# stepdefinitions.CatalystSteps.launchCatalystSite()?[0m
+Actual page title: Janet DiNino – Legal Nurse Consultant for Elder Care Litigation
+  ?[32mThen ?[0m?[32mthe page title should contain ?[0m?[32m?[1m"Janet DiNino – Legal Nurse Consultant for Elder Care Litigation"?[0m ?[90m# stepdefinitions.CatalystSteps.verifyTitle(java.lang.String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
