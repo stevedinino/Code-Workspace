@@ -1,4 +1,5 @@
 {
     "workbench.colorTheme": "Solarized Light",
-    "window.autoDetectColorScheme": true
+    "window.autoDetectColorScheme": true,
+    "java.configuration.updateBuildConfiguration": "interactive"
 }

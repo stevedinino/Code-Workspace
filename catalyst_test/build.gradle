@@ -13,7 +13,7 @@ dependencies {
     // ✅ Cucumber with JUnit Platform (JUnit 5)
     testImplementation 'io.cucumber:cucumber-java:7.14.0'
     testImplementation 'io.cucumber:cucumber-junit-platform-engine:7.14.0'
-
+    
     // ✅ JUnit 5 (Jupiter + Platform Suite)
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
     testImplementation 'org.junit.platform:junit-platform-suite:1.10.0'
@@ -27,6 +27,8 @@ dependencies {
     // ✅ Logging (optional but recommended)
     implementation 'org.slf4j:slf4j-api:2.0.9'
     runtimeOnly 'ch.qos.logback:logback-classic:1.4.11'
+
+    testImplementation 'org.assertj:assertj-core:3.24.2'
 }
 
 test {

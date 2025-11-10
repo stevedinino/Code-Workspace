@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">10.101s</div>
+<div class="counter">17.923s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">Open homepage and verify title</td>
-<td class="success">10.101s</td>
+<td class="success">17.923s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -89,15 +89,125 @@
 <span class="code">
 <pre>
 Scenario: Open homepage and verify title                                                               ?[90m# features/LaunchCatalyst.feature:3?[0m
-13:26:47.522 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
-13:26:48.075 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution firefox=144 in cache (valid until 14:04:39 09/11/2025 EST)
-13:26:48.077 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution firefox144=0.36.0 in cache (valid until 13:04:39 10/11/2025 EST)
-13:26:48.077 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.36.0 (resolved driver for Firefox 144)
-13:26:48.124 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver geckodriver 0.36.0 found in cache
-13:26:48.133 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\sdini\.cache\selenium\geckodriver\win64\0.36.0\geckodriver.exe
+20:39:21.342 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+20:39:22.149 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Removing resolution firefox=144 from cache (expired on Sun Nov 09 20:33:35 EST 2025)
+20:39:22.203 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ex-0000000001 preparing request execution
+20:39:22.224 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec -- ex-0000000001 target auth state: UNCHALLENGED
+20:39:22.224 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec -- ex-0000000001 proxy auth state: UNCHALLENGED
+20:39:22.224 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec -- ex-0000000001 acquiring connection with route {s}-&gt;https://raw.githubusercontent.com:443
+20:39:22.226 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ex-0000000001 acquiring endpoint (3 MINUTES)
+20:39:22.226 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ex-0000000001 endpoint lease request (3 MINUTES) [route: {s}-&gt;https://raw.githubusercontent.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 25]
+20:39:22.226 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ex-0000000001 endpoint leased [route: {s}-&gt;https://raw.githubusercontent.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
+20:39:22.258 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ex-0000000001 acquired ep-0000000001
+20:39:22.258 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ex-0000000001 acquired endpoint ep-0000000001
+20:39:22.258 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec -- ex-0000000001 opening connection {s}-&gt;https://raw.githubusercontent.com:443
+20:39:22.258 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ep-0000000001 connecting endpoint (null)
+20:39:22.263 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 connecting endpoint to https://raw.githubusercontent.com:443 (30 SECONDS)
+20:39:22.263 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator -- raw.githubusercontent.com resolving remote address
+20:39:22.306 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator -- raw.githubusercontent.com resolved to [raw.githubusercontent.com/185.199.110.133, raw.githubusercontent.com/185.199.111.133, raw.githubusercontent.com/185.199.108.133, raw.githubusercontent.com/185.199.109.133]
+20:39:22.320 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator -- raw.githubusercontent.com:443 connecting null-&gt;raw.githubusercontent.com/185.199.110.133:443 (30 SECONDS)
+20:39:22.321 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Connecting socket to raw.githubusercontent.com/185.199.110.133:443 with timeout 30 SECONDS
+20:39:22.480 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Enabled protocols: [TLSv1.3, TLSv1.2]
+20:39:22.480 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Enabled cipher suites: [TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+20:39:22.480 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Starting handshake (null)
+20:39:22.993 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Secure session established
+20:39:22.993 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  negotiated protocol: TLSv1.3
+20:39:22.993 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  negotiated cipher suite: TLS_AES_128_GCM_SHA256
+20:39:22.993 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  peer principal: CN=*.github.io
+20:39:23.001 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  peer alternative names: [*.github.io, *.github.com, *.githubusercontent.com, github.com, github.io, githubusercontent.com, www.github.com]
+20:39:23.001 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  issuer principal: CN=Sectigo RSA Domain Validation Secure Server CA, O=Sectigo Limited, L=Salford, ST=Greater Manchester, C=GB
+20:39:23.004 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultManagedHttpClientConnection -- http-outgoing-0 set socket timeout to 3 MINUTES
+20:39:23.004 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator -- raw.githubusercontent.com:443 connected null-&gt;raw.githubusercontent.com/185.199.110.133:443 as http-outgoing-0
+20:39:23.006 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 connected http-outgoing-0
+20:39:23.006 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ep-0000000001 endpoint connected
+20:39:23.006 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec -- ex-0000000001 executing GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+20:39:23.008 [Test worker] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies -- ex-0000000001 Cookie spec selected: strict
+20:39:23.022 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ep-0000000001 start execution ex-0000000001
+20:39:23.022 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 executing exchange ex-0000000001 over http-outgoing-0
+20:39:23.022 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &gt;&gt; GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+20:39:23.022 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &gt;&gt; user-agent: Apache-HttpClient/5.0
+20:39:23.022 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &gt;&gt; accept-encoding: gzip, deflate, br
+20:39:23.022 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &gt;&gt; cache-control: max-age=0
+20:39:23.027 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &gt;&gt; connection: keep-alive
+20:39:23.027 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &gt;&gt; Host: raw.githubusercontent.com
+20:39:23.027 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &gt;&gt; &quot;GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1[\r][\n]&quot;
+20:39:23.027 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &gt;&gt; &quot;user-agent: Apache-HttpClient/5.0[\r][\n]&quot;
+20:39:23.027 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &gt;&gt; &quot;accept-encoding: gzip, deflate, br[\r][\n]&quot;
+20:39:23.029 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &gt;&gt; &quot;cache-control: max-age=0[\r][\n]&quot;
+20:39:23.031 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &gt;&gt; &quot;connection: keep-alive[\r][\n]&quot;
+20:39:23.031 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &gt;&gt; &quot;Host: raw.githubusercontent.com[\r][\n]&quot;
+20:39:23.031 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &gt;&gt; &quot;[\r][\n]&quot;
+20:39:23.135 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+20:39:23.135 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+20:39:23.135 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;Content-Length: 946[\r][\n]&quot;
+20:39:23.135 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;Cache-Control: max-age=300[\r][\n]&quot;
+20:39:23.135 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox[\r][\n]&quot;
+20:39:23.135 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;Content-Type: text/plain; charset=utf-8[\r][\n]&quot;
+20:39:23.135 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;ETag: W/&quot;dc0c32cea2dfa86f6cf10513cf8a64e1e8817484a415b658b4eecd962d4deaee&quot;[\r][\n]&quot;
+20:39:23.135 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;Strict-Transport-Security: max-age=31536000[\r][\n]&quot;
+20:39:23.135 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;X-Content-Type-Options: nosniff[\r][\n]&quot;
+20:39:23.135 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;X-Frame-Options: deny[\r][\n]&quot;
+20:39:23.135 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;X-XSS-Protection: 1; mode=block[\r][\n]&quot;
+20:39:23.139 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;X-GitHub-Request-Id: D95D:3A73B8:C7D72C:E0B0D2:68FF8AD5[\r][\n]&quot;
+20:39:23.139 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;Content-Encoding: gzip[\r][\n]&quot;
+20:39:23.139 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;Accept-Ranges: bytes[\r][\n]&quot;
+20:39:23.139 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;Date: Mon, 10 Nov 2025 01:39:23 GMT[\r][\n]&quot;
+20:39:23.139 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;Via: 1.1 varnish[\r][\n]&quot;
+20:39:23.139 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;X-Served-By: cache-pdk-kpdk1780110-PDK[\r][\n]&quot;
+20:39:23.139 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;X-Cache: HIT[\r][\n]&quot;
+20:39:23.139 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;X-Cache-Hits: 1[\r][\n]&quot;
+20:39:23.139 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;X-Timer: S1762738764.573540,VS0,VE9[\r][\n]&quot;
+20:39:23.139 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;Vary: Authorization,Accept-Encoding[\r][\n]&quot;
+20:39:23.139 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;Access-Control-Allow-Origin: *[\r][\n]&quot;
+20:39:23.139 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;Cross-Origin-Resource-Policy: cross-origin[\r][\n]&quot;
+20:39:23.139 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;X-Fastly-Request-ID: dae8be0cda47e66d8e11d732d45f5d3f80bb9563[\r][\n]&quot;
+20:39:23.139 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;Expires: Mon, 10 Nov 2025 01:44:23 GMT[\r][\n]&quot;
+20:39:23.141 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;Source-Age: 63[\r][\n]&quot;
+20:39:23.141 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;[\r][\n]&quot;
+20:39:23.147 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; HTTP/1.1 200 OK
+20:39:23.147 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; Connection: keep-alive
+20:39:23.147 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; Content-Length: 946
+20:39:23.147 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; Cache-Control: max-age=300
+20:39:23.147 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+20:39:23.147 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; Content-Type: text/plain; charset=utf-8
+20:39:23.150 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; ETag: W/&quot;dc0c32cea2dfa86f6cf10513cf8a64e1e8817484a415b658b4eecd962d4deaee&quot;
+20:39:23.150 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; Strict-Transport-Security: max-age=31536000
+20:39:23.150 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; X-Content-Type-Options: nosniff
+20:39:23.150 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; X-Frame-Options: deny
+20:39:23.150 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; X-XSS-Protection: 1; mode=block
+20:39:23.150 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; X-GitHub-Request-Id: D95D:3A73B8:C7D72C:E0B0D2:68FF8AD5
+20:39:23.150 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; Content-Encoding: gzip
+20:39:23.150 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; Accept-Ranges: bytes
+20:39:23.150 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; Date: Mon, 10 Nov 2025 01:39:23 GMT
+20:39:23.150 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; Via: 1.1 varnish
+20:39:23.150 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; X-Served-By: cache-pdk-kpdk1780110-PDK
+20:39:23.150 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; X-Cache: HIT
+20:39:23.150 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; X-Cache-Hits: 1
+20:39:23.150 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; X-Timer: S1762738764.573540,VS0,VE9
+20:39:23.150 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; Vary: Authorization,Accept-Encoding
+20:39:23.150 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; Access-Control-Allow-Origin: *
+20:39:23.150 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; Cross-Origin-Resource-Policy: cross-origin
+20:39:23.150 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; X-Fastly-Request-ID: dae8be0cda47e66d8e11d732d45f5d3f80bb9563
+20:39:23.150 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; Expires: Mon, 10 Nov 2025 01:44:23 GMT
+20:39:23.152 [Test worker] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 &lt;&lt; Source-Age: 63
+20:39:23.156 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec -- ex-0000000001 connection can be kept alive for 3 MINUTES
+20:39:23.196 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;[0x1f][0xffffff8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xffffffb5]X[0xffffffd1]n[0xffffffda]0[0x14]}[0xffffffe7]+,[0xffffffba]J [0x11][0xffffffb2][0x1][0xffffffeb][0xffffffaa]Jy[0xffffffa0][0x19]e[0xffffffd5][0xffffffa8]`[0xffffffd0]v[0xffffff9b][0xffffffe4][0x17][0xffffff93]8`)[0xffffff89]Q[0xffffff9c]@[0xffffffb7][0xffffffa9][0xfffffffb][0xfffffff6]9NB[0xffffffe3]$[0xc]H[0xffffffe0][0xffffffad][0xffffff8e][0xffffff8f][0xffffffef]97[0xffffffdc]s}[0xffffffd3][0xb][0xffffffa0]S[0xffffffc7]A[0xffffffae][0xffffffc9][0xffffff80][0xffffff89]|4G[0xc][0xffffffd7].[0xffffffc0][0xffffffe3][0xffffff92]0`[0x11][0x1b][0x3][0xffffff83][0xffffffba]&gt;&quot;.[0x3][0xfffffffe]2\[0xffffffc4]P[0xffffff9f][0xffffff82]9[0x6][0xfffffff8][0x5][0x1b][0xffffff81][0xffffff8f]M@\[0xffffffb1][0xffffffcd][0xffffff96][0xffffffd8][0xffffffb6][0xffffffc3][0x5][0xfffffff5]L[0xffffffec][0xffffff85] [0x13][0xfffffffb][0xffffffd8][0xfffffff0][0xffffffc5][0xffffffe6][0x1a]{[0xffffff8c]P[0xffffffbe]g[0x1][0xffffffcc][0xffffffff]^x[0x18][0xffffffbb]`[0xffffffee][0xffffffd1][\r][0xffffffe3][0x1b][0xffffff9c][0xffffffb2][0xffffffa1]/=[0xffffffea][0xffffffe0][0x16][0xffffffb8]#[0x1e][0xffffffb6][0xffffffe8]K[0xb][0xffffff8c]W[0xffffffd8]C-00[0x17][0xfffffffc][0xffffffa9][0xffffffd8]%[0xffffff81][0xffffffd3][0xc][0xffffffe3][0xffffff9b][0xffffffc4][0xffffffb2][0xffffffb0][0xffffff87]][0x1f][0xffffffd0][0x10][0xffffffe3][0x13]w[0x1][0xffffffd8]/[0xffffffe6]c[0xffffff87][0xffffff81][0xffffffc6]w[0xffffffe2][0xffffff9a]&lt;j[0xb][0xffffff8c][0xffffff88][0x1b][0xfffffff0]0[0xf][0xffffffc8][0x0][0xffffffe3]Y[0xffffffb3][0xffffffc6]9&quot;[0xffffff8a]Z[0xffffff9c]F[0xffffffdb][0x10][0xffffffcb][0xfffffff6]&amp;:[0xffffffd0]~[0xffffffff]A3[0x1c][0xffffffb3][0xffffffcd][0xffffffb3][0x2][0xffffffaa][0xe]6[0xe]1[0xffffffc4]+[0x11][0xffffffaf]a[0xffffffb3][0xffffffe4]|[0xffffffc0]E[0xe][0xffffffd6][0xffffffea][0xffffff97][0xffffff93][0xffffffe9]x8[0xffffffed]?[0xffffffdc][0xffffffdd][0xffffff8f][0x6][0xffffffb3][0x1b][0xffffffa8]Ax[0x9][0xffffffe1][0xffffff90][0xffffffd2][0xffffff85][0xffffff8d]![0xffffff8c]( [0xffffffec][0xffffffaf]V61[0xffffffb8]4[0xffffffea]B[0x18][0x13][0xfffffff1][0xffffffc8]u[0xffffffb0][0xffffffc0]&gt;x[0xffffff8e][0xffffffdf][0xffffff85][0xffffffba]Fv[0xffffffb0][O[0xffffffa7][0xffffff84][0xffffff9e][0xffffffc6][0xffffff8f][0xffffffeb][0xffffffab][0xffffffe6]9Eu[0xf][0x14]5[0x1a][0xffffffeb][0xfffffffd]Q[0x7f]2[0xfffffff9][0xffffffdc][0x7f][0xffffffec][0xffffff9f]SOO[0xffffff9b][0xe][0xffffff86][0xffffffe0][0xffffffdb][0xffffffd3]`[0xfffffffa][0x13]|[0xfffffff9][0xffffffaa]?[0xffffffc1][0x19][0xffffffb5][0xfffffffc][\r][0xfffffff2]p[0xffffffc2][0x16][0xffffff93][0xffffffdd][0xffffff8e]n12D[0xffffffbc][0xffffffa4][0x16]w[0xffffffc6][0xfffffffc][0xffffffa8][0xffffffad][0xffffffe8][0xffffff86]c[0xffffffc2]z[0x16][0xffffffa9]*[0xffffffb1]I@c[0xffffff88]}[0xffffffe5][0xffffff9e][0x17][0x1a][0xffffffa8][0xffffffbf][0xfffffffb][0xffffff83][0xffffffdd][0xfffffff5]M:[0xffffffcd][0xffffffd7][0xc]e:[0xffffffbd]Tv[0xffffffcd]v[0xffffff9c][0xffffffda][0xffffffbd]k[0xffffffd1][0xfffffff6][0xffffffc4][0xffffffa3]f`[0xfffffff8][0xffffffcf]{$][0x1d].)W[0xe][0xffffffe7][0xffffffd4][0xfffffff5][0xffffffa9][0xffffff9c][0xffffffae]SH[0xffffffca]j[0xffffffb2]C[0xffffffbf][0xffffff87].V[0x3][0xffffffe6][0xffffffa9]s[0xffffffe2][0xffffffaa][0xb][0xffffffc1][0xffffffa1]D[0xfffffffb]@Qv[0xfffffffc][0xffffffee][0xfffffff1][0xffffffc1][0xffffff8e][0xffffffb6][0xb][0xffffff9f]=[0xffffffe0] C[0xfffffff0][0xffffffa4]T35J([0xffffffee]1m[0xffffffb4]Z[0xffffffa9]:[0xffffffef][0xffffff9d][0xffffffbc]I1[0xffffff95][0xffffffb7][0xffffffa0][0xfffffff1]L[0x6][0xffffffa4][0xffffffa3][0xfffffff3][0xffffffce][0x14]7[0xffffffbd]-[0xffffff91][0x15][0xffffffad]O[0xffffffd3][0xffffff9b][0x1e][0xffffffe8]ob[0xffffffdb](![0xffffff81]0[0xffffff89][0xffffffbe][0xffffffcf]k9[0x15][0xffffff95];[0xffffffd2][0xffffffe9][0xffffffa4]tS[0xffffffbe][0xffffffaf][0xffffffcb][0xffffffc6][0xffffff8f]I[0xffffffb2]d[0xfffffff5][0xffffffd0][0xfffffffa]z[0xffffffe0][0xffffff85][0x17]G[0xffffffb6][0xffffffac]s[0xffffffe1]{[0xffffff95][0xfffffffc][0x16]1[0xffffffff][0xfffffffd] [0xffffffa5]w[0xffffff90][0xffffffbf]rB[0xffffff8e][0xffffffe8]E[0xffffffb2][0xffffffc1][0xffffff8e][0xffffffd7][0xffffff90][0x13][0xffffff91]wT[0xffffffbc][0x3][0xffffff94][0xfffffff5].pGKar[0xffffffa0]B[0xffffffe7][0xffffffc4][0xffffffbf]O[0xffffff91]g[0xffffffd2][0xffffffb1][0xffffffb8]M[0xffffffc2]Y`[0x1b][0x13][0xfffffff3]E5[0xffffff83][0xffffffc8][0xffffffa5]I[0xc][0xffffff8f]2^C[0x10][0xffffff86]4[0xffffff99][0xffffffdb][0xffffffc9]a[0xffffff82]n_[0xffffff99][0xffffffca][0xffffff9a][0xffffffca][0xffffffd8][0xffffffe5][0xffffff8c]r[0xffffffba];[0xffffffaf][0xffffffca]72[0xffffffc1][0xfffffff5][0xffffffbf][0xffffffbb]R[0xe]Y[0xffffffd2]&amp;[0xffffffaf]Y[0xffffffc6]tr[0xffffffa9][0xffffffdc][0xe][0xffffffb2][0xffffff8c][0xffffffac][0xffffffa8][0xffffffa4]_[0x12][0xffffffe3]V[0xffffff97]U[0xffffff93][0xffffff85][0xffffffe5]=[0xffffffe4]$[0x1c]J[0x8]([0xffffffb8][0xffffff96][0xffffffd2][0xffffffe7]:[0xffffffda]N[0xffffffb8][0xffffff8c]/t[0xffffffd6]6[0x1d][0xffffffe1][0xffffff9c]&quot;[0xffffff83][0xffffffc9][0x8] ]Jb[0x0][0xffffffdf][0xffffffb2][0xffffff88]Q[0xfffffffb]x[0xffffffbf][0x15][0xffffffcd][0xffffff81][0xfffffffc][0xffffff8d]-&lt;[0xffffffe4]0[0x8][0x5][0x5][0xffffff84]Q[0xffffffec]}[0xffffffd5][0xffffff9c]QP[0xffffffc5]][0xffffffa7]QPe[0x16][0xffffff8e]ym[0x14][0xffffffb8][0x6][0xffffffc7][0x1e]K[0xffffffdd][0xffffffab][0xffffff90]|E[0xffffffea][0xffffffd2]7R[0xffffffc4]+[0xffffffd1][0x1e]d[0xfffffff0][0xc][0xffffffff][0x11][0xffffffa3][0xffffffb0]&lt;[0xffffff9d][0xffffff9f][0xffffff88][0xffffffbf][0xfffffff4][0xffffffc8][0xffffffbb]-[0xffffffba]H[0xffffffc8][[0xffffffc9][0xffffff95]Qq][0xfffffff6]-[0xffffff94]S[0xffffff91][0xffffff91][0xffffff91][0xffffffef]j[0xffffffe2]yA3[0xffffff93][0xfffffff0][0x1d]-[0xb][0xffffffcb][0xffffffe0][\n]&quot;
+20:39:23.196 [Test worker] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 &lt;&lt; &quot;[0xffffffbb][0xffffff98][0x10]Z[0xffffffd4][0xffffffbc][0xffffffc6][0xffffffd9]`[0xffffffc9]7&gt;[0x9][0x1c]yf[0xffffffe7][0xf]N[0xffffffd3][0xffffffba][0xffffff92][0xfffffff0][0x15]&gt;^%-[0xffffff95]'[0xffffffea]S[0xb]:[0xffffffb4][0xffffffa7][0x15]5[0xffffff96]Sk)=]l[0xffffff85]T[0xfffffffe][0xffffffd4][0xffffff95][0xfffffff4]T[0xffffff9b]-[0xffffffce]$[0xffffffaa]t;[0xffffffac][0xffffffa4]'/([0xffffffdf][0x12][0xffffff92]-%[0xfffffffe]7[0xffffffdf][0xffffffae]/[0xfffffff0][0xffffffd4]in[0xffffff87][0xffffffe3][0xf]u[0xfffffff3][0xffffff94][0x7][0xffffff9c][0xffffffea]i[0x5][0xffffffe0]&lt;[0xffffffba][0xffffffb0]#%[0xffffffaf][0xffffffae][0xffffffa8])[0xffffffe9][0x5]Q/[0xffffffc0][0xc]Y[0xffffffc8]#[0xffffffdb][0xfffffff0]L,[0xffffff8b][0xffffff83]G[0xffffffd0][0xffffffa2][0xffffffd0][0xffffffd1]N*[0xfffffff0]?l[0x1d]d@[0xffffffbe][0x15][0x0][0x0]&quot;
+20:39:23.207 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ep-0000000001 releasing valid endpoint
+20:39:23.207 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 releasing endpoint
+20:39:23.207 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 connection http-outgoing-0 can be kept alive for 3 MINUTES
+20:39:23.209 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 connection released [route: {s}-&gt;https://raw.githubusercontent.com:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+20:39:23.209 [Test worker] DEBUG io.github.bonigarcia.wdm.versions.VersionDetector -- Detecting firefox version using online commands.properties
+20:39:23.218 [Test worker] DEBUG io.github.bonigarcia.wdm.versions.Shell -- Running command on the shell: [cmd.exe, /C, wmic, datafile, where, name=&quot;%PROGRAMFILES:\=\\%\\Mozilla, Firefox\\firefox.exe&quot;, get, Version, /value]
+20:39:23.728 [Test worker] DEBUG io.github.bonigarcia.wdm.versions.Shell -- Result: Version=144.0.2.575
+20:39:23.733 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution firefox144=0.36.0 in cache (valid until 13:04:39 10/11/2025 EST)
+20:39:23.735 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.36.0 (resolved driver for Firefox 144)
+20:39:23.739 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Storing resolution firefox=144 in cache (valid until 21:39:23 09/11/2025 EST)
+20:39:23.767 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver geckodriver 0.36.0 found in cache
+20:39:23.775 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\sdini\.cache\selenium\geckodriver\win64\0.36.0\geckodriver.exe
   ?[32mGiven ?[0m?[32mthe user launches the Catalyst Legal Nurse website?[0m                                             ?[90m# stepdefinitions.CatalystSteps.launchCatalystSite()?[0m
-Actual page title: Janet DiNino – Legal Nurse Consultant for Elder Care Litigation
   ?[32mThen ?[0m?[32mthe page title should contain ?[0m?[32m?[1m&quot;Janet DiNino – Legal Nurse Consultant for Elder Care Litigation&quot;?[0m ?[90m# stepdefinitions.CatalystSteps.verifyTitle(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mthe Explore Services button should be visible?[0m                                                    ?[90m# stepdefinitions.CatalystSteps.verifyButtonVisible()?[0m
 </pre>
 </span>
 </div>
@@ -109,7 +219,7 @@ Actual page title: Janet DiNino – Legal Nurse Consultant for Elder Care Litiga
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.5</a> at Nov 9, 2025, 1:26:51 PM</p>
+<a href="http://www.gradle.org">Gradle 8.5</a> at Nov 9, 2025, 8:39:39 PM</p>
 </div>
 </div>
 </body>
