@@ -4,12 +4,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 import io.cucumber.java.Before;
 import io.cucumber.java.After;
 import io.cucumber.java.en.*;
-import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 import pages.IndexPage;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+//import static org.junit.jupiter.api.Assertions.assertTrue;
 import utils.DriverFactory;
 
 public class CatalystSteps {
@@ -64,7 +64,7 @@ public void tearDown() {
             .contains("/services");
     }
 
-@Then("the Testimonials link should navigate to the Testimonials page")
+    @Then("the Testimonials link should navigate to the Testimonials page")
     public void verifyTestimonials() {
         indexpage.testimonialsLink().click();
         assertThat(driver.getCurrentUrl())
@@ -96,7 +96,7 @@ public void tearDown() {
             .contains("/privacy");
     }
 
-        @Then("the FAQ link should navigate to the FAQ page")
+    @Then("the FAQ link should navigate to the FAQ page")
     public void verifyFAQ() {
         indexpage.faqLink().click();
         assertThat(driver.getCurrentUrl())

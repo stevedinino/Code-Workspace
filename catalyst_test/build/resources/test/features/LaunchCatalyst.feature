@@ -4,6 +4,9 @@ Feature: Launch Catalyst Legal Nurse website
     Given the user launches the Catalyst Legal Nurse website
     Then the page title should contain "Janet DiNino – Legal Nurse Consultant for Elder Care Litigation"
     And the Explore Services button should be visible
+    
+  Scenario: Verify navigation links
+    Given the user launches the Catalyst Legal Nurse website
     Then the About link should navigate to the About page
     Then the Services link should navigate to the Services page
     Then the Testimonials link should navigate to the Testimonials page
@@ -11,5 +14,4 @@ Feature: Launch Catalyst Legal Nurse website
     Then the Contact link should navigate to the Contact page
     Then the Privacy link should navigate to the Privacy page
     Then the FAQ link should navigate to the FAQ page
-
 

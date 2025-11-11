@@ -3,6 +3,9 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
 
 public class IndexPage {
 
@@ -74,7 +77,7 @@ public class IndexPage {
 
     public WebElement exploreServicesCTA() {
         return driver.findElement(By.xpath("//main//section[2]/p/a[@class='cta']"));
-    }
+    } 
 
     // 🖼 Sidebar Image
     public WebElement sidebarImage() {
