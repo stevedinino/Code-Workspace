@@ -8,7 +8,7 @@ import static io.cucumber.junit.platform.engine.Constants.GLUE_PROPERTY_NAME;
 import static io.cucumber.junit.platform.engine.Constants.PLUGIN_PROPERTY_NAME;
 
 @Suite
-@SelectClasspathResource("features")
+@SelectClasspathResource("features") // assumes src/test/resources/features
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "stepdefinitions,hooks")
-@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty, html:build/cucumber-report.html")
+@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty, html:build/cucumber-report.html, json:build/cucumber-report.json")
 public class TestRunner {}

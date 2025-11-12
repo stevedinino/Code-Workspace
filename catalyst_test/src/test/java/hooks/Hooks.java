@@ -1,66 +1,54 @@
 package hooks;
 
-import io.cucumber.java.Before;
-import io.cucumber.java.After;
-import io.cucumber.java.BeforeAll;
-import io.cucumber.java.AfterAll;
-import io.cucumber.java.Scenario;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import utils.ConfigLoader;
-import utils.DriverFactory;
 
 public class Hooks {
 
-    private static ExtentReports extent;
-    private static ThreadLocal<ExtentTest> scenarioThread = new ThreadLocal<>();
+    public static ExtentReports extent;
+    public static ExtentSparkReporter spark;
+    private static final ThreadLocal<ExtentTest> testThread = new ThreadLocal<>();
 
-    @BeforeAll
-    public static void setupReport() {
-        ExtentSparkReporter spark = new ExtentSparkReporter("target/ExtentReport.html");
-        spark.config().setDocumentTitle(ConfigLoader.get("report.title"));
-        spark.config().setReportName(ConfigLoader.get("report.name"));
+    @Before(order = 0)
+    public void setupReport() {
+        if (extent == null) {
+            String reportPath = "test-output/ExtentReport.html";
+            spark = new ExtentSparkReporter(reportPath);
 
-        String theme = ConfigLoader.get("report.theme");
-        spark.config().setTheme(Theme.valueOf(theme.toUpperCase())); // Only here do you use Theme enum
-        extent = new ExtentReports();
-        extent.setSystemInfo("Theme", theme); // This stays a string
-        extent.attachReporter(spark);
+            Theme theme = ConfigLoader.getTheme();
+            spark.config().setTheme(theme);
+            spark.config().setDocumentTitle("Catalyst Test Report");
+            spark.config().setReportName("Catalyst UI Automation");
 
-        extent.setSystemInfo("Author", "Steve");
-        extent.setSystemInfo("Suite", "Catalyst Legal Nurse UI Tests");
-        extent.setSystemInfo("Browser", "Firefox");
-        extent.setSystemInfo("OS", System.getProperty("os.name"));
-        extent.setSystemInfo("Base URL", ConfigLoader.get("base.url"));
+            extent = new ExtentReports();
+            extent.attachReporter(spark);
+            extent.setSystemInfo("Theme", theme.name());
+        }
     }
 
-    @Before
-    public void beforeScenario(Scenario scenario) {
-        DriverFactory.getDriver(); // Initializes WebDriver
+    @Before(order = 1)
+    public void createTest(Scenario scenario) {
         ExtentTest test = extent.createTest(scenario.getName());
-        scenarioThread.set(test);
+        testThread.set(test);
     }
 
     @After
-    public void afterScenario(Scenario scenario) {
+    public void tearDown(Scenario scenario) {
         if (scenario.isFailed()) {
-            scenarioThread.get().fail("Scenario failed: " + scenario.getName());
+            getTest().fail("Scenario failed: " + scenario.getName());
         } else {
-            scenarioThread.get().pass("Scenario passed");
+            getTest().pass("Scenario passed: " + scenario.getName());
         }
-        DriverFactory.quitDriver(); // Clean up WebDriver
-    }
-
-    @AfterAll
-    public static void tearDownReport() {
         extent.flush();
     }
 
     public static ExtentTest getTest() {
-        return scenarioThread.get();
+        return testThread.get();
     }
 }

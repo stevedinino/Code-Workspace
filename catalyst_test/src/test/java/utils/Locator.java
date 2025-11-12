@@ -9,7 +9,7 @@ public class Locator {
 
     @Override
     public String toString() {
-        return String.format("Locator[xpath='%s', action='%s', type='%s', result'%s', data='%s']",
+        return String.format("Locator[xpath='%s', action='%s', type='%s', result='%s', data='%s']",
                 xpath, action, type, result, data);
     }
 }
