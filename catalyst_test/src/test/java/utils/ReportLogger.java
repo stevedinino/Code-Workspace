@@ -13,10 +13,6 @@ public class ReportLogger {
         test().info(message);
     }
 
-    public static void debug(String message) {
-        test().debug(message);
-    }
-
     public static void pass(String message) {
         test().pass(message);
     }

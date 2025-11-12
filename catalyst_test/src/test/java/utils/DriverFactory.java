@@ -16,26 +16,34 @@ public class DriverFactory {
     private static WebDriver driver;
 
     public static WebDriver getDriver() {
-        String browser = System.getProperty("browser", "firefox").toLowerCase(); // default to Firefox
+        String browser = ConfigLoader.get("browser").toLowerCase(); // from config.properties
 
         switch (browser) {
             case "chrome":
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("--start-maximized");
-                chromeOptions.addArguments("--disable-infobars");
-                chromeOptions.addArguments("--disable-notifications");
-                chromeOptions.setAcceptInsecureCerts(true);
-                chromeOptions.setExperimentalOption("excludeSwitches", Arrays.asList("enable-automation"));
+                if (Boolean.parseBoolean(ConfigLoader.get("chrome.start.maximized")))
+                    chromeOptions.addArguments("--start-maximized");
+                if (Boolean.parseBoolean(ConfigLoader.get("chrome.disable.infobars")))
+                    chromeOptions.addArguments("--disable-infobars");
+                if (Boolean.parseBoolean(ConfigLoader.get("chrome.disable.notifications")))
+                    chromeOptions.addArguments("--disable-notifications");
+                if (Boolean.parseBoolean(ConfigLoader.get("accept.insecure.certs")))
+                    chromeOptions.setAcceptInsecureCerts(true);
+                chromeOptions.setExperimentalOption("excludeSwitches",
+                        Arrays.asList(ConfigLoader.get("chrome.exclude.switches")));
                 driver = new ChromeDriver(chromeOptions);
                 break;
 
             case "edge":
                 WebDriverManager.edgedriver().setup();
                 EdgeOptions edgeOptions = new EdgeOptions();
-                edgeOptions.addArguments("--start-maximized");
-                edgeOptions.addArguments("--disable-notifications");
-                edgeOptions.setAcceptInsecureCerts(true);
+                if (Boolean.parseBoolean(ConfigLoader.get("edge.start.maximized")))
+                    edgeOptions.addArguments("--start-maximized");
+                if (Boolean.parseBoolean(ConfigLoader.get("edge.disable.notifications")))
+                    edgeOptions.addArguments("--disable-notifications");
+                if (Boolean.parseBoolean(ConfigLoader.get("accept.insecure.certs")))
+                    edgeOptions.setAcceptInsecureCerts(true);
                 driver = new EdgeDriver(edgeOptions);
                 break;
 
@@ -43,10 +51,12 @@ public class DriverFactory {
             default:
                 WebDriverManager.firefoxdriver().setup();
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
-                firefoxOptions.addArguments("--headless");
-                firefoxOptions.setAcceptInsecureCerts(true);
-                firefoxOptions.addArguments("--width=1920");
-                firefoxOptions.addArguments("--height=1080");
+                if (Boolean.parseBoolean(ConfigLoader.get("firefox.headless")))
+                    firefoxOptions.addArguments("--headless");
+                if (Boolean.parseBoolean(ConfigLoader.get("accept.insecure.certs")))
+                    firefoxOptions.setAcceptInsecureCerts(true);
+                firefoxOptions.addArguments("--width=" + ConfigLoader.get("firefox.window.width"));
+                firefoxOptions.addArguments("--height=" + ConfigLoader.get("firefox.window.height"));
                 driver = new FirefoxDriver(firefoxOptions);
                 break;
         }

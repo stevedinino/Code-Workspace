@@ -24,9 +24,11 @@ public class Hooks {
         ExtentSparkReporter spark = new ExtentSparkReporter("target/ExtentReport.html");
         spark.config().setDocumentTitle(ConfigLoader.get("report.title"));
         spark.config().setReportName(ConfigLoader.get("report.name"));
-        spark.config().setTheme(Theme.STANDARD);
 
+        String theme = ConfigLoader.get("report.theme");
+        spark.config().setTheme(Theme.valueOf(theme.toUpperCase())); // Only here do you use Theme enum
         extent = new ExtentReports();
+        extent.setSystemInfo("Theme", theme); // This stays a string
         extent.attachReporter(spark);
 
         extent.setSystemInfo("Author", "Steve");

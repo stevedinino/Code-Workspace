@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import utils.DriverFactory;
 import utils.XPathRepository;
 import utils.Locator;
-import hooks.Hooks;
+import utils.ReportLogger;
 import utils.ConfigLoader;
 
 public class IndexSteps {
@@ -22,56 +22,116 @@ public class IndexSteps {
         driver = DriverFactory.getDriver();
         String baseUrl = ConfigLoader.get("base.url");
         assertThat(baseUrl).as("Base URL must be defined").isNotNull();
-        Hooks.getTest().info("Launching Catalyst site at: " + baseUrl);
+        ReportLogger.info("Launching Catalyst site at: " + baseUrl);
         driver.get(baseUrl);
-        Hooks.getTest().pass("Catalyst site loaded successfully");
+        ReportLogger.pass("Catalyst site loaded successfully");
     }
 
     @Given("the XPath repository for {string} is loaded")
     public void loadRepository(String pageName) {
-        Hooks.getTest().info("Clearing existing XPath repository");
+        ReportLogger.info("Clearing existing XPath repository");
         XPathRepository.clear();
         XPathRepository.loadPage(pageName);
-        Hooks.getTest().pass("Loaded XPath repository for page: " + pageName);
+        ReportLogger.pass("Loaded XPath repository for page: " + pageName);
     }
 
     @When("the user interacts with {string}")
     public void interactWithElement(String elementKey) {
         driver = DriverFactory.getDriver();
-        Hooks.getTest().info("Retrieving locator for key: " + elementKey);
         Locator locator = XPathRepository.get(elementKey);
         assertThat(locator).as("Locator should exist for key: " + elementKey).isNotNull();
-        Hooks.getTest().debug("Locator details: " + locator.toString());
+        ReportLogger.info("Interacting with element: " + elementKey + " (type: " + locator.type + ", action: " + locator.action + ")");
 
         WebElement element = driver.findElement(By.xpath(locator.xpath));
-        Hooks.getTest().info("Found element for key: " + elementKey);
+        assertThat(element).as("Element must be found for key: " + elementKey).isNotNull();
 
-        switch (locator.action.toLowerCase()) {
-            case "click":
-                element.click();
-                Hooks.getTest().pass("Clicked element: " + elementKey);
+        switch (locator.type.toLowerCase()) {
+            case "text":
+            case "image":
+            case "list":
+                if (locator.action.equalsIgnoreCase("assert")) {
+                    assertThat(element.isDisplayed()).isTrue();
+                    ReportLogger.pass("Asserted visibility of " + locator.type + ": " + elementKey);
+                } else {
+                    throw new UnsupportedOperationException("Cannot '" + locator.action + "' on type '" + locator.type + "'");
+                }
                 break;
-            case "type":
-                assertThat(locator.data).as("Missing data for typing into: " + elementKey).isNotNull();
-                element.sendKeys(locator.data);
-                Hooks.getTest().pass("Typed into element: " + elementKey + " with data: " + locator.data);
+
+            case "link":
+            case "button":
+                if (locator.action.equalsIgnoreCase("click")) {
+                    element.click();
+                    ReportLogger.pass("Clicked " + locator.type + ": " + elementKey);
+                } else {
+                    throw new UnsupportedOperationException("Unsupported action '" + locator.action + "' for type '" + locator.type + "'");
+                }
                 break;
-            case "assert":
-                assertThat(element.isDisplayed()).as("Element should be visible: " + elementKey).isTrue();
-                Hooks.getTest().pass("Asserted visibility of element: " + elementKey);
+
+            case "modal":
+                if (locator.action.equalsIgnoreCase("assert")) {
+                    assertThat(element.isDisplayed()).isTrue();
+                    ReportLogger.pass("Modal is visible: " + elementKey);
+                } else if (locator.action.equalsIgnoreCase("click")) {
+                    element.click();
+                    ReportLogger.pass("Clicked modal trigger: " + elementKey);
+                } else {
+                    throw new UnsupportedOperationException("Unsupported action '" + locator.action + "' for modal");
+                }
                 break;
+
             default:
-                Hooks.getTest().fail("Unsupported action: " + locator.action);
-                throw new UnsupportedOperationException("Unsupported action: " + locator.action);
+                throw new UnsupportedOperationException("Unknown element type: " + locator.type);
         }
     }
 
-    @Then("the element {string} should be handled as expected")
-    public void verifyElementHandled(String elementKey) {
-        Hooks.getTest().info("Verifying repository contains key: " + elementKey);
-        assertThat(XPathRepository.contains(elementKey))
-            .as("Element key should exist in repository: " + elementKey)
-            .isTrue();
-        Hooks.getTest().pass("Verified repository contains key: " + elementKey);
+    @Then("the result of {string} should be validated")
+    public void validateResult(String elementKey) {
+        driver = DriverFactory.getDriver();
+        Locator locator = XPathRepository.get(elementKey);
+        assertThat(locator).as("Locator should exist for key: " + elementKey).isNotNull();
+        assertThat(locator.result).as("Result must be defined for key: " + elementKey).isNotEmpty();
+
+        String result = locator.result.trim();
+        ReportLogger.info("Validating result for key: " + elementKey + " → " + result);
+
+        try {
+            if (result.startsWith("url contains")) {
+                String expectedFragment = result.replace("url contains", "").replace("'", "").trim();
+                assertThat(driver.getCurrentUrl()).contains(expectedFragment);
+                ReportLogger.pass("URL contains expected fragment: " + expectedFragment);
+            } else if (result.equals("element is visible")) {
+                WebElement element = driver.findElement(By.xpath(locator.xpath));
+                assertThat(element.isDisplayed()).isTrue();
+                ReportLogger.pass("Element is visible: " + elementKey);
+            } else if (result.equals("image is visible")) {
+                WebElement image = driver.findElement(By.xpath(locator.xpath));
+                assertThat(image.isDisplayed()).isTrue();
+                assertThat(image.getTagName()).isEqualTo("img");
+                ReportLogger.pass("Image is visible: " + elementKey);
+            } else if (result.equals("modal is visible")) {
+                WebElement modal = driver.findElement(By.xpath(locator.xpath));
+                assertThat(modal.isDisplayed()).isTrue();
+                ReportLogger.pass("Modal is visible: " + elementKey);
+            } else if (result.equals("modal is dismissed")) {
+                WebElement modal = driver.findElement(By.xpath(locator.xpath));
+                assertThat(modal.isDisplayed()).isFalse();
+                ReportLogger.pass("Modal is dismissed: " + elementKey);
+            } else if (result.equals("element is visible with list items")) {
+                WebElement list = driver.findElement(By.xpath(locator.xpath));
+                assertThat(list.isDisplayed()).isTrue();
+                assertThat(list.findElements(By.tagName("li"))).isNotEmpty();
+                ReportLogger.pass("List is visible with items: " + elementKey);
+            } else if (result.startsWith("element with class")) {
+                String className = result.replace("element with class", "").replace("'", "").trim();
+                WebElement target = driver.findElement(By.className(className));
+                assertThat(target.isDisplayed()).isTrue();
+                ReportLogger.pass("Element with class '" + className + "' is visible");
+            } else {
+                ReportLogger.warn("No validator implemented for result: " + result);
+            }
+        } catch (Exception e) {
+            ReportLogger.fail("Validation failed for key: " + elementKey + " → " + result);
+            throw e;
+        }
     }
 }

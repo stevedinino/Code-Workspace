@@ -19,7 +19,16 @@ public class ConfigLoader {
         }
     }
 
-    public static Theme get(String key) {
+    public static String get(String key) {
         return props.getProperty(key);
+    }
+
+    public static Theme getTheme() {
+        String themeValue = get("report.theme");
+        try {
+            return Theme.valueOf(themeValue.toUpperCase());
+        } catch (IllegalArgumentException | NullPointerException e) {
+            return Theme.STANDARD; // fallback to STANDARD if invalid or missing
+        }
     }
 }
