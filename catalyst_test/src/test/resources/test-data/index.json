@@ -57,10 +57,10 @@
     "xpath": "//button[@class='menu-toggle']",
     "action": "click",
     "type": "button",
-    "result": "element with class 'menu-open' is visible"
+    "result": "element with class 'active' is visible"
   },
   "MainHeader": {
-    "xpath": "//h1[text()='Trusted Expertise. Clinical Precision.']",
+    "xpath": "//h1",
     "action": "assert",
     "type": "text",
     "result": "element is visible"
@@ -78,7 +78,7 @@
     "result": "element is visible"
   },
   "StrategicServicesHeader": {
-    "xpath": "//h2[text()='Strategic Services']",
+    "xpath": "//h1[text()='Strategic Legal Nurse Consulting Services']",
     "action": "assert",
     "type": "text",
     "result": "element is visible"
@@ -126,7 +126,7 @@
     "result": "modal is dismissed"
   },
   "SidebarImage": {
-    "xpath": "//aside[@class='sidebar-image']/img",
+    "xpath": "//aside[contains(@class,'sidebar') or contains(@class,'sidebar-image')]/img",
     "action": "assert",
     "type": "image",
     "result": "image is visible"

@@ -1,20 +1,19 @@
 package utils;
 
-import java.io.InputStream;
-import java.util.Properties;
-
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
 public class ConfigLoader {
-    private static final Properties props = new Properties();
+    private static final String CONFIG_PATH = "config.properties";
+    private static Properties props = new Properties();
 
     static {
-        try (InputStream input = ConfigLoader.class.getClassLoader().getResourceAsStream("config.properties")) {
-            if (input == null) {
-                throw new RuntimeException("config.properties not found in resources");
-            }
+        try (FileInputStream input = new FileInputStream(CONFIG_PATH)) {
             props.load(input);
-        } catch (Exception e) {
+        } catch (IOException e) {
             throw new RuntimeException("Failed to load config.properties", e);
         }
     }
@@ -24,11 +23,15 @@ public class ConfigLoader {
     }
 
     public static Theme getTheme() {
-        String themeValue = get("report.theme");
+        String value = props.getProperty("report.theme", "standard").toUpperCase();
         try {
-            return Theme.valueOf(themeValue.toUpperCase());
-        } catch (IllegalArgumentException | NullPointerException e) {
-            return Theme.STANDARD; // fallback to STANDARD if invalid or missing
+            return Theme.valueOf(value);
+        } catch (IllegalArgumentException e) {
+            return Theme.STANDARD;
         }
+    }
+
+    public static Properties getAll() {
+        return props;
     }
 }

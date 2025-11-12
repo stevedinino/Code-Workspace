@@ -1,15 +1,34 @@
 package utils;
 
 public class Locator {
-    public String xpath;
-    public String action;
-    public String type;
-    public String data; // nullable
-    public String result; // 
+    private String xpath;
+    private String action;
+    private String type;
+    private String result;
+
+    public String getXpath() {
+        return xpath;
+    }
+
+    public String getAction() {
+        return action;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getResult() {
+        return result;
+    }
 
     @Override
     public String toString() {
-        return String.format("Locator[xpath='%s', action='%s', type='%s', result='%s', data='%s']",
-                xpath, action, type, result, data);
+        return "Locator{" +
+                "xpath='" + xpath + '\'' +
+                ", action='" + action + '\'' +
+                ", type='" + type + '\'' +
+                ", result='" + result + '\'' +
+                '}';
     }
 }

@@ -8,6 +8,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import utils.ConfigLoader;
+import utils.DriverFactory;
 
 public class Hooks {
 
@@ -38,14 +39,24 @@ public class Hooks {
         testThread.set(test);
     }
 
-    @After
-    public void tearDown(Scenario scenario) {
-        if (scenario.isFailed()) {
-            getTest().fail("Scenario failed: " + scenario.getName());
-        } else {
-            getTest().pass("Scenario passed: " + scenario.getName());
+    @After(order = 98)
+    public void tearDownDriver() {
+        DriverFactory.quitDriver();
+    }
+
+    @After(order = 99)
+    public void tearDownReport(Scenario scenario) {
+        ExtentTest test = getTest();
+        if (test != null) {
+            if (scenario.isFailed()) {
+                test.fail("Scenario failed: " + scenario.getName());
+            } else {
+                test.pass("Scenario passed: " + scenario.getName());
+            }
         }
-        extent.flush();
+        if (extent != null) {
+            extent.flush();
+        }
     }
 
     public static ExtentTest getTest() {

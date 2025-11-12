@@ -13,10 +13,18 @@ import java.util.Arrays;
 
 public class DriverFactory {
 
-    private static WebDriver driver;
+    private static final ThreadLocal<WebDriver> threadDriver = new ThreadLocal<>();
 
     public static WebDriver getDriver() {
-        String browser = ConfigLoader.get("browser").toLowerCase(); // from config.properties
+        if (threadDriver.get() == null) {
+            threadDriver.set(createDriver());
+        }
+        return threadDriver.get();
+    }
+
+    private static WebDriver createDriver() {
+        String browser = ConfigLoader.get("browser").toLowerCase();
+        System.out.println("[INFO] Launching browser: " + browser);
 
         switch (browser) {
             case "chrome":
@@ -32,8 +40,7 @@ public class DriverFactory {
                     chromeOptions.setAcceptInsecureCerts(true);
                 chromeOptions.setExperimentalOption("excludeSwitches",
                         Arrays.asList(ConfigLoader.get("chrome.exclude.switches")));
-                driver = new ChromeDriver(chromeOptions);
-                break;
+                return new ChromeDriver(chromeOptions);
 
             case "edge":
                 WebDriverManager.edgedriver().setup();
@@ -44,8 +51,7 @@ public class DriverFactory {
                     edgeOptions.addArguments("--disable-notifications");
                 if (Boolean.parseBoolean(ConfigLoader.get("accept.insecure.certs")))
                     edgeOptions.setAcceptInsecureCerts(true);
-                driver = new EdgeDriver(edgeOptions);
-                break;
+                return new EdgeDriver(edgeOptions);
 
             case "firefox":
             default:
@@ -57,16 +63,21 @@ public class DriverFactory {
                     firefoxOptions.setAcceptInsecureCerts(true);
                 firefoxOptions.addArguments("--width=" + ConfigLoader.get("firefox.window.width"));
                 firefoxOptions.addArguments("--height=" + ConfigLoader.get("firefox.window.height"));
-                driver = new FirefoxDriver(firefoxOptions);
-                break;
+                return new FirefoxDriver(firefoxOptions);
         }
-
-        return driver;
     }
 
     public static void quitDriver() {
-        if (driver != null) {
-            driver.quit();
+        if (threadDriver.get() != null) {
+            System.out.println("[INFO] Quitting browser instance");
+            threadDriver.get().quit();
+            threadDriver.remove();
         }
+    }
+
+    static {
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            quitDriver();
+        }));
     }
 }
