@@ -12,6 +12,7 @@ import utils.DriverFactory;
 
 public class Hooks {
 
+    public static ExtentTest test;
     public static ExtentReports extent;
     public static ExtentSparkReporter spark;
     private static final ThreadLocal<ExtentTest> testThread = new ThreadLocal<>();
