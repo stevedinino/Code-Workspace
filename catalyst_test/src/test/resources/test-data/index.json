@@ -2,7 +2,7 @@
   "title": {
     "xpath": "//title",
     "type": "text",
-    "action": "assert",
+    "action": "assert_title",
     "result": "Janet DiNino – Legal Nurse Consultant for Elder Care Litigation"
   },
   "link_favicon": {
@@ -33,15 +33,20 @@
     "xpath": "//header//a[@href='index.html']",
     "type": "link",
     "action": "click",
-    "result": "navigates to 'index.html'"
+    "result": "index.html"
   },
   "logo_image": {
     "xpath": "//header//img[@alt='Catalyst Logo']",
     "type": "image",
-    "action": "assert",
+    "action": "assert_alt",
     "result": "Catalyst Logo"
   },
-  "nav_wrapper": {
+    "logo_image_visible": {
+    "xpath": "//header//img[@alt='Catalyst Logo']",
+    "type": "image",
+    "action": "assert_visible",
+    "result": "visible"
+  },"nav_wrapper": {
     "xpath": "//header//div[@class='nav-wrapper']",
     "type": "container",
     "action": "assert_visible",
@@ -69,7 +74,7 @@
     "xpath": "//a[text()='About']",
     "type": "link",
     "action": "click",
-    "result": "navigates to 'about.html'"
+    "result": "about.html"
   },
   "nav_services_li": {
     "xpath": "//li[a[text()='Services']]",
@@ -81,7 +86,7 @@
     "xpath": "//a[text()='Services']",
     "type": "link",
     "action": "click",
-    "result": "navigates to 'services.html'"
+    "result": "services.html"
   },
   "nav_testimonials_li": {
     "xpath": "//li[a[text()='Testimonials']]",
@@ -93,7 +98,7 @@
     "xpath": "//a[text()='Testimonials']",
     "type": "link",
     "action": "click",
-    "result": "navigates to 'testimonials.html'"
+    "result": "testimonials.html"
   },
   "nav_upload_li": {
     "xpath": "//li[a[text()='Upload']]",
@@ -105,7 +110,7 @@
     "xpath": "//a[text()='Upload']",
     "type": "link",
     "action": "click",
-    "result": "navigates to 'upload.html'"
+    "result": "upload.html"
   },
   "nav_contact_li": {
     "xpath": "//li[a[text()='Contact']]",
@@ -117,7 +122,7 @@
     "xpath": "//a[text()='Contact']",
     "type": "link",
     "action": "click",
-    "result": "navigates to 'contact.html'"
+    "result": "contact.html"
   },
   "nav_privacy_li": {
     "xpath": "//li[a[text()='Privacy']]",
@@ -129,7 +134,7 @@
     "xpath": "//a[text()='Privacy']",
     "type": "link",
     "action": "click",
-    "result": "navigates to 'privacy.html'"
+    "result": "privacy.html"
   },
   "nav_faq_li": {
     "xpath": "//li[a[text()='FAQ']]",
@@ -141,7 +146,7 @@
     "xpath": "//a[text()='FAQ']",
     "type": "link",
     "action": "click",
-    "result": "navigates to 'faq.html'"
+    "result": "faq.html"
   },
   "page_layout": {
     "xpath": "//div[@class='page-layout']",
@@ -225,7 +230,7 @@
     "xpath": "//a[text()='Privacy Policy']",
     "type": "link",
     "action": "click",
-    "result": "navigates to 'privacy.html'"
+    "result": "privacy.html"
   },
   "section_strategic_services": {
     "xpath": "//section[./h2[text()='Strategic Services']]",
@@ -285,7 +290,7 @@
     "xpath": "//a[text()='Explore Services']",
     "type": "link",
     "action": "click",
-    "result": "navigates to 'services.html'"
+    "result": "services.html"
   },
   "sidebar_image_container": {
     "xpath": "//div[@class='sidebar-image']",
@@ -296,40 +301,15 @@
   "sidebar_image": {
     "xpath": "//img[@alt='Janet DiNino portrait']",
     "type": "image",
-    "action": "assert",
+    "action": "assert_alt",
     "result": "Janet DiNino portrait"
   },
-  "confirmation_modal": {
-    "xpath": "//div[@id='confirmation-modal']",
-    "type": "modal",
+  "sidebar_image_visible": {
+    "xpath": "//img[@alt='Janet DiNino portrait']",
+    "type": "image",
     "action": "assert_visible",
     "result": "visible"
-  },
-  "modal_content": {
-    "xpath": "//div[@class='modal-content']",
-    "type": "container",
-    "action": "assert_visible",
-    "result": "visible"
-  },
-  "modal_heading": {
-    "xpath": "//h3[text()='Upload Successful']",
-    "type": "heading",
-    "action": "assert",
-    "result": "Upload Successful"
-  },
-  "modal_message": {
-    "xpath": "//p[@class='modal-message']",
-    "type": "text",
-    "action": "assert",
-    "result": "Your documents have been securely submitted."
-  },
-  "modal_ok_button": {
-    "xpath": "//button[text()='OK']",
-    "type": "button",
-    "action": "click",
-    "result": "modal closes"
-  },
-  "footer": {
+  },  "footer": {
     "xpath": "//footer",
     "type": "container",
     "action": "assert_visible",

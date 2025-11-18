@@ -12,43 +12,32 @@ public class SemanticActionExecutor {
 
     public static void execute(WebDriver driver, String key) {
         Locator locator = LocatorRepository.get(key);
-        WebElement element = driver.findElement(By.xpath(locator.getXpath()));
+        String xpath = locator.getXpath();
+        String action = locator.getAction();
 
-        switch (locator.getAction()) {
+        switch (action) {
             case "click":
-                element.click();
+                WebElement clickable = driver.findElement(By.xpath(xpath));
+                clickable.click();
                 ReportLogger.info("🖱️ Clicked element for key: " + key);
                 break;
 
             case "assert":
-                String actualText = element.getText().trim();
-                if (actualText.equals(locator.getResult())) {
-                    ReportLogger.info("✅ Assertion passed for key: " + key);
-                } else {
-                    ReportLogger.error("❌ Assertion failed for key: " + key +
-                        ". Expected: \"" + locator.getResult() + "\", Found: \"" + actualText + "\"");
-                }
-                break;
-
+            case "assert_title":
             case "assert_visible":
-                if (element.isDisplayed()) {
-                    ReportLogger.info("👁️ Element is visible for key: " + key);
-                } else {
-                    ReportLogger.error("❌ Element not visible for key: " + key);
-                }
-                break;
-
             case "assert_exists":
-                ReportLogger.info("📌 Element exists for key: " + key);
+            case "assert_alt":
+                // No interaction needed—these are pure validations
+                ReportLogger.info("🔍 No interaction required for action: " + action + " (key: " + key + ")");
                 break;
 
             default:
-                ReportLogger.warn("⚠️ No interaction logic defined for action: " + locator.getAction());
+                ReportLogger.warn("⚠️ No execution logic defined for action: " + action + " (key: " + key + ")");
         }
     }
 
     public static void validate(WebDriver driver, String key) {
         Locator locator = LocatorRepository.get(key);
-        SemanticValidator.validate(driver, locator.getXpath(), key);
+        SemanticValidator.validate(driver, locator, key);
     }
 }
