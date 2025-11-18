@@ -1,0 +1,56 @@
+{
+  "AboutHeader": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//h1[text()='About Janet DiNino – Legal Nurse Consultant']",
+    "result": "About Janet DiNino – Legal Nurse Consultant"
+  },
+  "JanetIntroParagraph": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//p[contains(text(),'Janet DiNino is an accomplished healthcare executive')]",
+    "result": "Janet DiNino is an accomplished healthcare executive"
+  },
+  "CredentialsList": {
+    "type": "list",
+    "action": "assert",
+    "xpath": "//ul[li[contains(text(),'Board-Certified Adult-Gerontology')]]",
+    "result": "Board-Certified Adult-Gerontology Primary Care Nurse Practitioner"
+  },
+  "SCHouseCallsRole": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//p[contains(text(),'Chief Clinical Officer and Nurse Practitioner with SC House Calls')]",
+    "result": "Chief Clinical Officer and Nurse Practitioner with SC House Calls"
+  },
+  "ContactLink": {
+    "type": "link",
+    "action": "click",
+    "xpath": "//a[@href='contact.html']",
+    "result": "contact.html"
+  },
+  "PrivacyLink": {
+    "type": "link",
+    "action": "click",
+    "xpath": "//a[@href='privacy.html']",
+    "result": "privacy.html"
+  },
+  "FAQLink": {
+    "type": "link",
+    "action": "click",
+    "xpath": "//a[@href='faq.html']",
+    "result": "faq.html"
+  },
+  "BackToHomeLink": {
+    "type": "link",
+    "action": "click",
+    "xpath": "//a[@href='index.html' and text()='Back to Home']",
+    "result": "index.html"
+  },
+  "FooterText": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//footer//p[contains(text(),'© Catalyst Legal Nurse Consulting')]",
+    "result": "© Catalyst Legal Nurse Consulting"
+  }
+}

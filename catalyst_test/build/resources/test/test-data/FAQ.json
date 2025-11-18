@@ -1,0 +1,164 @@
+{
+  "FAQHeader": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//h1[text()='Frequently Asked Questions']",
+    "result": "Frequently Asked Questions"
+  },
+  "FAQQuestion1": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//h2[text()='What is a Certified Legal Nurse Consultant (CLNC)?']",
+    "result": "What is a Certified Legal Nurse Consultant (CLNC)?"
+  },
+  "FAQAnswer1": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//p[contains(text(),'A CLNC is a registered nurse with specialized training in legal consulting')]",
+    "result": "A CLNC is a registered nurse with specialized training in legal consulting"
+  },
+  "FAQQuestion2": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//h2[text()='How does Janet support attorneys in litigation?']",
+    "result": "How does Janet support attorneys in litigation?"
+  },
+  "FAQAnswer2": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//p[contains(text(),'Janet provides case screenings, merit reviews, medical chronologies')]",
+    "result": "Janet provides case screenings, merit reviews, medical chronologies"
+  },
+  "FAQQuestion3": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//h2[text()='What types of cases benefit from nurse expert review?']",
+    "result": "What types of cases benefit from nurse expert review?"
+  },
+  "FAQAnswer3": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//p[contains(text(),'Cases involving nursing homes, hospice care, wound care, medication errors')]",
+    "result": "Cases involving nursing homes, hospice care, wound care, medication errors"
+  },
+  "FAQQuestion4": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//h2[text()='What credentials does Janet hold?']",
+    "result": "What credentials does Janet hold?"
+  },
+  "FAQAnswer4": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//p[contains(text(),'Board-certified Adult-Gerontology Nurse Practitioner')]",
+    "result": "Board-certified Adult-Gerontology Nurse Practitioner"
+  },
+  "FAQQuestion5": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//h2[text()='Do you offer expert witness services?']",
+    "result": "Do you offer expert witness services?"
+  },
+  "FAQAnswer5": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//p[contains(text(),'Yes, we assist with expert witness preparation')]",
+    "result": "Yes, we assist with expert witness preparation"
+  },
+  "FAQQuestion6": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//h2[text()='How do I get started with Catalyst?']",
+    "result": "How do I get started with Catalyst?"
+  },
+  "FAQAnswer6": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//p[contains(text(),'Simply reach out via our contact form')]",
+    "result": "Simply reach out via our contact form"
+  },
+  "FAQQuestion7": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//h2[text()='Is my case information confidential?']",
+    "result": "Is my case information confidential?"
+  },
+  "FAQAnswer7": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//p[contains(text(),'Absolutely. We follow strict HIPAA compliance')]",
+    "result": "Absolutely. We follow strict HIPAA compliance"
+  },
+  "FAQQuestion8": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//h2[text()='Do you work with plaintiff or defense attorneys?']",
+    "result": "Do you work with plaintiff or defense attorneys?"
+  },
+  "FAQAnswer8": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//p[contains(text(),'We work with both plaintiff and defense teams')]",
+    "result": "We work with both plaintiff and defense teams"
+  },
+  "FAQQuestion9": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//h2[text()='What’s the turnaround time for a review?']",
+    "result": "What’s the turnaround time for a review?"
+  },
+  "FAQAnswer9": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//p[contains(text(),'Most reviews are completed within 5–10 business days')]",
+    "result": "Most reviews are completed within 5–10 business days"
+  },
+  "FAQQuestion10": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//h2[text()='Can you help with deposition or trial prep?']",
+    "result": "Can you help with deposition or trial prep?"
+  },
+  "FAQAnswer10": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//p[contains(text(),'Yes, we assist with deposition strategy and expert witness coaching')]",
+    "result": "Yes, we assist with deposition strategy and expert witness coaching"
+  },
+  "FAQQuestion11": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//h2[text()='Do you provide chronologies and timelines?']",
+    "result": "Do you provide chronologies and timelines?"
+  },
+  "FAQAnswer11": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//p[contains(text(),'Yes, we create detailed medical chronologies')]",
+    "result": "Yes, we create detailed medical chronologies"
+  },
+  "BackToHomeLink": {
+    "type": "link",
+    "action": "click",
+    "xpath": "//a[@href='index.html' and text()='Back to Home']",
+    "result": "index.html"
+  },
+  "ContactLink": {
+    "type": "link",
+    "action": "click",
+    "xpath": "//a[@href='contact.html']",
+    "result": "contact.html"
+  },
+  "PrivacyLink": {
+    "type": "link",
+    "action": "click",
+    "xpath": "//a[@href='privacy.html']",
+    "result": "privacy.html"
+  },
+  "FooterText": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//footer//p[contains(text(),'© Catalyst Legal Nurse Consulting')]",
+    "result": "© Catalyst Legal Nurse Consulting"
+  }
+}

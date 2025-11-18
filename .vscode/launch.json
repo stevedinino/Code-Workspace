@@ -3,10 +3,18 @@
   "configurations": [
     {
       "type": "java",
-      "name": "Run Cucumber Tests",
+      "name": "Debug Catalyst Cucumber",
       "request": "launch",
       "mainClass": "runners.TestRunner",
-      "vmArgs": "-Dbrowser=firefox"
+      "projectName": "catalyst_test"
+    },
+    {
+      "type": "java",
+      "name": "Attach to Gradle Test",
+      "request": "attach",
+      "hostName": "localhost",
+      "port": 5005,
+      "preLaunchTask": "Gradle Test with Debug"
     }
   ]
 }

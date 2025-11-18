@@ -1,0 +1,56 @@
+{
+  "ContactHeader": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//h1[text()='Contact Janet DiNino – Legal Nurse Consultant']",
+    "result": "Contact Janet DiNino – Legal Nurse Consultant"
+  },
+  "IntroParagraph": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//p[contains(text(),'To discuss your case or request a consultation')]",
+    "result": "To discuss your case or request a consultation, please reach out using the information below:"
+  },
+  "EmailAddress": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//a[contains(@href,'mailto:janet@catalystlegalnurse.com')]",
+    "result": "janet@catalystlegalnurse.com"
+  },
+  "PhoneNumber": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//p[contains(text(),'Phone: (803) 740-9964')]",
+    "result": "Phone: (803) 740-9964"
+  },
+  "DownloadBusinessCardLink": {
+    "type": "link",
+    "action": "click",
+    "xpath": "//a[contains(text(),'Download Janet’s Business Card')]",
+    "result": "Download Janet’s Business Card"
+  },
+  "BackToHomeLink": {
+    "type": "link",
+    "action": "click",
+    "xpath": "//a[@href='index.html' and text()='Back to Home']",
+    "result": "index.html"
+  },
+  "PrivacyLink": {
+    "type": "link",
+    "action": "click",
+    "xpath": "//a[@href='privacy.html']",
+    "result": "privacy.html"
+  },
+  "FAQLink": {
+    "type": "link",
+    "action": "click",
+    "xpath": "//a[@href='faq.html']",
+    "result": "faq.html"
+  },
+  "FooterText": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//footer//p[contains(text(),'© Catalyst Legal Nurse Consulting')]",
+    "result": "© Catalyst Legal Nurse Consulting"
+  }
+}

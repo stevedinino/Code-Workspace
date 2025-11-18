@@ -5,79 +5,58 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
-import io.github.bonigarcia.wdm.WebDriverManager;
-
-import java.util.Arrays;
 
 public class DriverFactory {
 
-    private static final ThreadLocal<WebDriver> threadDriver = new ThreadLocal<>();
+    private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     public static WebDriver getDriver() {
-        if (threadDriver.get() == null) {
-            threadDriver.set(createDriver());
+        if (driver.get() == null) {
+            String browser = ConfigLoader.getBrowser();
+            switch (browser.toLowerCase()) {
+                case "chrome":
+                    ChromeOptions chromeOptions = new ChromeOptions();
+                    if ("true".equalsIgnoreCase(ConfigLoader.get("chrome.headless"))) {
+                        chromeOptions.addArguments("--headless=new");
+                    }
+                    driver.set(new ChromeDriver(chromeOptions));
+                    break;
+
+                case "firefox":
+                    FirefoxOptions firefoxOptions = new FirefoxOptions();
+
+                    if ("true".equalsIgnoreCase(ConfigLoader.get("firefox.headless"))) {
+                        firefoxOptions.addArguments("--headless");
+                    }
+
+                    String width = ConfigLoader.get("firefox.window.width");
+                    String height = ConfigLoader.get("firefox.window.height");
+                    if (width != null && height != null) {
+                        firefoxOptions.addArguments("--width=" + width);
+                        firefoxOptions.addArguments("--height=" + height);
+                    }
+
+                    driver.set(new FirefoxDriver(firefoxOptions));
+                    break;
+
+                default:
+                    throw new RuntimeException("❌ Unsupported browser: " + browser);
+            }
         }
-        return threadDriver.get();
-    }
-
-    private static WebDriver createDriver() {
-        String browser = ConfigLoader.get("browser").toLowerCase();
-        System.out.println("[INFO] Launching browser: " + browser);
-
-        switch (browser) {
-            case "chrome":
-                WebDriverManager.chromedriver().setup();
-                ChromeOptions chromeOptions = new ChromeOptions();
-                if (Boolean.parseBoolean(ConfigLoader.get("chrome.start.maximized")))
-                    chromeOptions.addArguments("--start-maximized");
-                if (Boolean.parseBoolean(ConfigLoader.get("chrome.disable.infobars")))
-                    chromeOptions.addArguments("--disable-infobars");
-                if (Boolean.parseBoolean(ConfigLoader.get("chrome.disable.notifications")))
-                    chromeOptions.addArguments("--disable-notifications");
-                if (Boolean.parseBoolean(ConfigLoader.get("accept.insecure.certs")))
-                    chromeOptions.setAcceptInsecureCerts(true);
-                chromeOptions.setExperimentalOption("excludeSwitches",
-                        Arrays.asList(ConfigLoader.get("chrome.exclude.switches")));
-                return new ChromeDriver(chromeOptions);
-
-            case "edge":
-                WebDriverManager.edgedriver().setup();
-                EdgeOptions edgeOptions = new EdgeOptions();
-                if (Boolean.parseBoolean(ConfigLoader.get("edge.start.maximized")))
-                    edgeOptions.addArguments("--start-maximized");
-                if (Boolean.parseBoolean(ConfigLoader.get("edge.disable.notifications")))
-                    edgeOptions.addArguments("--disable-notifications");
-                if (Boolean.parseBoolean(ConfigLoader.get("accept.insecure.certs")))
-                    edgeOptions.setAcceptInsecureCerts(true);
-                return new EdgeDriver(edgeOptions);
-
-            case "firefox":
-            default:
-                WebDriverManager.firefoxdriver().setup();
-                FirefoxOptions firefoxOptions = new FirefoxOptions();
-                if (Boolean.parseBoolean(ConfigLoader.get("firefox.headless")))
-                    firefoxOptions.addArguments("--headless");
-                if (Boolean.parseBoolean(ConfigLoader.get("accept.insecure.certs")))
-                    firefoxOptions.setAcceptInsecureCerts(true);
-                firefoxOptions.addArguments("--width=" + ConfigLoader.get("firefox.window.width"));
-                firefoxOptions.addArguments("--height=" + ConfigLoader.get("firefox.window.height"));
-                return new FirefoxDriver(firefoxOptions);
-        }
+        return driver.get();
     }
 
     public static void quitDriver() {
-        if (threadDriver.get() != null) {
-            System.out.println("[INFO] Quitting browser instance");
-            threadDriver.get().quit();
-            threadDriver.remove();
+        try {
+            WebDriver currentDriver = driver.get();
+            if (currentDriver != null) {
+                currentDriver.quit();
+                ReportLogger.info("🧹 WebDriver quit successfully.");
+            }
+        } catch (Exception e) {
+            ReportLogger.error("❌ Error during WebDriver quit: " + e.getMessage());
+        } finally {
+            driver.remove();
         }
-    }
-
-    static {
-        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
-            quitDriver();
-        }));
     }
 }

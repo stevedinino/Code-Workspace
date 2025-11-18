@@ -31,14 +31,18 @@ dependencies {
     testImplementation 'org.assertj:assertj-core:3.24.2'
 }
 
+tasks.withType(JavaCompile) {
+    options.debug = true
+}
+
 test {
-    useJUnit()
+    useJUnitPlatform() // Use JUnit 5 platform (Cucumber supports this)
     testLogging {
         events "passed", "skipped", "failed"
     }
-
-test {
-    useJUnitPlatform()
+    forkEvery = 0
+    maxParallelForks = 1
+    jvmArgs += ["-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005"]
 }
 
-}
+

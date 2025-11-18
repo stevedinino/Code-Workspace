@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Catalyst UI Automation</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 12, 2025 09:39:58 PM</span></a>
+<a href="#"><span class="badge badge-primary">Nov 17, 2025 08:07:48 PM</span></a>
 </li>
 </ul>
 </div>
@@ -68,6 +68,7 @@
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="warning" href="#"><span>Warning</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -75,25 +76,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Interact with homepage element and validate result</p>
             <p class="text-sm">
-              <span>9:39:58 PM</span> / <span>00:00:17:647</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:07:49 PM</span> / <span>00:00:40:677</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
-<span class='badge badge-success'>11.12.2025 9:39:58 PM</span>
-<span class='badge badge-danger'>11.12.2025 9:40:16 PM</span>
-<span class='badge badge-default'>00:00:17:647</span>
+<h5 class="test-status text-fail">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:07:49 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:08:30 PM</span>
+<span class='badge badge-default'>00:00:40:677</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -105,37 +106,51 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:40:12 PM</td>
+        <td>8:07:49 PM</td>
         <td>
-          Launching Catalyst site at: https://www.catalystlegalnurse.com
+          🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:40:13 PM</td>
+        <td>8:08:13 PM</td>
         <td>
-          Loading locator repository for page: Index
+          🌐 Navigated to: https://www.catalystlegalnurse.com
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:40:14 PM</td>
+        <td>8:08:15 PM</td>
         <td>
-          Interacting with key: HomeLogoLink | type: link | action: click | xpath: //div[@class='logo']/a
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:08:15 PM</td>
+        <td>
+          ❌ Assertion failed for key: title. Expected: "Janet DiNino – Legal Nurse Consultant for Elder Care Litigation", Found: ""
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:08:16 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: title
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:40:16 PM</td>
+        <td>8:08:30 PM</td>
         <td>
-          Validating result for key: HomeLogoLink | type: link | xpath: //div[@class='logo']/a
+          🧹 WebDriver quit successfully.
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:40:16 PM</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:08:30 PM</td>
         <td>
-          Scenario passed: Interact with homepage element and validate result
+          🧹 WebDriver session closed after scenario.
         </td>
       </tr>
   </tbody>
@@ -143,25 +158,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="warning" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Interact with homepage element and validate result</p>
             <p class="text-sm">
-              <span>9:40:20 PM</span> / <span>00:00:09:361</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:08:31 PM</span> / <span>00:00:23:078</span>
+              <span class="badge warning-bg log float-right">Warning</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
-<span class='badge badge-success'>11.12.2025 9:40:20 PM</span>
-<span class='badge badge-danger'>11.12.2025 9:40:30 PM</span>
-<span class='badge badge-default'>00:00:09:361</span>
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:08:31 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:08:54 PM</span>
+<span class='badge badge-default'>00:00:23:078</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -173,37 +188,51 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:40:27 PM</td>
+        <td>8:08:31 PM</td>
         <td>
-          Launching Catalyst site at: https://www.catalystlegalnurse.com
+          🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:40:28 PM</td>
+        <td>8:08:47 PM</td>
         <td>
-          Loading locator repository for page: Index
+          🌐 Navigated to: https://www.catalystlegalnurse.com
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:40:28 PM</td>
+        <td>8:08:47 PM</td>
         <td>
-          Interacting with key: AboutLink | type: link | action: click | xpath: //a[@href='about.html']
+          📦 Loaded XPath repository for page: Index
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:40:29 PM</td>
+        <td>8:08:47 PM</td>
         <td>
-          Validating result for key: AboutLink | type: link | xpath: //a[@href='about.html']
+          📌 Element exists for key: link_favicon
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:40:30 PM</td>
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:08:47 PM</td>
         <td>
-          Scenario passed: Interact with homepage element and validate result
+          ⚠️ No validation logic defined for key: link_favicon
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:08:54 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:08:54 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
         </td>
       </tr>
   </tbody>
@@ -211,25 +240,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
+        <li class="test-item"  status="warning" test-id="3"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Interact with homepage element and validate result</p>
             <p class="text-sm">
-              <span>9:40:33 PM</span> / <span>00:00:09:528</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:08:55 PM</span> / <span>00:00:24:605</span>
+              <span class="badge warning-bg log float-right">Warning</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
-<span class='badge badge-success'>11.12.2025 9:40:33 PM</span>
-<span class='badge badge-danger'>11.12.2025 9:40:43 PM</span>
-<span class='badge badge-default'>00:00:09:528</span>
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:08:55 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:09:19 PM</span>
+<span class='badge badge-default'>00:00:24:605</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -241,37 +270,51 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:40:40 PM</td>
+        <td>8:08:55 PM</td>
         <td>
-          Launching Catalyst site at: https://www.catalystlegalnurse.com
+          🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:40:41 PM</td>
+        <td>8:09:08 PM</td>
         <td>
-          Loading locator repository for page: Index
+          🌐 Navigated to: https://www.catalystlegalnurse.com
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:40:41 PM</td>
+        <td>8:09:08 PM</td>
         <td>
-          Interacting with key: ServicesLink | type: link | action: click | xpath: //a[@href='services.html']
+          📦 Loaded XPath repository for page: Index
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:40:42 PM</td>
+        <td>8:09:08 PM</td>
         <td>
-          Validating result for key: ServicesLink | type: link | xpath: //a[@href='services.html']
+          📌 Element exists for key: script_schema_json
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:40:43 PM</td>
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:09:08 PM</td>
         <td>
-          Scenario passed: Interact with homepage element and validate result
+          ⚠️ No validation logic defined for key: script_schema_json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:09:19 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:09:19 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
         </td>
       </tr>
   </tbody>
@@ -279,25 +322,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="4"
+        <li class="test-item"  status="warning" test-id="4"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Interact with homepage element and validate result</p>
             <p class="text-sm">
-              <span>9:40:45 PM</span> / <span>00:00:08:340</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:09:19 PM</span> / <span>00:00:18:382</span>
+              <span class="badge warning-bg log float-right">Warning</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
-<span class='badge badge-success'>11.12.2025 9:40:45 PM</span>
-<span class='badge badge-danger'>11.12.2025 9:40:54 PM</span>
-<span class='badge badge-default'>00:00:08:340</span>
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:09:19 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:09:38 PM</span>
+<span class='badge badge-default'>00:00:18:382</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -309,37 +352,51 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:40:52 PM</td>
+        <td>8:09:19 PM</td>
         <td>
-          Launching Catalyst site at: https://www.catalystlegalnurse.com
+          🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:40:53 PM</td>
+        <td>8:09:32 PM</td>
         <td>
-          Loading locator repository for page: Index
+          🌐 Navigated to: https://www.catalystlegalnurse.com
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:40:53 PM</td>
+        <td>8:09:32 PM</td>
         <td>
-          Interacting with key: TestimonialsLink | type: link | action: click | xpath: //a[@href='testimonials.html']
+          📦 Loaded XPath repository for page: Index
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:40:54 PM</td>
+        <td>8:09:32 PM</td>
         <td>
-          Validating result for key: TestimonialsLink | type: link | xpath: //a[@href='testimonials.html']
+          👁️ Element is visible for key: header
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:40:54 PM</td>
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:09:32 PM</td>
         <td>
-          Scenario passed: Interact with homepage element and validate result
+          ⚠️ No validation logic defined for key: header
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:09:38 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:09:38 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
         </td>
       </tr>
   </tbody>
@@ -347,25 +404,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="5"
+        <li class="test-item"  status="warning" test-id="5"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Interact with homepage element and validate result</p>
             <p class="text-sm">
-              <span>9:40:57 PM</span> / <span>00:00:09:855</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:09:38 PM</span> / <span>00:00:22:348</span>
+              <span class="badge warning-bg log float-right">Warning</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
-<span class='badge badge-success'>11.12.2025 9:40:57 PM</span>
-<span class='badge badge-danger'>11.12.2025 9:41:07 PM</span>
-<span class='badge badge-default'>00:00:09:855</span>
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:09:38 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:10:00 PM</span>
+<span class='badge badge-default'>00:00:22:348</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -377,37 +434,51 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:41:05 PM</td>
+        <td>8:09:38 PM</td>
         <td>
-          Launching Catalyst site at: https://www.catalystlegalnurse.com
+          🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:41:06 PM</td>
+        <td>8:09:55 PM</td>
         <td>
-          Loading locator repository for page: Index
+          🌐 Navigated to: https://www.catalystlegalnurse.com
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:41:06 PM</td>
+        <td>8:09:55 PM</td>
         <td>
-          Interacting with key: UploadLink | type: link | action: click | xpath: //a[@href='upload.html']
+          📦 Loaded XPath repository for page: Index
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:41:07 PM</td>
+        <td>8:09:55 PM</td>
         <td>
-          Validating result for key: UploadLink | type: link | xpath: //a[@href='upload.html']
+          👁️ Element is visible for key: logo_container
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:41:07 PM</td>
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:09:55 PM</td>
         <td>
-          Scenario passed: Interact with homepage element and validate result
+          ⚠️ No validation logic defined for key: logo_container
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:10:00 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:10:00 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
         </td>
       </tr>
   </tbody>
@@ -415,25 +486,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="6"
+        <li class="test-item"  status="warning" test-id="6"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Interact with homepage element and validate result</p>
             <p class="text-sm">
-              <span>9:41:11 PM</span> / <span>00:00:09:717</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:10:00 PM</span> / <span>00:00:26:664</span>
+              <span class="badge warning-bg log float-right">Warning</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
-<span class='badge badge-success'>11.12.2025 9:41:11 PM</span>
-<span class='badge badge-danger'>11.12.2025 9:41:20 PM</span>
-<span class='badge badge-default'>00:00:09:717</span>
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:10:00 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:10:27 PM</span>
+<span class='badge badge-default'>00:00:26:664</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -445,37 +516,51 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:41:18 PM</td>
+        <td>8:10:00 PM</td>
         <td>
-          Launching Catalyst site at: https://www.catalystlegalnurse.com
+          🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:41:19 PM</td>
+        <td>8:10:19 PM</td>
         <td>
-          Loading locator repository for page: Index
+          🌐 Navigated to: https://www.catalystlegalnurse.com
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:41:19 PM</td>
+        <td>8:10:19 PM</td>
         <td>
-          Interacting with key: ContactLink | type: link | action: click | xpath: //a[@href='contact.html']
+          📦 Loaded XPath repository for page: Index
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:41:20 PM</td>
+        <td>8:10:20 PM</td>
         <td>
-          Validating result for key: ContactLink | type: link | xpath: //a[@href='contact.html']
+          🖱️ Clicked element for key: logo_link
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:41:20 PM</td>
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:10:20 PM</td>
         <td>
-          Scenario passed: Interact with homepage element and validate result
+          ⚠️ No validation logic defined for key: logo_link
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:10:27 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:10:27 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
         </td>
       </tr>
   </tbody>
@@ -483,25 +568,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="7"
+        <li class="test-item"  status="fail" test-id="7"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Interact with homepage element and validate result</p>
             <p class="text-sm">
-              <span>9:41:24 PM</span> / <span>00:00:10:123</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:10:27 PM</span> / <span>00:00:25:943</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
-<span class='badge badge-success'>11.12.2025 9:41:24 PM</span>
-<span class='badge badge-danger'>11.12.2025 9:41:34 PM</span>
-<span class='badge badge-default'>00:00:10:123</span>
+<h5 class="test-status text-fail">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:10:27 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:10:53 PM</span>
+<span class='badge badge-default'>00:00:25:943</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -513,37 +598,51 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:41:32 PM</td>
+        <td>8:10:27 PM</td>
         <td>
-          Launching Catalyst site at: https://www.catalystlegalnurse.com
+          🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:41:33 PM</td>
+        <td>8:10:46 PM</td>
         <td>
-          Loading locator repository for page: Index
+          🌐 Navigated to: https://www.catalystlegalnurse.com
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:41:33 PM</td>
+        <td>8:10:46 PM</td>
         <td>
-          Interacting with key: PrivacyLink | type: link | action: click | xpath: //a[@href='privacy.html']
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:10:47 PM</td>
+        <td>
+          ❌ Assertion failed for key: logo_image. Expected: "Catalyst Logo", Found: ""
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:10:47 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: logo_image
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:41:33 PM</td>
+        <td>8:10:53 PM</td>
         <td>
-          Validating result for key: PrivacyLink | type: link | xpath: //a[@href='privacy.html']
+          🧹 WebDriver quit successfully.
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:41:34 PM</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:10:53 PM</td>
         <td>
-          Scenario passed: Interact with homepage element and validate result
+          🧹 WebDriver session closed after scenario.
         </td>
       </tr>
   </tbody>
@@ -551,25 +650,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="8"
+        <li class="test-item"  status="warning" test-id="8"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Interact with homepage element and validate result</p>
             <p class="text-sm">
-              <span>9:41:38 PM</span> / <span>00:00:09:095</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:10:54 PM</span> / <span>00:00:25:071</span>
+              <span class="badge warning-bg log float-right">Warning</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
-<span class='badge badge-success'>11.12.2025 9:41:38 PM</span>
-<span class='badge badge-danger'>11.12.2025 9:41:47 PM</span>
-<span class='badge badge-default'>00:00:09:095</span>
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:10:54 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:11:19 PM</span>
+<span class='badge badge-default'>00:00:25:071</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -581,37 +680,51 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:41:45 PM</td>
+        <td>8:10:54 PM</td>
         <td>
-          Launching Catalyst site at: https://www.catalystlegalnurse.com
+          🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:41:46 PM</td>
+        <td>8:11:12 PM</td>
         <td>
-          Loading locator repository for page: Index
+          🌐 Navigated to: https://www.catalystlegalnurse.com
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:41:46 PM</td>
+        <td>8:11:12 PM</td>
         <td>
-          Interacting with key: FAQLink | type: link | action: click | xpath: //a[@href='faq.html']
+          📦 Loaded XPath repository for page: Index
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:41:47 PM</td>
+        <td>8:11:12 PM</td>
         <td>
-          Validating result for key: FAQLink | type: link | xpath: //a[@href='faq.html']
+          👁️ Element is visible for key: nav_wrapper
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:41:47 PM</td>
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:11:13 PM</td>
         <td>
-          Scenario passed: Interact with homepage element and validate result
+          ⚠️ No validation logic defined for key: nav_wrapper
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:11:19 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:11:19 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
         </td>
       </tr>
   </tbody>
@@ -619,25 +732,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="9"
+        <li class="test-item"  status="warning" test-id="9"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Interact with homepage element and validate result</p>
             <p class="text-sm">
-              <span>9:41:50 PM</span> / <span>00:00:26:530</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>8:11:19 PM</span> / <span>00:00:22:404</span>
+              <span class="badge warning-bg log float-right">Warning</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Interact with homepage element and validate result</h5>
-<span class='badge badge-success'>11.12.2025 9:41:50 PM</span>
-<span class='badge badge-danger'>11.12.2025 9:42:17 PM</span>
-<span class='badge badge-default'>00:00:26:530</span>
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:11:19 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:11:41 PM</span>
+<span class='badge badge-default'>00:00:22:404</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -649,37 +762,51 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:41:58 PM</td>
+        <td>8:11:19 PM</td>
         <td>
-          Launching Catalyst site at: https://www.catalystlegalnurse.com
+          🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:41:59 PM</td>
+        <td>8:11:34 PM</td>
         <td>
-          Loading locator repository for page: Index
+          🌐 Navigated to: https://www.catalystlegalnurse.com
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:41:59 PM</td>
+        <td>8:11:34 PM</td>
         <td>
-          Interacting with key: ExploreServicesCTA | type: link | action: click | xpath: //a[@class='cta' and @href='services.html']
+          📦 Loaded XPath repository for page: Index
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:42:01 PM</td>
+        <td>8:11:35 PM</td>
         <td>
-          Validating result for key: ExploreServicesCTA | type: link | xpath: //a[@class='cta' and @href='services.html']
+          👁️ Element is visible for key: main_nav
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:42:17 PM</td>
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:11:35 PM</td>
         <td>
-          Scenario failed: Interact with homepage element and validate result
+          ⚠️ No validation logic defined for key: main_nav
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:11:41 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:11:41 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
         </td>
       </tr>
   </tbody>
@@ -687,25 +814,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="10"
+        <li class="test-item"  status="warning" test-id="10"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Interact with homepage element and validate result</p>
             <p class="text-sm">
-              <span>9:42:20 PM</span> / <span>00:00:08:139</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:11:41 PM</span> / <span>00:00:19:996</span>
+              <span class="badge warning-bg log float-right">Warning</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
-<span class='badge badge-success'>11.12.2025 9:42:20 PM</span>
-<span class='badge badge-danger'>11.12.2025 9:42:28 PM</span>
-<span class='badge badge-default'>00:00:08:139</span>
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:11:41 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:12:01 PM</span>
+<span class='badge badge-default'>00:00:19:996</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -717,37 +844,51 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:42:27 PM</td>
+        <td>8:11:41 PM</td>
         <td>
-          Launching Catalyst site at: https://www.catalystlegalnurse.com
+          🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:42:28 PM</td>
+        <td>8:11:56 PM</td>
         <td>
-          Loading locator repository for page: Index
+          🌐 Navigated to: https://www.catalystlegalnurse.com
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:42:28 PM</td>
+        <td>8:11:56 PM</td>
         <td>
-          Interacting with key: MainHeader | type: text | action: assert | xpath: //h1
+          📦 Loaded XPath repository for page: Index
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:42:28 PM</td>
+        <td>8:11:56 PM</td>
         <td>
-          Validating result for key: MainHeader | type: text | xpath: //h1
+          👁️ Element is visible for key: nav_links_list
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:42:28 PM</td>
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:11:56 PM</td>
         <td>
-          Scenario passed: Interact with homepage element and validate result
+          ⚠️ No validation logic defined for key: nav_links_list
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:12:01 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:12:01 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
         </td>
       </tr>
   </tbody>
@@ -755,25 +896,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="11"
+        <li class="test-item"  status="warning" test-id="11"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Interact with homepage element and validate result</p>
             <p class="text-sm">
-              <span>9:42:32 PM</span> / <span>00:00:08:459</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:12:01 PM</span> / <span>00:00:20:041</span>
+              <span class="badge warning-bg log float-right">Warning</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
-<span class='badge badge-success'>11.12.2025 9:42:32 PM</span>
-<span class='badge badge-danger'>11.12.2025 9:42:40 PM</span>
-<span class='badge badge-default'>00:00:08:459</span>
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:12:01 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:12:21 PM</span>
+<span class='badge badge-default'>00:00:20:041</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -785,37 +926,51 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:42:39 PM</td>
+        <td>8:12:01 PM</td>
         <td>
-          Launching Catalyst site at: https://www.catalystlegalnurse.com
+          🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:42:40 PM</td>
+        <td>8:12:15 PM</td>
         <td>
-          Loading locator repository for page: Index
+          🌐 Navigated to: https://www.catalystlegalnurse.com
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:42:40 PM</td>
+        <td>8:12:15 PM</td>
         <td>
-          Interacting with key: SubtitleParagraph | type: text | action: assert | xpath: //p[@class='subtitle']
+          📦 Loaded XPath repository for page: Index
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:42:40 PM</td>
+        <td>8:12:15 PM</td>
         <td>
-          Validating result for key: SubtitleParagraph | type: text | xpath: //p[@class='subtitle']
+          👁️ Element is visible for key: nav_about_li
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:42:40 PM</td>
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:12:15 PM</td>
         <td>
-          Scenario passed: Interact with homepage element and validate result
+          ⚠️ No validation logic defined for key: nav_about_li
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:12:21 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:12:21 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
         </td>
       </tr>
   </tbody>
@@ -823,25 +978,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="12"
+        <li class="test-item"  status="warning" test-id="12"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Interact with homepage element and validate result</p>
             <p class="text-sm">
-              <span>9:42:44 PM</span> / <span>00:00:08:793</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:12:22 PM</span> / <span>00:00:24:077</span>
+              <span class="badge warning-bg log float-right">Warning</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
-<span class='badge badge-success'>11.12.2025 9:42:44 PM</span>
-<span class='badge badge-danger'>11.12.2025 9:42:53 PM</span>
-<span class='badge badge-default'>00:00:08:793</span>
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:12:22 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:12:46 PM</span>
+<span class='badge badge-default'>00:00:24:077</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -853,37 +1008,51 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:42:52 PM</td>
+        <td>8:12:22 PM</td>
         <td>
-          Launching Catalyst site at: https://www.catalystlegalnurse.com
+          🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:42:52 PM</td>
+        <td>8:12:36 PM</td>
         <td>
-          Loading locator repository for page: Index
+          🌐 Navigated to: https://www.catalystlegalnurse.com
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:42:52 PM</td>
+        <td>8:12:36 PM</td>
         <td>
-          Interacting with key: WhyChooseHeader | type: text | action: assert | xpath: //h2[text()='Why Attorneys Choose Catalyst']
+          📦 Loaded XPath repository for page: Index
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:42:52 PM</td>
+        <td>8:12:38 PM</td>
         <td>
-          Validating result for key: WhyChooseHeader | type: text | xpath: //h2[text()='Why Attorneys Choose Catalyst']
+          🖱️ Clicked element for key: nav_about_link
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:42:53 PM</td>
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:12:38 PM</td>
         <td>
-          Scenario passed: Interact with homepage element and validate result
+          ⚠️ No validation logic defined for key: nav_about_link
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:12:46 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:12:46 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
         </td>
       </tr>
   </tbody>
@@ -891,25 +1060,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="13"
+        <li class="test-item"  status="warning" test-id="13"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Interact with homepage element and validate result</p>
             <p class="text-sm">
-              <span>9:42:56 PM</span> / <span>00:00:23:729</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>8:12:46 PM</span> / <span>00:00:26:031</span>
+              <span class="badge warning-bg log float-right">Warning</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Interact with homepage element and validate result</h5>
-<span class='badge badge-success'>11.12.2025 9:42:56 PM</span>
-<span class='badge badge-danger'>11.12.2025 9:43:20 PM</span>
-<span class='badge badge-default'>00:00:23:729</span>
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:12:46 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:13:12 PM</span>
+<span class='badge badge-default'>00:00:26:031</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -921,30 +1090,51 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:43:04 PM</td>
+        <td>8:12:46 PM</td>
         <td>
-          Launching Catalyst site at: https://www.catalystlegalnurse.com
+          🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:43:05 PM</td>
+        <td>8:13:02 PM</td>
         <td>
-          Loading locator repository for page: Index
+          🌐 Navigated to: https://www.catalystlegalnurse.com
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:43:05 PM</td>
+        <td>8:13:02 PM</td>
         <td>
-          Interacting with key: StrategicServicesHeader | type: text | action: assert | xpath: //h1[text()='Strategic Legal Nurse Consulting Services']
+          📦 Loaded XPath repository for page: Index
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:43:20 PM</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:13:03 PM</td>
         <td>
-          Scenario failed: Interact with homepage element and validate result
+          👁️ Element is visible for key: nav_services_li
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:13:03 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: nav_services_li
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:13:12 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:13:12 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
         </td>
       </tr>
   </tbody>
@@ -952,25 +1142,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="14"
+        <li class="test-item"  status="warning" test-id="14"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Interact with homepage element and validate result</p>
             <p class="text-sm">
-              <span>9:43:23 PM</span> / <span>00:00:08:674</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:13:12 PM</span> / <span>00:00:27:426</span>
+              <span class="badge warning-bg log float-right">Warning</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
-<span class='badge badge-success'>11.12.2025 9:43:23 PM</span>
-<span class='badge badge-danger'>11.12.2025 9:43:32 PM</span>
-<span class='badge badge-default'>00:00:08:674</span>
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:13:12 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:13:40 PM</span>
+<span class='badge badge-default'>00:00:27:426</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -982,37 +1172,51 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:43:30 PM</td>
+        <td>8:13:12 PM</td>
         <td>
-          Launching Catalyst site at: https://www.catalystlegalnurse.com
+          🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:43:31 PM</td>
+        <td>8:13:30 PM</td>
         <td>
-          Loading locator repository for page: Index
+          🌐 Navigated to: https://www.catalystlegalnurse.com
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:43:31 PM</td>
+        <td>8:13:30 PM</td>
         <td>
-          Interacting with key: CredentialsList | type: list | action: assert | xpath: //section[h2[text()='Why Attorneys Choose Catalyst']]/ul
+          📦 Loaded XPath repository for page: Index
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:43:31 PM</td>
+        <td>8:13:34 PM</td>
         <td>
-          Validating result for key: CredentialsList | type: list | xpath: //section[h2[text()='Why Attorneys Choose Catalyst']]/ul
+          🖱️ Clicked element for key: nav_services_link
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:43:32 PM</td>
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:13:34 PM</td>
         <td>
-          Scenario passed: Interact with homepage element and validate result
+          ⚠️ No validation logic defined for key: nav_services_link
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:13:40 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:13:40 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
         </td>
       </tr>
   </tbody>
@@ -1020,25 +1224,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="15"
+        <li class="test-item"  status="warning" test-id="15"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Interact with homepage element and validate result</p>
             <p class="text-sm">
-              <span>9:43:35 PM</span> / <span>00:00:10:442</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:13:40 PM</span> / <span>00:00:21:010</span>
+              <span class="badge warning-bg log float-right">Warning</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
-<span class='badge badge-success'>11.12.2025 9:43:35 PM</span>
-<span class='badge badge-danger'>11.12.2025 9:43:45 PM</span>
-<span class='badge badge-default'>00:00:10:442</span>
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:13:40 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:14:01 PM</span>
+<span class='badge badge-default'>00:00:21:010</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -1050,37 +1254,51 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:43:44 PM</td>
+        <td>8:13:40 PM</td>
         <td>
-          Launching Catalyst site at: https://www.catalystlegalnurse.com
+          🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:43:45 PM</td>
+        <td>8:13:54 PM</td>
         <td>
-          Loading locator repository for page: Index
+          🌐 Navigated to: https://www.catalystlegalnurse.com
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:43:45 PM</td>
+        <td>8:13:54 PM</td>
         <td>
-          Interacting with key: ServicesList | type: list | action: assert | xpath: //section[h2[text()='Strategic Services']]/ul
+          📦 Loaded XPath repository for page: Index
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:43:45 PM</td>
+        <td>8:13:54 PM</td>
         <td>
-          Validating result for key: ServicesList | type: list | xpath: //section[h2[text()='Strategic Services']]/ul
+          👁️ Element is visible for key: nav_testimonials_li
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:43:45 PM</td>
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:13:54 PM</td>
         <td>
-          Scenario passed: Interact with homepage element and validate result
+          ⚠️ No validation logic defined for key: nav_testimonials_li
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:14:01 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:14:01 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
         </td>
       </tr>
   </tbody>
@@ -1088,25 +1306,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="16"
+        <li class="test-item"  status="warning" test-id="16"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Interact with homepage element and validate result</p>
             <p class="text-sm">
-              <span>9:43:49 PM</span> / <span>00:00:24:371</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>8:14:01 PM</span> / <span>00:00:28:769</span>
+              <span class="badge warning-bg log float-right">Warning</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Interact with homepage element and validate result</h5>
-<span class='badge badge-success'>11.12.2025 9:43:49 PM</span>
-<span class='badge badge-danger'>11.12.2025 9:44:13 PM</span>
-<span class='badge badge-default'>00:00:24:371</span>
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:14:01 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:14:30 PM</span>
+<span class='badge badge-default'>00:00:28:769</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -1118,37 +1336,51 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:43:57 PM</td>
+        <td>8:14:01 PM</td>
         <td>
-          Launching Catalyst site at: https://www.catalystlegalnurse.com
+          🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:43:57 PM</td>
+        <td>8:14:18 PM</td>
         <td>
-          Loading locator repository for page: Index
+          🌐 Navigated to: https://www.catalystlegalnurse.com
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:43:57 PM</td>
+        <td>8:14:18 PM</td>
         <td>
-          Interacting with key: PrivacyPolicyLinkInList | type: link | action: click | xpath: //section[h2[text()='Why Attorneys Choose Catalyst']]//a[@href='privacy.html']
+          📦 Loaded XPath repository for page: Index
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:43:58 PM</td>
+        <td>8:14:20 PM</td>
         <td>
-          Validating result for key: PrivacyPolicyLinkInList | type: link | xpath: //section[h2[text()='Why Attorneys Choose Catalyst']]//a[@href='privacy.html']
+          🖱️ Clicked element for key: nav_testimonials_link
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:44:13 PM</td>
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:14:20 PM</td>
         <td>
-          Scenario failed: Interact with homepage element and validate result
+          ⚠️ No validation logic defined for key: nav_testimonials_link
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:14:30 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:14:30 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
         </td>
       </tr>
   </tbody>
@@ -1156,25 +1388,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="17"
+        <li class="test-item"  status="warning" test-id="17"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Interact with homepage element and validate result</p>
             <p class="text-sm">
-              <span>9:44:16 PM</span> / <span>00:00:08:889</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:14:30 PM</span> / <span>00:00:25:473</span>
+              <span class="badge warning-bg log float-right">Warning</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
-<span class='badge badge-success'>11.12.2025 9:44:16 PM</span>
-<span class='badge badge-danger'>11.12.2025 9:44:25 PM</span>
-<span class='badge badge-default'>00:00:08:889</span>
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:14:30 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:14:55 PM</span>
+<span class='badge badge-default'>00:00:25:473</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -1186,37 +1418,51 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:44:24 PM</td>
+        <td>8:14:30 PM</td>
         <td>
-          Launching Catalyst site at: https://www.catalystlegalnurse.com
+          🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:44:25 PM</td>
+        <td>8:14:48 PM</td>
         <td>
-          Loading locator repository for page: Index
+          🌐 Navigated to: https://www.catalystlegalnurse.com
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:44:25 PM</td>
+        <td>8:14:48 PM</td>
         <td>
-          Interacting with key: SidebarImage | type: image | action: assert | xpath: //aside[contains(@class,'sidebar') or contains(@class,'sidebar-image')]/img
+          📦 Loaded XPath repository for page: Index
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:44:25 PM</td>
+        <td>8:14:49 PM</td>
         <td>
-          Validating result for key: SidebarImage | type: image | xpath: //aside[contains(@class,'sidebar') or contains(@class,'sidebar-image')]/img
+          👁️ Element is visible for key: nav_upload_li
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:44:25 PM</td>
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:14:49 PM</td>
         <td>
-          Scenario passed: Interact with homepage element and validate result
+          ⚠️ No validation logic defined for key: nav_upload_li
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:14:55 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:14:55 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
         </td>
       </tr>
   </tbody>
@@ -1224,25 +1470,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="18"
+        <li class="test-item"  status="warning" test-id="18"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Interact with homepage element and validate result</p>
             <p class="text-sm">
-              <span>9:44:27 PM</span> / <span>00:00:05:748</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:14:55 PM</span> / <span>00:00:21:732</span>
+              <span class="badge warning-bg log float-right">Warning</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
-<span class='badge badge-success'>11.12.2025 9:44:27 PM</span>
-<span class='badge badge-danger'>11.12.2025 9:44:33 PM</span>
-<span class='badge badge-default'>00:00:05:748</span>
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:14:55 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:15:17 PM</span>
+<span class='badge badge-default'>00:00:21:732</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -1254,37 +1500,3121 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:44:32 PM</td>
+        <td>8:14:55 PM</td>
         <td>
-          Launching Catalyst site at: https://www.catalystlegalnurse.com
+          🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:44:33 PM</td>
+        <td>8:15:09 PM</td>
         <td>
-          Loading locator repository for page: Index
+          🌐 Navigated to: https://www.catalystlegalnurse.com
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:44:33 PM</td>
+        <td>8:15:09 PM</td>
         <td>
-          Interacting with key: FooterText | type: text | action: assert | xpath: //footer/p
+          📦 Loaded XPath repository for page: Index
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:44:33 PM</td>
+        <td>8:15:11 PM</td>
         <td>
-          Validating result for key: FooterText | type: text | xpath: //footer/p
+          🖱️ Clicked element for key: nav_upload_link
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:44:33 PM</td>
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:15:11 PM</td>
         <td>
-          Scenario passed: Interact with homepage element and validate result
+          ⚠️ No validation logic defined for key: nav_upload_link
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:15:17 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:15:17 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="19"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:15:17 PM</span> / <span>00:00:24:273</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:15:17 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:15:41 PM</span>
+<span class='badge badge-default'>00:00:24:273</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:15:17 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:15:33 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:15:33 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:15:33 PM</td>
+        <td>
+          👁️ Element is visible for key: nav_contact_li
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:15:34 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: nav_contact_li
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:15:41 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:15:41 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="20"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:15:42 PM</span> / <span>00:00:30:084</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:15:42 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:16:12 PM</span>
+<span class='badge badge-default'>00:00:30:084</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:15:42 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:16:01 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:16:01 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:16:03 PM</td>
+        <td>
+          🖱️ Clicked element for key: nav_contact_link
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:16:03 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: nav_contact_link
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:16:12 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:16:12 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="21"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:16:12 PM</span> / <span>00:00:30:050</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:16:12 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:16:42 PM</span>
+<span class='badge badge-default'>00:00:30:050</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:16:12 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:16:36 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:16:36 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:16:36 PM</td>
+        <td>
+          👁️ Element is visible for key: nav_privacy_li
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:16:36 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: nav_privacy_li
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:16:42 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:16:42 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="22"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:16:42 PM</span> / <span>00:00:25:391</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:16:42 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:17:07 PM</span>
+<span class='badge badge-default'>00:00:25:391</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:16:42 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:17:00 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:17:00 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:17:02 PM</td>
+        <td>
+          🖱️ Clicked element for key: nav_privacy_link
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:17:02 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: nav_privacy_link
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:17:07 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:17:07 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="23"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:17:07 PM</span> / <span>00:00:25:594</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:17:07 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:17:33 PM</span>
+<span class='badge badge-default'>00:00:25:594</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:17:07 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:17:24 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:17:24 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:17:24 PM</td>
+        <td>
+          👁️ Element is visible for key: nav_faq_li
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:17:25 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: nav_faq_li
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:17:33 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:17:33 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="24"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:17:33 PM</span> / <span>00:00:32:208</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:17:33 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:18:05 PM</span>
+<span class='badge badge-default'>00:00:32:208</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:17:33 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:17:56 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:17:56 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:17:58 PM</td>
+        <td>
+          🖱️ Clicked element for key: nav_faq_link
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:17:58 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: nav_faq_link
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:18:05 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:18:05 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="25"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:18:06 PM</span> / <span>00:00:25:741</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:18:06 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:18:31 PM</span>
+<span class='badge badge-default'>00:00:25:741</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:18:06 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:18:23 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:18:23 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:18:23 PM</td>
+        <td>
+          👁️ Element is visible for key: page_layout
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:18:23 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: page_layout
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:18:31 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:18:31 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="26"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:18:31 PM</span> / <span>00:00:34:366</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:18:31 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:19:06 PM</span>
+<span class='badge badge-default'>00:00:34:366</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:18:31 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:18:54 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:18:55 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:18:55 PM</td>
+        <td>
+          👁️ Element is visible for key: main_content
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:18:55 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: main_content
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:19:06 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:19:06 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="27"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:19:06 PM</span> / <span>00:00:34:713</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:19:06 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:19:41 PM</span>
+<span class='badge badge-default'>00:00:34:713</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:19:06 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:19:32 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:19:33 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:19:33 PM</td>
+        <td>
+          ✅ Assertion passed for key: main_heading
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:19:33 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: main_heading
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:19:41 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:19:41 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="28"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:19:41 PM</span> / <span>00:00:34:745</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:19:41 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:20:16 PM</span>
+<span class='badge badge-default'>00:00:34:745</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:19:41 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:20:02 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:20:02 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:20:02 PM</td>
+        <td>
+          ✅ Assertion passed for key: main_subtitle
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:20:03 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: main_subtitle
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:20:16 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:20:16 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="29"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:20:16 PM</span> / <span>00:00:36:331</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:20:16 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:20:52 PM</span>
+<span class='badge badge-default'>00:00:36:331</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:20:16 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:20:37 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:20:37 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:20:38 PM</td>
+        <td>
+          👁️ Element is visible for key: section_why_attorneys
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:20:38 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: section_why_attorneys
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:20:52 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:20:52 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="30"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:20:52 PM</span> / <span>00:00:38:269</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:20:52 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:21:30 PM</span>
+<span class='badge badge-default'>00:00:38:269</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:20:52 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:21:21 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:21:21 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:21:22 PM</td>
+        <td>
+          ✅ Assertion passed for key: h2_why_attorneys
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:21:22 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: h2_why_attorneys
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:21:30 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:21:30 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="31"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:21:30 PM</span> / <span>00:00:32:779</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:21:30 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:22:03 PM</span>
+<span class='badge badge-default'>00:00:32:779</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:21:30 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:21:54 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:21:54 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:21:55 PM</td>
+        <td>
+          👁️ Element is visible for key: list_why_attorneys
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:21:55 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: list_why_attorneys
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:22:03 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:22:03 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="32"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:22:03 PM</span> / <span>00:00:49:063</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:22:03 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:22:52 PM</span>
+<span class='badge badge-default'>00:00:49:063</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:22:03 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:22:42 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:22:42 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:22:42 PM</td>
+        <td>
+          ✅ Assertion passed for key: why_item_board_certified
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:22:43 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: why_item_board_certified
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:22:52 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:22:52 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="33"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:22:53 PM</span> / <span>00:00:28:396</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:22:53 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:23:21 PM</span>
+<span class='badge badge-default'>00:00:28:396</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:22:53 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:23:15 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:23:15 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:23:15 PM</td>
+        <td>
+          ✅ Assertion passed for key: why_item_legal_nurse
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:23:15 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: why_item_legal_nurse
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:23:21 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:23:21 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="34"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:23:21 PM</span> / <span>00:00:29:382</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:23:21 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:23:50 PM</span>
+<span class='badge badge-default'>00:00:29:382</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:23:21 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:23:41 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:23:41 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:23:42 PM</td>
+        <td>
+          ✅ Assertion passed for key: why_item_nursing_admin
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:23:42 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: why_item_nursing_admin
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:23:50 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:23:50 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="35"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:23:50 PM</span> / <span>00:00:48:176</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:23:50 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:24:39 PM</span>
+<span class='badge badge-default'>00:00:48:176</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:23:50 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:24:23 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:24:23 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:24:24 PM</td>
+        <td>
+          ✅ Assertion passed for key: why_item_wound_care
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:24:24 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: why_item_wound_care
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:24:39 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:24:39 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="36"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:24:39 PM</span> / <span>00:00:21:852</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:24:39 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:25:01 PM</span>
+<span class='badge badge-default'>00:00:21:852</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=36</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:24:39 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:24:54 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:24:54 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:24:55 PM</td>
+        <td>
+          ✅ Assertion passed for key: why_item_leadership
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:24:55 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: why_item_leadership
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:25:01 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:25:01 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="37"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:25:01 PM</span> / <span>00:00:33:470</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:25:01 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:25:34 PM</span>
+<span class='badge badge-default'>00:00:33:470</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=37</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:25:01 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:25:26 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:25:26 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:25:27 PM</td>
+        <td>
+          👁️ Element is visible for key: why_item_privacy_policy
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:25:27 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: why_item_privacy_policy
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:25:34 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:25:34 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="38"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:25:35 PM</span> / <span>00:00:27:575</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:25:35 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:26:02 PM</span>
+<span class='badge badge-default'>00:00:27:575</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=38</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:25:35 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:25:52 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:25:52 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:25:53 PM</td>
+        <td>
+          🖱️ Clicked element for key: link_privacy_policy_why
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:26:02 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:26:02 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="39"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:26:02 PM</span> / <span>00:00:19:030</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:26:02 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:26:21 PM</span>
+<span class='badge badge-default'>00:00:19:030</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=39</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:26:02 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:26:15 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:26:15 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:26:16 PM</td>
+        <td>
+          👁️ Element is visible for key: section_strategic_services
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:26:16 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: section_strategic_services
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:26:21 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:26:21 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="40"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:26:21 PM</span> / <span>00:00:27:640</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:26:21 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:26:49 PM</span>
+<span class='badge badge-default'>00:00:27:640</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=40</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:26:21 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:26:42 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:26:42 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:26:43 PM</td>
+        <td>
+          ✅ Assertion passed for key: h2_strategic_services
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:26:43 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: h2_strategic_services
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:26:49 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:26:49 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="41"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:26:49 PM</span> / <span>00:00:24:008</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:26:49 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:27:13 PM</span>
+<span class='badge badge-default'>00:00:24:008</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=41</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:26:49 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:27:06 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:27:06 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:27:07 PM</td>
+        <td>
+          👁️ Element is visible for key: list_strategic_services
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:27:07 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: list_strategic_services
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:27:13 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:27:13 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="42"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:27:13 PM</span> / <span>00:00:29:067</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:27:13 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:27:42 PM</span>
+<span class='badge badge-default'>00:00:29:067</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=42</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:27:13 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:27:34 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:27:34 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:27:42 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:27:42 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="43"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:27:42 PM</span> / <span>00:00:20:047</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:27:42 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:28:02 PM</span>
+<span class='badge badge-default'>00:00:20:047</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=43</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:27:42 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:27:56 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:27:56 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:28:02 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:28:02 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="44"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:28:02 PM</span> / <span>00:00:18:516</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:28:02 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:28:21 PM</span>
+<span class='badge badge-default'>00:00:18:516</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=44</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:28:02 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:28:15 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:28:15 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:28:21 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:28:21 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="45"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:28:21 PM</span> / <span>00:00:22:033</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:28:21 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:28:43 PM</span>
+<span class='badge badge-default'>00:00:22:033</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=45</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:28:21 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:28:37 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:28:37 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:28:43 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:28:43 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="46"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:28:43 PM</span> / <span>00:00:19:622</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:28:43 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:29:03 PM</span>
+<span class='badge badge-default'>00:00:19:622</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=46</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:28:43 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:28:57 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:28:57 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:29:03 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:29:03 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="47"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:29:03 PM</span> / <span>00:00:20:556</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:29:03 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:29:23 PM</span>
+<span class='badge badge-default'>00:00:20:556</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=47</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:29:03 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:29:18 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:29:18 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:29:23 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:29:23 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="48"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:29:23 PM</span> / <span>00:00:22:774</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:29:23 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:29:46 PM</span>
+<span class='badge badge-default'>00:00:22:774</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=48</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:29:23 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:29:41 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:29:41 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:29:42 PM</td>
+        <td>
+          🖱️ Clicked element for key: cta_explore_services
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:29:46 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:29:46 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="49"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:29:46 PM</span> / <span>00:00:25:620</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:29:46 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:30:12 PM</span>
+<span class='badge badge-default'>00:00:25:620</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=49</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:29:46 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:30:05 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:30:05 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:30:12 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:30:12 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="50"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:30:12 PM</span> / <span>00:00:25:737</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:30:12 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:30:38 PM</span>
+<span class='badge badge-default'>00:00:25:737</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=50</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:30:12 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:30:29 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:30:29 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:30:38 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:30:38 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="51"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:30:38 PM</span> / <span>00:00:24:087</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:30:38 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:31:02 PM</span>
+<span class='badge badge-default'>00:00:24:087</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=51</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:30:38 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:30:53 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:30:53 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:31:02 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:31:02 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="52"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:31:02 PM</span> / <span>00:00:20:634</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:31:02 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:31:23 PM</span>
+<span class='badge badge-default'>00:00:20:634</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=52</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:31:02 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:31:16 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:31:16 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:31:17 PM</td>
+        <td>
+          ❌ Element not visible for key: modal_content
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:31:17 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: modal_content
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:31:23 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:31:23 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="53"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:31:23 PM</span> / <span>00:00:20:209</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:31:23 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:31:43 PM</span>
+<span class='badge badge-default'>00:00:20:209</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=53</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:31:23 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:31:37 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:31:37 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:31:43 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:31:43 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="54"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:31:43 PM</span> / <span>00:00:24:999</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:31:43 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:32:08 PM</span>
+<span class='badge badge-default'>00:00:24:999</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=54</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:31:43 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:32:02 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:32:02 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:32:08 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:32:08 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="55"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:32:08 PM</span> / <span>00:00:34:592</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:32:08 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:32:43 PM</span>
+<span class='badge badge-default'>00:00:34:592</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=55</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:32:08 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:32:29 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:32:30 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:32:43 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:32:43 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="56"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:32:43 PM</span> / <span>00:00:20:714</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:32:43 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:33:03 PM</span>
+<span class='badge badge-default'>00:00:20:714</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=56</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:32:43 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:32:57 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:32:57 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:32:58 PM</td>
+        <td>
+          👁️ Element is visible for key: footer
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>8:32:58 PM</td>
+        <td>
+          ⚠️ No validation logic defined for key: footer
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:33:03 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:33:03 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="57"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:33:04 PM</span> / <span>00:00:16:932</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:33:04 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:33:20 PM</span>
+<span class='badge badge-default'>00:00:16:932</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=57</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:33:04 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:33:15 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:33:15 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:33:20 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:33:20 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="58"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with homepage element and validate result</p>
+            <p class="text-sm">
+              <span>8:33:21 PM</span> / <span>00:00:22:228</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Interact with homepage element and validate result</h5>
+<span class='badge badge-success'>11.17.2025 8:33:21 PM</span>
+<span class='badge badge-danger'>11.17.2025 8:33:43 PM</span>
+<span class='badge badge-default'>00:00:22:228</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=58</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:33:21 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:33:34 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:33:34 PM</td>
+        <td>
+          📦 Loaded XPath repository for page: Index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:33:43 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:33:43 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
         </td>
       </tr>
   </tbody>
@@ -1306,19 +4636,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 12, 2025 09:39:58 PM</h3>
+<h3>Nov 17, 2025 08:07:48 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 12, 2025 09:44:33 PM</h3>
+<h3>Nov 17, 2025 08:33:43 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>15</h3>
+<h3>16</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -1340,13 +4670,13 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='83%'>
-<b>15</b> tests passed
+<div><small data-tooltip='27%'>
+<b>16</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='16%'><b>3</b> tests failed,
-<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='5%'><b>3</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='67%'>39</b> others
 </small>
 </div>
 </div>
@@ -1363,10 +4693,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='16%'><b>15</b> events passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='3%'><b>3</b> events failed,
-<b data-tooltip='%'>71</b> others
+<small data-tooltip='0%'><b>3</b> events failed,
+<b data-tooltip='%'>373</b> others
 </small>
 </div>
 </div>
@@ -1382,7 +4712,7 @@
 </div></div>
 <script>
 var timeline = {
-"Interact with homepage element and validate result":17.647,"Interact with homepage element and validate result":9.361,"Interact with homepage element and validate result":9.528,"Interact with homepage element and validate result":8.34,"Interact with homepage element and validate result":9.855,"Interact with homepage element and validate result":9.717,"Interact with homepage element and validate result":10.123,"Interact with homepage element and validate result":9.095,"Interact with homepage element and validate result":26.53,"Interact with homepage element and validate result":8.139,"Interact with homepage element and validate result":8.459,"Interact with homepage element and validate result":8.793,"Interact with homepage element and validate result":23.729,"Interact with homepage element and validate result":8.674,"Interact with homepage element and validate result":10.442,"Interact with homepage element and validate result":24.371,"Interact with homepage element and validate result":8.889,"Interact with homepage element and validate result":5.748
+"Interact with homepage element and validate result":40.677,"Interact with homepage element and validate result":23.078,"Interact with homepage element and validate result":24.605,"Interact with homepage element and validate result":18.382,"Interact with homepage element and validate result":22.348,"Interact with homepage element and validate result":26.664,"Interact with homepage element and validate result":25.943,"Interact with homepage element and validate result":25.071,"Interact with homepage element and validate result":22.404,"Interact with homepage element and validate result":19.996,"Interact with homepage element and validate result":20.041,"Interact with homepage element and validate result":24.077,"Interact with homepage element and validate result":26.031,"Interact with homepage element and validate result":27.426,"Interact with homepage element and validate result":21.01,"Interact with homepage element and validate result":28.769,"Interact with homepage element and validate result":25.473,"Interact with homepage element and validate result":21.732,"Interact with homepage element and validate result":24.273,"Interact with homepage element and validate result":30.084,"Interact with homepage element and validate result":30.05,"Interact with homepage element and validate result":25.391,"Interact with homepage element and validate result":25.594,"Interact with homepage element and validate result":32.208,"Interact with homepage element and validate result":25.741,"Interact with homepage element and validate result":34.366,"Interact with homepage element and validate result":34.713,"Interact with homepage element and validate result":34.745,"Interact with homepage element and validate result":36.331,"Interact with homepage element and validate result":38.269,"Interact with homepage element and validate result":32.779,"Interact with homepage element and validate result":49.063,"Interact with homepage element and validate result":28.396,"Interact with homepage element and validate result":29.382,"Interact with homepage element and validate result":48.176,"Interact with homepage element and validate result":21.852,"Interact with homepage element and validate result":33.47,"Interact with homepage element and validate result":27.575,"Interact with homepage element and validate result":19.03,"Interact with homepage element and validate result":27.64,"Interact with homepage element and validate result":24.008,"Interact with homepage element and validate result":29.067,"Interact with homepage element and validate result":20.047,"Interact with homepage element and validate result":18.516,"Interact with homepage element and validate result":22.033,"Interact with homepage element and validate result":19.622,"Interact with homepage element and validate result":20.556,"Interact with homepage element and validate result":22.774,"Interact with homepage element and validate result":25.62,"Interact with homepage element and validate result":25.737,"Interact with homepage element and validate result":24.087,"Interact with homepage element and validate result":20.634,"Interact with homepage element and validate result":20.209,"Interact with homepage element and validate result":24.999,"Interact with homepage element and validate result":34.592,"Interact with homepage element and validate result":20.714,"Interact with homepage element and validate result":16.932,"Interact with homepage element and validate result":22.228
 };
 </script>
 <div class="row">
@@ -1405,9 +4735,9 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 15,
+passParent: 16,
 failParent: 3,
-warningParent: 0,
+warningParent: 39,
 skipParent: 0,
 childCount: 5,
 passChild: 0,
@@ -1422,11 +4752,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 15,
+passEvents: 0,
 failEvents: 3,
-warningEvents: 0,
+warningEvents: 42,
 skipEvents: 0,
-infoEvents: 71
+infoEvents: 331
 };
 </script>        </div>
       </div>

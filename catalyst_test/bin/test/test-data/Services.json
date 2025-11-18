@@ -1,0 +1,74 @@
+{
+  "StrategicServicesHeader": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//h1[text()='Strategic Legal Nurse Consulting Services']",
+    "result": "Strategic Legal Nurse Consulting Services"
+  },
+  "MedicalRecordReviewHeader": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//h2[text()='Medical Record Review']",
+    "result": "Medical Record Review"
+  },
+  "WoundCareSupportHeader": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//h2[text()='Wound Care Litigation Support']",
+    "result": "Wound Care Litigation Support"
+  },
+  "LongTermCareHeader": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//h2[text()='Long-Term Care Case Consulting']",
+    "result": "Long-Term Care Case Consulting"
+  },
+  "ComplianceReviewHeader": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//h2[text()='Compliance & Regulatory Review']",
+    "result": "Compliance & Regulatory Review"
+  },
+  "ExpertWitnessPrepHeader": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//h2[text()='Expert Witness Preparation']",
+    "result": "Expert Witness Preparation"
+  },
+  "CaseReviewImage": {
+    "type": "image",
+    "action": "assert",
+    "xpath": "//img[contains(@src,'case_review')]",
+    "result": "case_review"
+  },
+  "ContactCTAButton": {
+    "type": "link",
+    "action": "click",
+    "xpath": "//a[@class='cta' and contains(@href,'contact.html')]",
+    "result": "contact.html"
+  },
+  "BackToHomeLink": {
+    "type": "link",
+    "action": "click",
+    "xpath": "//a[@href='index.html' and text()='Back to Home']",
+    "result": "index.html"
+  },
+  "FAQLink": {
+    "type": "link",
+    "action": "click",
+    "xpath": "//a[@href='faq.html']",
+    "result": "faq.html"
+  },
+  "PrivacyLink": {
+    "type": "link",
+    "action": "click",
+    "xpath": "//a[@href='privacy.html']",
+    "result": "privacy.html"
+  },
+  "FooterText": {
+    "type": "text",
+    "action": "assert",
+    "xpath": "//footer//p[contains(text(),'© Catalyst Legal Nurse Consulting')]",
+    "result": "© Catalyst Legal Nurse Consulting"
+  }
+}

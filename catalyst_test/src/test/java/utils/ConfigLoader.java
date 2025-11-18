@@ -1,40 +1,53 @@
 package utils;
 
-import com.aventstack.extentreports.reporter.configuration.Theme;
-
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
 public class ConfigLoader {
-    private static final String CONFIG_PATH = "/config.properties";
-    private static final Properties props = new Properties();
+
+    private static final Properties properties = new Properties();
 
     static {
-        try (InputStream input = ConfigLoader.class.getResourceAsStream(CONFIG_PATH)) {
+        try (InputStream input = ConfigLoader.class.getClassLoader().getResourceAsStream("config.properties")) {
             if (input == null) {
-                throw new RuntimeException("config.properties not found in classpath");
+                throw new RuntimeException("❌ config.properties not found in classpath");
             }
-            props.load(input);
-        } catch (IOException e) {
-            throw new RuntimeException("Failed to load config.properties", e);
+            properties.load(input);
+        } catch (Exception e) {
+            throw new RuntimeException("❌ Failed to load config.properties", e);
         }
     }
 
+    public static String getBaseUrl() {
+        return properties.getProperty("base.url");
+    }
+
+    public static String getBrowser() {
+        return properties.getProperty("browser");
+    }
+
+    public static String getWaitTimeoutSeconds() {
+        return properties.getProperty("wait.timeout.seconds");
+    }
+
+    public static String getReportTheme() {
+        return properties.getProperty("report.theme");
+    }
+
+    public static String getDataFolder() {
+        String folder = properties.getProperty("data.folder");
+        if (folder == null || folder.isBlank()) {
+            throw new RuntimeException("❌ Missing config key: data.folder");
+        }
+        return folder;
+    }
+
+    // ✅ Generic accessor for dynamic config keys
     public static String get(String key) {
-        return props.getProperty(key);
-    }
-
-    public static Theme getTheme() {
-        String value = props.getProperty("report.theme", "standard").toUpperCase();
-        try {
-            return Theme.valueOf(value);
-        } catch (IllegalArgumentException e) {
-            return Theme.STANDARD;
+        String value = properties.getProperty(key);
+        if (value == null || value.isBlank()) {
+            throw new RuntimeException("❌ Missing config key: " + key);
         }
-    }
-
-    public static Properties getAll() {
-        return props;
+        return value;
     }
 }
