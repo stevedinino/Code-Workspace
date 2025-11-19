@@ -2,367 +2,330 @@
   "title": {
     "xpath": "//title",
     "type": "text",
-    "action": "assert",
-    "result": "text equals 'Janet DiNino – Legal Nurse Consultant for Elder Care Litigation'"
-  },
-  "meta_description": {
-    "xpath": "//meta[@name='description']",
-    "type": "metadata",
-    "action": "assert",
-    "result": "content attribute contains 'Board-certified NP and legal nurse consultant offering expert case reviews in elder care, wound management, and compliance litigation.'"
-  },
-  "meta_keywords": {
-    "xpath": "//meta[@name='keywords']",
-    "type": "metadata",
-    "action": "assert",
-    "result": "content attribute contains 'legal nurse consultant, elder care litigation, wound care expert'"
+    "action": "assert_title",
+    "result": "Janet DiNino – Legal Nurse Consultant for Elder Care Litigation"
   },
   "link_favicon": {
     "xpath": "//link[@rel='icon']",
     "type": "resource",
-    "action": "assert",
-    "result": "element exists in DOM"
+    "action": "assert_exists",
+    "result": "exists"
   },
   "script_schema_json": {
     "xpath": "//script[@type='application/ld+json']",
     "type": "script",
-    "action": "assert",
-    "result": "Schema.org JSON-LD for MedicalOrganization is present"
+    "action": "assert_exists",
+    "result": "exists"
   },
   "header": {
     "xpath": "//header",
     "type": "container",
-    "action": "assert",
-    "result": "header is visible in viewport"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "logo_container": {
     "xpath": "//header//div[@class='logo']",
     "type": "container",
-    "action": "assert",
-    "result": "logo container is visible"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "logo_link": {
     "xpath": "//header//a[@href='index.html']",
     "type": "link",
     "action": "click",
-    "result": "navigates to 'index.html' (home page)"
+    "result": "index.html"
   },
   "logo_image": {
     "xpath": "//header//img[@alt='Catalyst Logo']",
     "type": "image",
-    "action": "assert",
-    "result": "logo image is displayed and has alt text 'Catalyst Logo'"
+    "action": "assert_alt",
+    "result": "Catalyst Logo"
   },
-  "nav_wrapper": {
+    "logo_image_visible": {
+    "xpath": "//header//img[@alt='Catalyst Logo']",
+    "type": "image",
+    "action": "assert_visible",
+    "result": "visible"
+  },"nav_wrapper": {
     "xpath": "//header//div[@class='nav-wrapper']",
     "type": "container",
-    "action": "assert",
-    "result": "navigation wrapper is visible"
-  },
-  "menu_toggle_button": {
-    "xpath": "//header//button[@class='menu-toggle']",
-    "type": "button",
-    "action": "click",
-    "result": "toggles visibility of mobile navigation menu (class 'active' added/removed from .nav-links)"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "main_nav": {
     "xpath": "//nav[@class='main-nav']",
     "type": "container",
-    "action": "assert",
-    "result": "main navigation is visible on desktop; hidden on mobile until toggle"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "nav_links_list": {
     "xpath": "//ul[@class='nav-links']",
     "type": "list",
-    "action": "assert",
-    "result": "navigation list is visible (on desktop or after mobile toggle)"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "nav_about_li": {
     "xpath": "//li[a[text()='About']]",
     "type": "list-item",
-    "action": "assert",
-    "result": "About menu item is visible"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "nav_about_link": {
     "xpath": "//a[text()='About']",
     "type": "link",
     "action": "click",
-    "result": "navigates to 'about.html'"
+    "result": "about.html"
   },
   "nav_services_li": {
     "xpath": "//li[a[text()='Services']]",
     "type": "list-item",
-    "action": "assert",
-    "result": "Services menu item is visible"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "nav_services_link": {
     "xpath": "//a[text()='Services']",
     "type": "link",
     "action": "click",
-    "result": "navigates to 'services.html'"
+    "result": "services.html"
   },
   "nav_testimonials_li": {
     "xpath": "//li[a[text()='Testimonials']]",
     "type": "list-item",
-    "action": "assert",
-    "result": "Testimonials menu item is visible"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "nav_testimonials_link": {
     "xpath": "//a[text()='Testimonials']",
     "type": "link",
     "action": "click",
-    "result": "navigates to 'testimonials.html'"
+    "result": "testimonials.html"
   },
   "nav_upload_li": {
     "xpath": "//li[a[text()='Upload']]",
     "type": "list-item",
-    "action": "assert",
-    "result": "Upload menu item is visible"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "nav_upload_link": {
     "xpath": "//a[text()='Upload']",
     "type": "link",
     "action": "click",
-    "result": "navigates to 'upload.html'"
+    "result": "upload.html"
   },
   "nav_contact_li": {
     "xpath": "//li[a[text()='Contact']]",
     "type": "list-item",
-    "action": "assert",
-    "result": "Contact menu item is visible"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "nav_contact_link": {
     "xpath": "//a[text()='Contact']",
     "type": "link",
     "action": "click",
-    "result": "navigates to 'contact.html'"
+    "result": "contact.html"
   },
   "nav_privacy_li": {
     "xpath": "//li[a[text()='Privacy']]",
     "type": "list-item",
-    "action": "assert",
-    "result": "Privacy menu item is visible"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "nav_privacy_link": {
     "xpath": "//a[text()='Privacy']",
     "type": "link",
     "action": "click",
-    "result": "navigates to 'privacy.html'"
+    "result": "privacy.html"
   },
   "nav_faq_li": {
     "xpath": "//li[a[text()='FAQ']]",
     "type": "list-item",
-    "action": "assert",
-    "result": "FAQ menu item is visible"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "nav_faq_link": {
     "xpath": "//a[text()='FAQ']",
     "type": "link",
     "action": "click",
-    "result": "navigates to 'faq.html'"
+    "result": "faq.html"
   },
   "page_layout": {
     "xpath": "//div[@class='page-layout']",
     "type": "container",
-    "action": "assert",
-    "result": "page layout grid is visible"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "main_content": {
     "xpath": "//main[@class='content']",
     "type": "container",
-    "action": "assert",
-    "result": "main content area is visible"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "main_heading": {
     "xpath": "//h1[text()='Trusted Expertise. Clinical Precision.']",
     "type": "heading",
     "action": "assert",
-    "result": "heading text exactly matches 'Trusted Expertise. Clinical Precision.'"
+    "result": "Trusted Expertise. Clinical Precision."
   },
   "main_subtitle": {
     "xpath": "//p[@class='subtitle']",
     "type": "text",
     "action": "assert",
-    "result": "subtitle text equals 'Catalyst Legal Nurse Consulting bridges clinical insight with litigation strategy.'"
+    "result": "Catalyst Legal Nurse Consulting bridges clinical insight with litigation strategy."
   },
   "section_why_attorneys": {
     "xpath": "//section[./h2[text()='Why Attorneys Choose Catalyst']]",
     "type": "section",
-    "action": "assert",
-    "result": "Why Attorneys Choose Catalyst section is visible"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "h2_why_attorneys": {
     "xpath": "//h2[text()='Why Attorneys Choose Catalyst']",
     "type": "heading",
     "action": "assert",
-    "result": "section heading exactly matches 'Why Attorneys Choose Catalyst'"
+    "result": "Why Attorneys Choose Catalyst"
   },
   "list_why_attorneys": {
     "xpath": "//ul[preceding-sibling::h2[text()='Why Attorneys Choose Catalyst']]",
     "type": "list",
-    "action": "assert",
-    "result": "list of credentials is visible"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "why_item_board_certified": {
     "xpath": "//li[text()='Board-certified Adult-Gerontology Nurse Practitioner']",
     "type": "list-item",
     "action": "assert",
-    "result": "item text exactly matches 'Board-certified Adult-Gerontology Nurse Practitioner'"
+    "result": "Board-certified Adult-Gerontology Nurse Practitioner"
   },
   "why_item_legal_nurse": {
     "xpath": "//li[text()='Certified Legal Nurse Consultant']",
     "type": "list-item",
     "action": "assert",
-    "result": "item text exactly matches 'Certified Legal Nurse Consultant'"
+    "result": "Certified Legal Nurse Consultant"
   },
   "why_item_nursing_admin": {
     "xpath": "//li[text()='Licensed Nursing Home Administrator']",
     "type": "list-item",
     "action": "assert",
-    "result": "item text exactly matches 'Licensed Nursing Home Administrator'"
+    "result": "Licensed Nursing Home Administrator"
   },
   "why_item_wound_care": {
     "xpath": "//li[text()='Wound Care Certified Specialist']",
     "type": "list-item",
     "action": "assert",
-    "result": "item text exactly matches 'Wound Care Certified Specialist'"
+    "result": "Wound Care Certified Specialist"
   },
   "why_item_leadership": {
     "xpath": "//li[text()='Decades of leadership in long-term care and hospice']",
     "type": "list-item",
     "action": "assert",
-    "result": "item text exactly matches 'Decades of leadership in long-term care and hospice'"
+    "result": "Decades of leadership in long-term care and hospice"
   },
   "why_item_privacy_policy": {
     "xpath": "//li[a[text()='Privacy Policy']]",
     "type": "list-item",
-    "action": "assert",
-    "result": "Privacy Policy link is visible within list"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "link_privacy_policy_why": {
     "xpath": "//a[text()='Privacy Policy']",
     "type": "link",
     "action": "click",
-    "result": "navigates to 'privacy.html'"
+    "result": "privacy.html"
   },
   "section_strategic_services": {
     "xpath": "//section[./h2[text()='Strategic Services']]",
     "type": "section",
-    "action": "assert",
-    "result": "Strategic Services section is visible"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "h2_strategic_services": {
     "xpath": "//h2[text()='Strategic Services']",
     "type": "heading",
     "action": "assert",
-    "result": "section heading exactly matches 'Strategic Services'"
+    "result": "Strategic Services"
   },
   "list_strategic_services": {
     "xpath": "//ul[preceding-sibling::h2[text()='Strategic Services']]",
     "type": "list",
-    "action": "assert",
-    "result": "list of services is visible"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "service_medical_review": {
-    "xpath": "//li[text()='Medical record review and expert analysis']",
+    "xpath": "//li[text()='Medical Record Review']",
     "type": "list-item",
     "action": "assert",
-    "result": "item text exactly matches 'Medical record review and expert analysis'"
+    "result": "Medical Record Review"
   },
   "service_wound_care": {
-    "xpath": "//li[text()='Wound care litigation support']",
+    "xpath": "//li[text()='Wound Care Analysis']",
     "type": "list-item",
     "action": "assert",
-    "result": "item text exactly matches 'Wound care litigation support'"
+    "result": "Wound Care Analysis"
   },
   "service_long_term_care": {
-    "xpath": "//li[text()='Long-term care case consulting']",
+    "xpath": "//li[text()='Long-Term Care Evaluation']",
     "type": "list-item",
     "action": "assert",
-    "result": "item text exactly matches 'Long-term care case consulting'"
+    "result": "Long-Term Care Evaluation"
   },
   "service_compliance": {
-    "xpath": "//li[text()='Compliance and regulatory insight']",
+    "xpath": "//li[text()='Regulatory Compliance Review']",
     "type": "list-item",
     "action": "assert",
-    "result": "item text exactly matches 'Compliance and regulatory insight'"
+    "result": "Regulatory Compliance Review"
   },
   "service_expert_witness": {
-    "xpath": "//li[text()='Expert witness preparation']",
+    "xpath": "//li[text()='Expert Witness Testimony']",
     "type": "list-item",
     "action": "assert",
-    "result": "item text exactly matches 'Expert witness preparation'"
+    "result": "Expert Witness Testimony"
   },
   "cta_explore_services_wrapper": {
-    "xpath": "//p[a[@class='cta']]",
+    "xpath": "//div[@class='cta-wrapper']",
     "type": "container",
-    "action": "assert",
-    "result": "CTA container is visible"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "cta_explore_services": {
-    "xpath": "//a[@class='cta' and text()='Explore Services']",
+    "xpath": "//a[text()='Explore Services']",
     "type": "link",
     "action": "click",
-    "result": "navigates to 'services.html'"
+    "result": "services.html"
   },
   "sidebar_image_container": {
-    "xpath": "//aside[@class='sidebar-image']",
+    "xpath": "//div[@class='sidebar-image']",
     "type": "container",
-    "action": "assert",
-    "result": "sidebar image container is visible"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "sidebar_image": {
-    "xpath": "//aside//img[@alt='Image of nurse cap and gavel']",
+    "xpath": "//img[@alt='Janet DiNino portrait']",
     "type": "image",
-    "action": "assert",
-    "result": "image is displayed with correct alt text 'Image of nurse cap and gavel'"
+    "action": "assert_alt",
+    "result": "Janet DiNino portrait"
   },
-  "confirmation_modal": {
-    "xpath": "//div[@id='confirmationModal']",
-    "type": "modal",
-    "action": "assert",
-    "result": "modal is visible when URL contains '?success=1'"
-  },
-  "modal_content": {
-    "xpath": "//div[@class='modal-content']",
-    "type": "container",
-    "action": "assert",
-    "result": "modal content is visible"
-  },
-  "modal_heading": {
-    "xpath": "//h2[text()='Submission Received']",
-    "type": "heading",
-    "action": "assert",
-    "result": "modal heading exactly matches 'Submission Received'"
-  },
-  "modal_message": {
-    "xpath": "//p[text()='Your case submission has been received successfully.']",
-    "type": "text",
-    "action": "assert",
-    "result": "modal message exactly matches 'Your case submission has been received successfully.'"
-  },
-  "modal_ok_button": {
-    "xpath": "//button[@id='confirmButton']",
-    "type": "button",
-    "action": "click",
-    "result": "closes modal and redirects to 'index.html'"
-  },
-  "footer": {
+  "sidebar_image_visible": {
+    "xpath": "//img[@alt='Janet DiNino portrait']",
+    "type": "image",
+    "action": "assert_visible",
+    "result": "visible"
+  },  "footer": {
     "xpath": "//footer",
     "type": "container",
-    "action": "assert",
-    "result": "footer is visible at bottom of page"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "footer_copyright": {
-    "xpath": "//footer//p",
+    "xpath": "//footer//p[@class='copyright']",
     "type": "text",
-    "action": "assert",
-    "result": "copyright text contains 'Catalyst Legal Nurse Consulting of SC, LLC'"
+    "action": "assert_visible",
+    "result": "visible"
   },
   "copyright_text": {
-    "xpath": "//p[contains(text(), '2025 Catalyst Legal Nurse Consulting of SC, LLC')]",
+    "xpath": "//footer//p[@class='copyright']",
     "type": "text",
     "action": "assert",
-    "result": "copyright text exactly matches '© 2025 Catalyst Legal Nurse Consulting of SC, LLC'"
+    "result": "© 2025 Catalyst Legal Nurse Consulting. All rights reserved."
   }
 }
+  

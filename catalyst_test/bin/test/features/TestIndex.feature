@@ -1,7 +1,46 @@
-Feature: Validate homepage elements using semantic keys
+Feature: Validate Index page elements using semantic keys
 
-  Scenario Outline: Interact with homepage element and validate result
-    Given the user launches Catalyst web site
+  @Skip
+  Scenario Outline: Interact with Index page element and validate result
+    Given the user launches Catalyst "index" page
+    And the XPath repository for "Index" is loaded
+    When the user interacts with "<key>"
+    Then the result of "<key>" should be validated
+
+  Examples:
+    | key                          |
+    | title                        |
+    | header                       |
+    | main_nav                     |
+    | footer                       |
+
+
+  @Critical
+  Scenario Outline: Interact with Index page element and validate result
+    Given the user launches Catalyst "index" page
+    And the XPath repository for "Index" is loaded
+    When the user interacts with "<key>"
+    Then the result of "<key>" should be validated
+
+  Examples:
+    | key                          |
+    | title                        |
+    | link_favicon                 |
+    | header                       |
+    | logo_image_visible           |
+    | main_nav                     |
+    | main_heading                 |
+    | h2_why_attorneys             |
+    | section_strategic_services   |
+    | h2_strategic_services        |
+    | cta_explore_services         |
+    | sidebar_image_visible        |
+    | footer                       |
+
+
+  @Regression
+  Scenario Outline: Interact with Index page element and validate result
+    Given the user launches Catalyst "index" page
     And the XPath repository for "Index" is loaded
     When the user interacts with "<key>"
     Then the result of "<key>" should be validated

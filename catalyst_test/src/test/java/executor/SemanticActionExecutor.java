@@ -3,10 +3,15 @@ package executor;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import utils.ConfigLoader;
 import utils.Locator;
 import utils.LocatorRepository;
 import utils.ReportLogger;
 import validator.SemanticValidator;
+
+import java.time.Duration;
 
 public class SemanticActionExecutor {
 
@@ -17,9 +22,20 @@ public class SemanticActionExecutor {
 
         switch (action) {
             case "click":
-                WebElement clickable = driver.findElement(By.xpath(xpath));
-                clickable.click();
-                ReportLogger.info("🖱️ Clicked element for key: " + key);
+                try {
+                    int timeout = Integer.parseInt(ConfigLoader.getWaitTimeoutSeconds());
+                    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
+                    WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
+
+                    ReportLogger.info("✅ Found element for key: " + key +
+                        " — Tag: <" + element.getTagName() + ">, Outer HTML: " + element.getAttribute("outerHTML"));
+
+                    element.click();
+                    ReportLogger.info("🖱️ Clicked element for key: " + key);
+                } catch (Exception e) {
+                    ReportLogger.error("❌ Failed to click element for key: " + key + " — " + e.getMessage());
+                    throw e;
+                }
                 break;
 
             case "assert":
@@ -27,7 +43,6 @@ public class SemanticActionExecutor {
             case "assert_visible":
             case "assert_exists":
             case "assert_alt":
-                // No interaction needed—these are pure validations
                 ReportLogger.info("🔍 No interaction required for action: " + action + " (key: " + key + ")");
                 break;
 

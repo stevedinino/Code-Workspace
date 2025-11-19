@@ -1,56 +1,146 @@
 {
-  "AboutHeader": {
-    "type": "text",
-    "action": "assert",
-    "xpath": "//h1[text()='About Janet DiNino – Legal Nurse Consultant']",
-    "result": "About Janet DiNino – Legal Nurse Consultant"
-  },
-  "JanetIntroParagraph": {
-    "type": "text",
-    "action": "assert",
-    "xpath": "//p[contains(text(),'Janet DiNino is an accomplished healthcare executive')]",
-    "result": "Janet DiNino is an accomplished healthcare executive"
-  },
-  "CredentialsList": {
-    "type": "list",
-    "action": "assert",
-    "xpath": "//ul[li[contains(text(),'Board-Certified Adult-Gerontology')]]",
-    "result": "Board-Certified Adult-Gerontology Primary Care Nurse Practitioner"
-  },
-  "SCHouseCallsRole": {
-    "type": "text",
-    "action": "assert",
-    "xpath": "//p[contains(text(),'Chief Clinical Officer and Nurse Practitioner with SC House Calls')]",
-    "result": "Chief Clinical Officer and Nurse Practitioner with SC House Calls"
-  },
-  "ContactLink": {
+  "HomeLogoLink": {
+    "xpath": "//a[@href='index.html']",
     "type": "link",
     "action": "click",
-    "xpath": "//a[@href='contact.html']",
-    "result": "contact.html"
-  },
-  "PrivacyLink": {
-    "type": "link",
-    "action": "click",
-    "xpath": "//a[@href='privacy.html']",
-    "result": "privacy.html"
-  },
-  "FAQLink": {
-    "type": "link",
-    "action": "click",
-    "xpath": "//a[@href='faq.html']",
-    "result": "faq.html"
-  },
-  "BackToHomeLink": {
-    "type": "link",
-    "action": "click",
-    "xpath": "//a[@href='index.html' and text()='Back to Home']",
     "result": "index.html"
   },
-  "FooterText": {
+  "NavAboutLink": {
+    "xpath": "//a[@href='about.html']",
+    "type": "link",
+    "action": "click",
+    "result": "about.html"
+  },
+  "NavServicesLink": {
+    "xpath": "//a[@href='services.html']",
+    "type": "link",
+    "action": "click",
+    "result": "services.html"
+  },
+  "NavTestimonialsLink": {
+    "xpath": "//a[@href='testimonials.html']",
+    "type": "link",
+    "action": "click",
+    "result": "testimonials.html"
+  },
+  "NavUploadLink": {
+    "xpath": "//a[@href='upload.html']",
+    "type": "link",
+    "action": "click",
+    "result": "upload.html"
+  },
+  "NavContactLink": {
+    "xpath": "//a[@href='contact.html']",
+    "type": "link",
+    "action": "click",
+    "result": "contact.html"
+  },
+  "NavPrivacyLink": {
+    "xpath": "//a[@href='privacy.html']",
+    "type": "link",
+    "action": "click",
+    "result": "privacy.html"
+  },
+  "NavFaqLink": {
+    "xpath": "//a[@href='faq.html']",
+    "type": "link",
+    "action": "click",
+    "result": "faq.html"
+  },
+  "MobileMenuToggle": {
+    "xpath": "//button[@class='menu-toggle']",
+    "type": "button",
+    "action": "click",
+    "result": "Toggles mobile menu (adds/removes 'active' class on //ul[@class='nav-links'])"
+  },
+  "LogoImageVisible": {
+    "xpath": "//img[@alt='Catalyst Logo']",
+    "type": "image",
+    "action": "assert_visible",
+    "result": "visible"
+  },
+  "LogoImageAltText": {
+    "xpath": "//img[@alt='Catalyst Logo']",
+    "type": "image",
+    "action": "assert_alt",
+    "result": "Catalyst Logo"
+  },
+  "JanetHeroImageVisible": {
+    "xpath": "//img[@alt='Janet DiNino']",
+    "type": "image",
+    "action": "assert_visible",
+    "result": "visible"
+  },
+  "JanetHeroImageAltText": {
+    "xpath": "//img[@alt='Janet DiNino']",
+    "type": "image",
+    "action": "assert_alt",
+    "result": "Janet DiNino"
+  },
+  "PageHeading": {
+    "xpath": "//h1",
+    "type": "heading",
+    "action": "assert",
+    "result": "About Janet DiNino"
+  },
+  "BioParagraph01": {
+    "xpath": "//div[@class='text-block']/p[1]",
+    "type": "paragraph",
+    "action": "assert",
+    "result": "Cynthia “Janet” DiNino is an accomplished healthcare executive and advanced practice nurse with over 25 years of progressive leadership and clinical experience spanning hospice, palliative care, long-term care, home-based primary care, and healthcare administration. She is a Board-Certified Adult-Gerontology Primary Care Nurse Practitioner, Certified Legal Nurse Consultant, Licensed Nursing Home Administrator, Wound Care Certified Specialist, and Certified in Health Care Compliance."
+  },
+  "BioParagraph02": {
+    "xpath": "//div[@class='text-block']/p[2]",
+    "type": "paragraph",
+    "action": "assert",
+    "result": "Janet currently serves as Chief Clinical Officer and Nurse Practitioner with SC House Calls, where she provides strategic clinical leadership, standardizes care delivery across diverse settings, and ensures excellence in patient outcomes through evidence-based practice. She leads initiatives to expand clinical programs, develop onboarding and education processes, and strengthen transitions-of-care pathways that have reduced hospital readmissions to below national benchmarks."
+  },
+  "BioParagraph03": {
+    "xpath": "//div[@class='text-block']/p[3]",
+    "type": "paragraph",
+    "action": "assert",
+    "result": "In addition to her executive leadership, Janet practices as an Adult-Gerontology Nurse Practitioner, providing comprehensive primary, hospice, and palliative care in home and facility settings across South Carolina, Georgia, Florida, and North Carolina. Her clinical expertise includes pain and symptom management, chronic disease management, and end-of-life care planning — with a steadfast commitment to patient dignity and family support."
+  },
+  "BioParagraph04": {
+    "xpath": "//div[@class='text-block']/p[4]",
+    "type": "paragraph",
+    "action": "assert",
+    "result": "As CEO of Catalyst Legal Nurse Consulting, Janet applies her extensive clinical and regulatory knowledge to assist attorneys in case analysis, causation review, expert witness preparation, and medical record interpretation. Her dual experience in healthcare operations and legal consulting uniquely positions her as a bridge between clinical practice, compliance, and risk management."
+  },
+  "BioParagraph05": {
+    "xpath": "//div[@class='text-block']/p[5]",
+    "type": "paragraph",
+    "action": "assert",
+    "result": "Earlier in her career, Janet held multiple senior leadership roles with Agape Senior, including Chief Clinical Officer, Director of Operations, and Regional President, where she oversaw post-acute care, hospice, and physician practice operations across multiple facilities. Her leadership was instrumental in improving quality outcomes, compliance standards, and workforce development across the organization."
+  },
+  "BioParagraph06": {
+    "xpath": "//div[@class='text-block']/p[6]",
+    "type": "paragraph",
+    "action": "assert",
+    "result": "Janet earned her Master of Science in Nursing Administration and Leadership and Bachelor of Science in Nursing from Western Governors University, and her Post-Master’s Certificate as an Adult-Gerontology Primary Care Nurse Practitioner from West Coast University. She began her nursing career as a graduate of the Presbyterian Hospital School of Nursing in Charlotte, North Carolina."
+  },
+  "BioParagraph07": {
+    "xpath": "//div[@class='text-block']/p[7]",
+    "type": "paragraph",
+    "action": "assert",
+    "result": "A lifelong advocate for excellence in patient care and organizational integrity, Janet combines clinical expertise, executive acumen, and legal insight to drive innovation and quality in healthcare delivery."
+  },
+  "LicensesHeading": {
+    "xpath": "//div[@class='text-block']/p[8]",
+    "type": "paragraph",
+    "action": "assert",
+    "result": "Licenses & Certifications"
+  },
+  "LicensesList": {
+    "xpath": "//div[@class='text-block']/p[9]",
+    "type": "paragraph",
+    "action": "assert",
+    "result": "APRN (SC, GA, FL, NC; TN pending) | AGPCNP-C | LNHA | CLNC | WCC | CHC | CAPPM | BLS"
+  },
+  "FooterCopyright": {
+    "xpath": "//footer/p",
     "type": "text",
     "action": "assert",
-    "xpath": "//footer//p[contains(text(),'© Catalyst Legal Nurse Consulting')]",
-    "result": "© Catalyst Legal Nurse Consulting"
+    "result": "© 2025 Catalyst Legal Nurse Consulting of SC, LLC"
   }
 }
