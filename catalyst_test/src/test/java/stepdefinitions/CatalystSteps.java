@@ -33,7 +33,7 @@ public class CatalystSteps {
             String headingXpath = "//h1[contains(text(),'" + page + "')]";
             wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(headingXpath)));
 
-            ReportLogger.info("✅ Page heading loaded: " + headingXpath);
+            ReportLogger.verbose("✅ Page heading loaded: " + headingXpath);
         } catch (Exception e) {
             ReportLogger.error("❌ Failed to confirm page load for: " + page + " — " + e.getMessage());
             throw e;
@@ -44,7 +44,7 @@ public class CatalystSteps {
     public void loadXPathRepository(String pageName) {
         String folder = ConfigLoader.getDataFolder();
         LocatorRepository.loadRepository(folder, pageName);
-        ReportLogger.info("📦 Loaded XPath repository for page: " + pageName);
+        ReportLogger.verbose("📦 Loaded XPath repository for page: " + pageName);
     }
 
     @When("the user interacts with {string}")

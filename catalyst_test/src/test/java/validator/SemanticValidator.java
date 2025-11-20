@@ -33,9 +33,11 @@ public class SemanticValidator {
             case "click":
                 validateNavigation(driver, expected, key);
                 break;
+
             case "assert_title":
                 validatePageTitle(driver, expected, key);
                 break;
+
             default:
                 ReportLogger.warn("⚠️ No validation logic defined for action: " + action + " (key: " + key + ")");
         }
@@ -43,7 +45,7 @@ public class SemanticValidator {
 
     private static void validateText(WebDriver driver, String xpath, String expected, String key) {
         WebElement element = driver.findElement(By.xpath(xpath));
-        ReportLogger.info("Validating result for key: " + key);
+        ReportLogger.verbose("Validating result for key: " + key);
         String actual = element.getText().trim();
         if (actual.equals(expected)) {
             ReportLogger.pass("✅ Text matches for key: " + key);
@@ -55,7 +57,7 @@ public class SemanticValidator {
 
     private static void validateVisibility(WebDriver driver, String xpath, String key) {
         WebElement element = driver.findElement(By.xpath(xpath));
-        ReportLogger.info("Validating result for key: " + key);
+        ReportLogger.verbose("Validating result for key: " + key);
         if (element.isDisplayed()) {
             ReportLogger.pass("✅ Element is visible for key: " + key);
         } else {
@@ -65,7 +67,7 @@ public class SemanticValidator {
 
     private static void validatePresence(WebDriver driver, String xpath, String key) {
         boolean exists = driver.findElements(By.xpath(xpath)).size() > 0;
-        ReportLogger.info("Validating result for key: " + key);
+        ReportLogger.verbose("Validating result for key: " + key);
         if (exists) {
             ReportLogger.pass("✅ Element exists for key: " + key);
         } else {
@@ -75,7 +77,7 @@ public class SemanticValidator {
 
     private static void validatePageTitle(WebDriver driver, String expected, String key) {
         String actualTitle = driver.getTitle().trim();
-        ReportLogger.info("Validating result for key: " + key);
+        ReportLogger.verbose("Validating result for key: " + key);
         if (actualTitle.equals(expected)) {
             ReportLogger.pass("✅ Page title matches for key: " + key);
         } else {
@@ -83,9 +85,10 @@ public class SemanticValidator {
                 ". Expected: \"" + expected + "\", Found: \"" + actualTitle + "\"");
         }
     }
+
     private static void validateAltText(WebDriver driver, String xpath, String expected, String key) {
         WebElement element = driver.findElement(By.xpath(xpath));
-        ReportLogger.info("Validating result for key: " + key);
+        ReportLogger.verbose("Validating result for key: " + key);
         String actualAlt = element.getAttribute("alt");
         if (expected.equals(actualAlt)) {
             ReportLogger.pass("✅ Alt text matches for key: " + key);

@@ -34,13 +34,17 @@ public class ConfigLoader {
         return properties.getProperty("report.theme");
     }
 
-    public static String getDataFolder() {
-        String folder = properties.getProperty("data.folder");
-        if (folder == null || folder.isBlank()) {
-            throw new RuntimeException("❌ Missing config key: data.folder");
-        }
-        return folder;
+    public static boolean isVerboseMode() {
+        return Boolean.parseBoolean(get("verbose.mode"));
     }
+
+    public static String getDataFolder() {
+            String folder = properties.getProperty("data.folder");
+            if (folder == null || folder.isBlank()) {
+                throw new RuntimeException("❌ Missing config key: data.folder");
+            }
+            return folder;
+        }
 
     // ✅ Generic accessor for dynamic config keys
     public static String get(String key) {

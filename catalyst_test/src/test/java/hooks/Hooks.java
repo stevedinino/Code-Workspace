@@ -39,13 +39,13 @@ public class Hooks {
     public void beforeScenario(Scenario scenario) {
         ExtentTest test = extent.createTest(scenario.getName());
         testThread.set(test);
-        ReportLogger.info("🎨 Report theme loaded from config: " + ConfigLoader.getReportTheme());
+        ReportLogger.verbose("🎨 Report theme loaded from config: " + ConfigLoader.getReportTheme());
     }
 
     @After(order = 1)
     public void afterScenario() {
         DriverFactory.quitDriver();
-        ReportLogger.info("🧹 WebDriver session closed after scenario.");
+        ReportLogger.verbose("🧹 WebDriver session closed after scenario.");
         extent.flush();
     }
 

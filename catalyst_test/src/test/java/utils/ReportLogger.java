@@ -20,4 +20,11 @@ public class ReportLogger {
     public static void pass(String message) {
         Hooks.getTest().log(Status.PASS, message);
     }
+
+    // ✅ Verbose logging wrapper
+    public static void verbose(String message) {
+        if (ConfigLoader.isVerboseMode()) {
+            info(message);
+        }
+    }
 }

@@ -20,6 +20,7 @@ public class LocatorRepository {
 
             ObjectMapper mapper = new ObjectMapper();
             repository = mapper.readValue(inputStream, new TypeReference<Map<String, Locator>>() {});
+            ReportLogger.verbose("📦 Locator JSON loaded successfully for page: " + pageName);
         } catch (Exception e) {
             throw new RuntimeException("❌ Failed to load locator JSON: " + folder + "/" + pageName + ".json", e);
         }

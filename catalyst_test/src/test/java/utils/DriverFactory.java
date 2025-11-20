@@ -51,7 +51,7 @@ public class DriverFactory {
             WebDriver currentDriver = driver.get();
             if (currentDriver != null) {
                 currentDriver.quit();
-                ReportLogger.info("🧹 WebDriver quit successfully.");
+                ReportLogger.verbose("🧹 WebDriver quit successfully.");
             }
         } catch (Exception e) {
             ReportLogger.error("❌ Error during WebDriver quit: " + e.getMessage());

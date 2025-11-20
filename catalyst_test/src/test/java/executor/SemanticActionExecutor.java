@@ -27,7 +27,7 @@ public class SemanticActionExecutor {
                     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
                     WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
 
-                    ReportLogger.info("✅ Found element for key: " + key +
+                    ReportLogger.verbose("✅ Found element for key: " + key +
                         " — Tag: <" + element.getTagName() + ">, Outer HTML: " + element.getAttribute("outerHTML"));
 
                     element.click();
@@ -43,7 +43,7 @@ public class SemanticActionExecutor {
             case "assert_visible":
             case "assert_exists":
             case "assert_alt":
-                ReportLogger.info("🔍 No interaction required for action: " + action + " (key: " + key + ")");
+                ReportLogger.verbose("🔍 No interaction required for action: " + action + " (key: " + key + ")");
                 break;
 
             default:
