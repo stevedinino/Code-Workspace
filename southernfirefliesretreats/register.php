@@ -23,29 +23,14 @@ if ($name && $address && $phone && $email) {
           <meta charset="UTF-8">
           <meta http-equiv="refresh" content="2;url=index.html">
           <title>Registration Successful</title>
-          <style>
-            body {
-              background-color: #fdf6f0;
-              font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              height: 100vh;
-              margin: 0;
-            }
-            .message {
-              background-color: white;
-              padding: 30px;
-              border-radius: 10px;
-              box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-              text-align: center;
-            }
-          </style>
+          <link rel="stylesheet" href="styles/layout.css" />
         </head>
         <body>
-          <div class="message">
-            <h2>Thank you for registering!</h2>
-            <p>You’ll be redirected to the home page shortly.</p>
+          <div class="message-container">
+            <div class="message">
+              <h2>Thank you for registering!</h2>
+              <p>You’ll be redirected to the home page shortly.</p>
+            </div>
           </div>
         </body>
         </html>';

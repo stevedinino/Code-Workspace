@@ -4,41 +4,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Southern Fireflies Retreat</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #fdf6f0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      min-height: 100vh;
-      overflow-x: hidden;
-    }
-    .container {
-      width: 100%;
-      text-align: center;
-      padding: 20px;
-    }
-    img {
-      width: 80%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-  </style>
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="styles/layout.css" />
 </head>
 <body>
-<div class="container">
-  <img src="green modern spring sale (Flyer).png" alt="Southern Fireflies Retreat Flyer" />
-  <p>
-    <a href="register.html" style="display:inline-block; margin-top:20px; padding:10px 20px; background-color:#4CAF50; color:white; text-decoration:none; border-radius:5px; font-weight:bold;">
-      Register Now
-    </a>
-  </p>
-</div>
+  <div class="container">
+    <img src="images/green modern spring sale (Flyer).png" alt="Retreat Flyer" />
+
+    <div class="button-row">
+      <a href="register.html" class="btn">Register Now</a>
+      <a href="cancellation.html" class="btn">Our Policies</a>
+      <button id="aboutBtn" type="button" class="btn">About</button>
+    </div>
+  </div>
+
+  <!-- Modal overlay -->
+  <div id="aboutOverlay" class="modal-overlay">
+    <div class="modal-content">
+      <button class="close-icon" id="aboutClose" aria-label="Close">×</button>
+      <h2>About Southern Fireflies Retreat</h2>
+      <p>Southern Fireflies Retreat is a warm, creative getaway for crafters who want to relax, make, and connect. We host curated weekends with plenty of table space, good company, and time to dive deep into your projects.</p>
+      <hr />
+      <h3>Meet Your Host</h3>
+      <p>Janet is a lifelong crafter and community-builder who believes creativity shines brightest together. She brings thoughtful planning, kindness, and a bit of sparkle to every retreat.</p>
+      <p>Questions or special requests? We’re happy to help — reach out anytime during registration.</p>
+    </div>
+  </div>
+
+  <script>
+    const aboutBtn = document.getElementById('aboutBtn');
+    const aboutOverlay = document.getElementById('aboutOverlay');
+    const aboutClose = document.getElementById('aboutClose');
+
+    function openAbout() { aboutOverlay.style.display = 'block'; }
+    function closeAbout() { aboutOverlay.style.display = 'none'; }
+
+    aboutBtn.addEventListener('click', openAbout);
+    aboutClose.addEventListener('click', closeAbout);
+    aboutOverlay.addEventListener('click', (e) => {
+      if (e.target === aboutOverlay) closeAbout();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeAbout();
+    });
+  </script>
 </body>
 </html>

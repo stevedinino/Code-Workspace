@@ -1,0 +1,295 @@
+/* ============================ Base Layout ============================ */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    overflow-x: hidden; /* allow vertical scroll globally */
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Flyer image */
+img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================ Buttons ============================ */
+
+.button-row {
+    margin-top: 20px;
+}
+
+/* Shared button style for anchors and buttons */
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1.2;
+  vertical-align: middle;
+  box-sizing: border-box;
+
+  /* ✅ Force consistent text size and alignment */
+  font-size: 16px;
+  text-align: center;
+}
+
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* ============================ Modal Popovers ============================ */
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
+.modal-content {
+    background-color: #fff;
+    max-width: 700px;
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: left;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.modal-content p,
+.modal-content li {
+    line-height: 1.6;
+    font-size: 1.05em;
+}
+
+.modal-content ul {
+    padding-left: 20px;
+}
+
+.modal-content hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+/* Close icon */
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+}
+
+/* ============================ QR Code Block ============================ */
+
+.qr-code {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.qr-code img {
+    width: 130px;
+    height: auto;
+}
+
+.qr-code p {
+    font-size: 13px;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* ============================ Form Elements ============================ */
+
+input,
+textarea,
+button[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* ============================ Cancellation Page ============================ */
+
+.page-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.page-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+.page-container h2 {
+    margin-top: 30px;
+    font-size: 1.3em;
+}
+
+.footer-link {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-link a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-link a:hover {
+    text-decoration: underline;
+}
+
+/* ============================ Success Message (register.php) ============================ */
+
+.message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.message {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* ============================ Guests Page (ourguests.php) ============================ */
+
+.guests-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.guests-wrapper h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.guests-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.guests-wrapper th,
+.guests-wrapper td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.guests-wrapper th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.button-container input[type="text"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.button-container button {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #c9302c;
+}
+
+/* ============================ Responsive Tweaks ============================ */
+
+@media (max-height: 600px) {
+    .modal-content {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

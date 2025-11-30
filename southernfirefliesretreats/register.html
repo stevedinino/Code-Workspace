@@ -4,110 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Register for Southern Fireflies Retreat</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      background-color: #fdf6f0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      height: 100%;
-      overflow: hidden;
-    }
-
-    .background-wrapper {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .background-image {
-      width: 80%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-
-    .form-container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: rgba(255, 255, 255, 0.95);
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      width: 90%;
-      max-width: 360px;
-      max-height: 90vh;
-      overflow-y: auto;
-      z-index: 2;
-    }
-
-    h2 {
-      text-align: center;
-      margin: 0 0 15px;
-      font-size: 1.4em;
-    }
-
-    .qr-code {
-      text-align: center;
-      margin-bottom: 15px;
-    }
-
-    .qr-code img {
-      width: 130px;
-      height: auto;
-    }
-
-    .qr-code p {
-      font-size: 13px;
-      color: #555;
-      margin-top: 5px;
-    }
-
-    input, textarea, button {
-      width: 100%;
-      padding: 8px;
-      margin-top: 8px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 15px;
-    }
-
-    button {
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      cursor: pointer;
-      margin-top: 12px;
-    }
-
-    button:hover {
-      background-color: #45a049;
-    }
-
-    @media (max-height: 600px) {
-      .form-container {
-        top: 52%;
-        transform: translate(-50%, -52%);
-        padding: 15px;
-      }
-    }
-  </style>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles/layout.css" />
+  <link rel="stylesheet" href="styles/register.css" />
 </head>
-<body>
+<body class="register-page">
   <div class="background-wrapper">
-    <img src="green modern spring sale (Flyer).png" alt="Retreat Flyer" class="background-image" />
+    <img src="images/green modern spring sale (Flyer).png" alt="Retreat Flyer" class="background-image" />
     <div class="form-container">
       <h2>Retreat Registration</h2>
 
       <div class="qr-code">
-        <img src="venmo.jpeg" alt="Scan to pay via Venmo" />
-        <p>Scan to pay via Venmo</p>
+        <img src="images/venmo.png" alt="@SouthernFirefliesRetreats" />
+        <a href="https://venmo.com/SouthernFirefliesRetreats">Scan QR code or click here to pay via Venmo</a>
       </div>
+
+      <!-- Use .btn class for consistency -->
+      <a href="cancellation.html" class="btn">View Our Policies</a>
 
       <form action="register.php" method="POST">
         <input type="text" name="name" placeholder="Full Name" required />
@@ -115,7 +28,7 @@
         <input type="tel" name="phone" placeholder="Phone Number" required />
         <input type="email" name="email" placeholder="Email Address" required />
         <textarea name="message" placeholder="Special Requests or Notes" rows="3"></textarea>
-        <button type="submit">Submit Registration</button>
+        <button type="submit" class="btn">Submit Registration</button>
       </form>
     </div>
   </div>

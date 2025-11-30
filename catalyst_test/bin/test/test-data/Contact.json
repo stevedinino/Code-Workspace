@@ -1,0 +1,106 @@
+{
+  "HeaderLogoLink": {
+    "xpath": "//header//div[@class='logo']/a | //a[img/@alt='Catalyst Logo']",
+    "type": "link",
+    "action": "click",
+    "result": "index.html"
+  },
+
+  "NavAboutLink": {
+    "xpath": "//a[@href='about.html'] | //nav//a[text()='About']",
+    "type": "link",
+    "action": "click",
+    "result": "about.html"
+  },
+
+  "NavServicesLink": {
+    "xpath": "//a[@href='services.html'] | //nav//a[text()='Services']",
+    "type": "link",
+    "action": "click",
+    "result": "services.html"
+  },
+
+  "NavTestimonialsLink": {
+    "xpath": "//a[@href='testimonials.html'] | //nav//a[text()='Testimonials']",
+    "type": "link",
+    "action": "click",
+    "result": "testimonials.html"
+  },
+
+  "NavUploadLink": {
+    "xpath": "//a[@href='upload.html'] | //nav//a[text()='Upload']",
+    "type": "link",
+    "action": "click",
+    "result": "upload.html"
+  },
+
+  "NavContactLink": {
+    "xpath": "//a[@href='contact.html'] | //nav//a[text()='Contact']",
+    "type": "link",
+    "action": "click",
+    "result": "contact.html"
+  },
+
+  "NavPrivacyLink": {
+    "xpath": "//a[@href='privacy.html'] | //nav//a[text()='Privacy']",
+    "type": "link",
+    "action": "click",
+    "result": "privacy.html"
+  },
+
+  "NavFAQLink": {
+    "xpath": "//a[@href='faq.html'] | //nav//a[text()='FAQ']",
+    "type": "link",
+    "action": "click",
+    "result": "faq.html"
+  },
+
+  "PageTitleContact": {
+    "xpath": "//h1[text()='Contact']",
+    "type": "heading",
+    "action": "assert",
+    "result": "Contact"
+  },
+
+  "ContactEmailLink": {
+    "xpath": "//a[@href='mailto:janet@catalystlegalnurse.com'] | //a[contains(text(),'janet@catalystlegalnurse.com')]",
+    "type": "link",
+    "action": "click",
+    "result": "mailto:janet@catalystlegalnurse.com"
+  },
+
+  "ContactPhoneNumber": {
+    "xpath": "//li[contains(.,'(803) 740-9964')] | //strong[text()='Phone:']/following-sibling::text()[contains(.,'(803)')]",
+    "type": "text",
+    "action": "assert",
+    "result": "(803) 740-9964"
+  },
+
+  "BusinessCardDownloadLink": {
+    "xpath": "//a[@href='assets/business-card.svg'] | //a[contains(text(),'Download Janet’s Business Card')]",
+    "type": "link",
+    "action": "click",
+    "result": "downloads business-card.svg"
+  },
+
+  "FooterCopyright": {
+    "xpath": "//footer//p[contains(text(),'© 2025 Catalyst Legal Nurse Consulting')]",
+    "type": "text",
+    "action": "assert",
+    "result": "© 2025 Catalyst Legal Nurse Consulting"
+  },
+
+  "MainContentArea": {
+    "xpath": "//main[@class='content']",
+    "type": "container",
+    "action": "assert_exists",
+    "result": "exists"
+  },
+
+  "ContactInstructionsText": {
+    "xpath": "//main//p[contains(text(),'To discuss your case or request a consultation')]",
+    "type": "text",
+    "action": "assert",
+    "result": "To discuss your case or request a consultation"
+  }
+}
