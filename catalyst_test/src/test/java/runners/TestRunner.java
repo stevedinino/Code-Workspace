@@ -10,7 +10,8 @@ import static io.cucumber.junit.platform.engine.Constants.PLUGIN_PROPERTY_NAME;
 
 @Suite
 @SelectClasspathResource("features") // assumes src/test/resources/features
-@ConfigurationParameter(key = FILTER_TAGS_PROPERTY_NAME, value = "@Smoke")
+@ConfigurationParameter(key = FILTER_TAGS_PROPERTY_NAME, value = "@Solo")
+//@ConfigurationParameter(key = FILTER_TAGS_PROPERTY_NAME, value = "@Smoke")
 //@ConfigurationParameter(key = FILTER_TAGS_PROPERTY_NAME, value = "@Critical")
 //@ConfigurationParameter(key = FILTER_TAGS_PROPERTY_NAME, value = "@Regression")
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "stepdefinitions,hooks")

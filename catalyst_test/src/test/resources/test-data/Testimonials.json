@@ -1,0 +1,141 @@
+{
+  "HeaderLogoLink": {
+    "xpath": "//header//div[@class='logo']/a | //a[img/@alt='Catalyst Logo']",
+    "type": "link",
+    "action": "click",
+    "result": "index.html"
+  },
+
+  "NavAboutLink": {
+    "xpath": "//a[@href='about.html'] | //nav//a[text()='About']",
+    "type": "link",
+    "action": "click",
+    "result": "about.html"
+  },
+
+  "NavServicesLink": {
+    "xpath": "//a[@href='services.html'] | //nav//a[text()='Services']",
+    "type": "link",
+    "action": "click",
+    "result": "services.html"
+  },
+
+  "NavTestimonialsLink": {
+    "xpath": "//a[@href='testimonials.html'] | //nav//a[text()='Testimonials']",
+    "type": "link",
+    "action": "click",
+    "result": "testimonials.html"
+  },
+
+  "NavUploadLink": {
+    "xpath": "//a[@href='upload.html'] | //nav//a[text()='Upload']",
+    "type": "link",
+    "action": "click",
+    "result": "upload.html"
+  },
+
+  "NavContactLink": {
+    "xpath": "//a[@href='contact.html'] | //nav//a[text()='Contact']",
+    "type": "link",
+    "action": "click",
+    "result": "contact.html"
+  },
+
+  "NavPrivacyLink": {
+    "xpath": "//a[@href='privacy.html'] | //nav//a[text()='Privacy']",
+    "type": "link",
+    "action": "click",
+    "result": "privacy.html"
+  },
+
+  "NavFAQLink": {
+    "xpath": "//a[@href='faq.html'] | //nav//a[text()='FAQ']",
+    "type": "link",
+    "action": "click",
+    "result": "faq.html"
+  },
+
+  "PageTitleTestimonials": {
+    "xpath": "//h1[text()='What Attorneys Say About Working With Janet']",
+    "type": "heading",
+    "action": "assert",
+    "result": "What Attorneys Say About Working With Janet"
+  },
+
+  "TestimonialSection": {
+    "xpath": "//section[@class='testimonials']",
+    "type": "container",
+    "action": "assert_visible",
+    "result": "visible"
+  },
+
+  "Testimonial1Quote": {
+    "xpath": "//li[@class='testimonial left'][1]//p[@class='quote']",
+    "type": "text",
+    "action": "assert",
+    "result": "I have had the personal and professional privilege of working with Janet as an expert witness in medical negligence cases"
+  },
+
+  "Testimonial1Attribution": {
+    "xpath": "//li[@class='testimonial left'][1]//p[@class='attribution']",
+    "type": "text",
+    "action": "assert",
+    "result": "— Attorney, Medical Malpractice Firm"
+  },
+
+  "Testimonial2Quote": {
+    "xpath": "//li[@class='testimonial right']//p[@class='quote']",
+    "type": "text",
+    "action": "assert",
+    "result": "Her reports are litigation-ready and strategically sound. I trust her judgment implicitly."
+  },
+
+  "Testimonial2Attribution": {
+    "xpath": "//li[@class='testimonial right']//p[@class='attribution']",
+    "type": "text",
+    "action": "assert",
+    "result": "— Partner, Personal Injury Practice"
+  },
+
+  "Testimonial3Quote": {
+    "xpath": "//li[@class='testimonial left'][2]//p[@class='quote']",
+    "type": "text",
+    "action": "assert",
+    "result": "Professional, responsive, and deeply knowledgeable. Janet is a true asset to any legal team."
+  },
+
+  "Testimonial3Attribution": {
+    "xpath": "//li[@class='testimonial left'][2]//p[@class='attribution']",
+    "type": "text",
+    "action": "assert",
+    "result": "— Trial Attorney, Complex Claims Division"
+  },
+
+  "TestimonialAvatar1": {
+    "xpath": "//img[@src='images/avatar1.png' and contains(@alt, 'Professional silhouette')]",
+    "type": "image",
+    "action": "assert_visible",
+    "result": "visible"
+  },
+
+  "TestimonialAvatar2": {
+    "xpath": "//img[@src='images/avatar2.png' and contains(@alt, 'Professional silhouette')]",
+    "type": "image",
+    "action": "assert_visible",
+    "result": "visible"
+  },
+
+  "FooterCopyright": {
+    "xpath": "//footer//p[contains(text(),'© 2025 Catalyst Legal Nurse Consulting')]",
+    "type": "text",
+    "action": "assert",
+    "result": "© 2025 Catalyst Legal Nurse Consulting of SC, LLC"
+  },
+
+  "MainContentArea": {
+    "xpath": "//main[@class='content']",
+    "type": "container",
+    "action": "assert_visible",
+    "result": "visible"
+  }
+}

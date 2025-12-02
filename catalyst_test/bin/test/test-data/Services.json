@@ -1,0 +1,127 @@
+{
+  "HeaderLogoLink": {
+    "xpath": "//header//div[@class='logo']/a | //a[img/@alt='Catalyst Logo']",
+    "type": "link",
+    "action": "click",
+    "result": "index.html"
+  },
+
+  "NavAboutLink": {
+    "xpath": "//a[@href='about.html'] | //nav//a[text()='About']",
+    "type": "link",
+    "action": "click",
+    "result": "about.html"
+  },
+
+  "NavServicesLink": {
+    "xpath": "//a[@href='services.html'] | //nav//a[text()='Services']",
+    "type": "link",
+    "action": "click",
+    "result": "services.html"
+  },
+
+  "NavTestimonialsLink": {
+    "xpath": "//a[@href='testimonials.html'] | //nav//a[text()='Testimonials']",
+    "type": "link",
+    "action": "click",
+    "result": "testimonials.html"
+  },
+
+  "NavUploadLink": {
+    "xpath": "//a[@href='upload.html'] | //nav//a[text()='Upload']",
+    "type": "link",
+    "action": "click",
+    "result": "upload.html"
+  },
+
+  "NavContactLink": {
+    "xpath": "//a[@href='contact.html'] | //nav//a[text()='Contact']",
+    "type": "link",
+    "action": "click",
+    "result": "contact.html"
+  },
+
+  "NavPrivacyLink": {
+    "xpath": "//a[@href='privacy.html'] | //nav//a[text()='Privacy']",
+    "type": "link",
+    "action": "click",
+    "result": "privacy.html"
+  },
+
+  "NavFAQLink": {
+    "xpath": "//a[@href='faq.html'] | //nav//a[text()='FAQ']",
+    "type": "link",
+    "action": "click",
+    "result": "faq.html"
+  },
+
+  "PageTitleServices": {
+    "xpath": "//h1[contains(text(),'Strategic Legal Nurse Consulting Services')]",
+    "type": "heading",
+    "action": "assert",
+    "result": "Strategic Legal Nurse Consulting Services"
+  },
+
+  "PageSubtitle": {
+    "xpath": "//p[@class='subtitle' and contains(text(),'Janet DiNino offers')]",
+    "type": "text",
+    "action": "assert_visible",
+    "result": "visible"
+  },
+
+  "SectionMedicalRecordReview": {
+    "xpath": "//h2[text()='Medical Record Review']/following-sibling::ul",
+   "type": "heading",
+    "action": "assert_visible",
+    "result": "visible"
+  },
+
+  "SectionWoundCare": {
+    "xpath": "//h2[text()='Wound Care Litigation Support']/following-sibling::ul",
+    "type": "container",
+    "action": "assert_visible",
+    "result": "visible"
+  },
+
+  "SectionLongTermCare": {
+    "xpath": "//h2[text()='Long-Term Care Case Consulting']/following-sibling::ul",
+    "type": "container",
+    "action": "assert_visible",
+    "result": "visible"
+  },
+
+  "SectionComplianceRegulatory": {
+    "xpath": "//h2[text()='Compliance and Regulatory Insight']/following-sibling::ul",
+    "type": "container",
+    "action": "assert_visible",
+    "result": "visible"
+  },
+
+  "SectionExpertWitness": {
+    "xpath": "//h2[text()='Expert Witness Preparation']/following-sibling::ul",
+    "type": "container",
+    "action": "assert_visible",
+    "result": "visible"
+  },
+
+  "SidebarHandshakeImage": {
+    "xpath": "//aside[@class='sidebar-image']//img[@alt='Image of nurse and lawyer']",
+    "type": "image",
+    "action": "assert_alt",
+    "result": "Image of nurse and lawyer"
+  },
+
+  "FooterCopyright": {
+    "xpath": "//footer//p[contains(text(),'© 2025 Catalyst Legal Nurse Consulting')]",
+    "type": "text",
+    "action": "assert",
+    "result": "© 2025 Catalyst Legal Nurse Consulting of SC, LLC"
+  },
+
+  "MainContentArea": {
+    "xpath": "//main[@class='content']",
+    "type": "container",
+    "action": "assert_visible",
+    "result": "visible"
+  }
+}

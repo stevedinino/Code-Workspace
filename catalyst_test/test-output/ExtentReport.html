@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Catalyst UI Automation</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 21, 2025 09:12:19 PM</span></a>
+<a href="#"><span class="badge badge-primary">Nov 30, 2025 07:58:36 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,7 +66,6 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
@@ -75,25 +74,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Interact with Contact page element and validate result</p>
+            <p class="name">Interact with Testimonials page element and validate result</p>
             <p class="text-sm">
-              <span>9:12:20 PM</span> / <span>00:00:13:947</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:58:37 PM</span> / <span>00:00:17:081</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with Contact page element and validate result</h5>
-<span class='badge badge-success'>11.21.2025 9:12:20 PM</span>
-<span class='badge badge-danger'>11.21.2025 9:12:34 PM</span>
-<span class='badge badge-default'>00:00:13:947</span>
+<h5 class="test-status text-fail">Interact with Testimonials page element and validate result</h5>
+<span class='badge badge-success'>11.30.2025 7:58:37 PM</span>
+<span class='badge badge-danger'>11.30.2025 7:58:54 PM</span>
+<span class='badge badge-default'>00:00:17:081</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -105,77 +104,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:20 PM</td>
+        <td>7:58:37 PM</td>
         <td>
           🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:29 PM</td>
+        <td>7:58:46 PM</td>
         <td>
-          🌐 Navigated to: https://www.catalystlegalnurse.com/contact.html
+          🌐 Navigated to: https://www.catalystlegalnurse.com/testimonials.html
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:58:52 PM</td>
+        <td>
+          ❌ Failed to confirm page load for: Testimonials — Expected condition failed: waiting for presence of element located by: By.xpath: //h1[contains(text(),'Testimonials')] (tried for 5 second(s) with 500 milliseconds interval)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:30 PM</td>
-        <td>
-          ✅ Page heading loaded: //h1[contains(text(),'Contact')]
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:30 PM</td>
-        <td>
-          📦 Locator JSON loaded successfully for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:30 PM</td>
-        <td>
-          📦 Loaded XPath repository for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:31 PM</td>
-        <td>
-          ✅ Found element for key: HeaderLogoLink — Tag: <a>, Outer HTML: <a href="index.html"><img src="images/logo.png" alt="Catalyst Logo"></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:31 PM</td>
-        <td>
-          🖱️ Clicked element for key: HeaderLogoLink
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:31 PM</td>
-        <td>
-          Validating navigation for key: HeaderLogoLink
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:12:31 PM</td>
-        <td>
-          ✅ Navigation validated for key: HeaderLogoLink → URL contains: index.html
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:34 PM</td>
+        <td>7:58:54 PM</td>
         <td>
           🧹 WebDriver quit successfully.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:34 PM</td>
+        <td>7:58:54 PM</td>
         <td>
           🧹 WebDriver session closed after scenario.
         </td>
@@ -185,25 +142,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="fail" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Interact with Contact page element and validate result</p>
+            <p class="name">Interact with Testimonials page element and validate result</p>
             <p class="text-sm">
-              <span>9:12:35 PM</span> / <span>00:00:13:329</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:58:55 PM</span> / <span>00:00:14:513</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with Contact page element and validate result</h5>
-<span class='badge badge-success'>11.21.2025 9:12:35 PM</span>
-<span class='badge badge-danger'>11.21.2025 9:12:48 PM</span>
-<span class='badge badge-default'>00:00:13:329</span>
+<h5 class="test-status text-fail">Interact with Testimonials page element and validate result</h5>
+<span class='badge badge-success'>11.30.2025 7:58:55 PM</span>
+<span class='badge badge-danger'>11.30.2025 7:59:10 PM</span>
+<span class='badge badge-default'>00:00:14:513</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -215,49 +172,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:35 PM</td>
+        <td>7:58:55 PM</td>
         <td>
           🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:43 PM</td>
+        <td>7:59:03 PM</td>
         <td>
-          🌐 Navigated to: https://www.catalystlegalnurse.com/contact.html
+          🌐 Navigated to: https://www.catalystlegalnurse.com/testimonials.html
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:59:08 PM</td>
+        <td>
+          ❌ Failed to confirm page load for: Testimonials — Expected condition failed: waiting for presence of element located by: By.xpath: //h1[contains(text(),'Testimonials')] (tried for 5 second(s) with 500 milliseconds interval)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:43 PM</td>
-        <td>
-          ✅ Page heading loaded: //h1[contains(text(),'Contact')]
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:43 PM</td>
-        <td>
-          📦 Locator JSON loaded successfully for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:43 PM</td>
-        <td>
-          📦 Loaded XPath repository for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:48 PM</td>
+        <td>7:59:10 PM</td>
         <td>
           🧹 WebDriver quit successfully.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:48 PM</td>
+        <td>7:59:10 PM</td>
         <td>
           🧹 WebDriver session closed after scenario.
         </td>
@@ -267,25 +210,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
+        <li class="test-item"  status="fail" test-id="3"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Interact with Contact page element and validate result</p>
+            <p class="name">Interact with Testimonials page element and validate result</p>
             <p class="text-sm">
-              <span>9:12:48 PM</span> / <span>00:00:12:949</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:59:10 PM</span> / <span>00:00:13:846</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with Contact page element and validate result</h5>
-<span class='badge badge-success'>11.21.2025 9:12:48 PM</span>
-<span class='badge badge-danger'>11.21.2025 9:13:01 PM</span>
-<span class='badge badge-default'>00:00:12:949</span>
+<h5 class="test-status text-fail">Interact with Testimonials page element and validate result</h5>
+<span class='badge badge-success'>11.30.2025 7:59:10 PM</span>
+<span class='badge badge-danger'>11.30.2025 7:59:24 PM</span>
+<span class='badge badge-default'>00:00:13:846</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -297,77 +240,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:48 PM</td>
+        <td>7:59:10 PM</td>
         <td>
           🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:55 PM</td>
+        <td>7:59:17 PM</td>
         <td>
-          🌐 Navigated to: https://www.catalystlegalnurse.com/contact.html
+          🌐 Navigated to: https://www.catalystlegalnurse.com/testimonials.html
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:59:22 PM</td>
+        <td>
+          ❌ Failed to confirm page load for: Testimonials — Expected condition failed: waiting for presence of element located by: By.xpath: //h1[contains(text(),'Testimonials')] (tried for 5 second(s) with 500 milliseconds interval)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:55 PM</td>
-        <td>
-          ✅ Page heading loaded: //h1[contains(text(),'Contact')]
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:55 PM</td>
-        <td>
-          📦 Locator JSON loaded successfully for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:55 PM</td>
-        <td>
-          📦 Loaded XPath repository for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:55 PM</td>
-        <td>
-          ✅ Found element for key: NavAboutLink — Tag: <a>, Outer HTML: <a href="about.html">About</a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:56 PM</td>
-        <td>
-          🖱️ Clicked element for key: NavAboutLink
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:12:56 PM</td>
-        <td>
-          Validating navigation for key: NavAboutLink
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:12:56 PM</td>
-        <td>
-          ✅ Navigation validated for key: NavAboutLink → URL contains: about.html
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:01 PM</td>
+        <td>7:59:24 PM</td>
         <td>
           🧹 WebDriver quit successfully.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:01 PM</td>
+        <td>7:59:24 PM</td>
         <td>
           🧹 WebDriver session closed after scenario.
         </td>
@@ -377,25 +278,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="4"
+        <li class="test-item"  status="fail" test-id="4"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Interact with Contact page element and validate result</p>
+            <p class="name">Interact with Testimonials page element and validate result</p>
             <p class="text-sm">
-              <span>9:13:01 PM</span> / <span>00:00:10:491</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:59:24 PM</span> / <span>00:00:14:903</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with Contact page element and validate result</h5>
-<span class='badge badge-success'>11.21.2025 9:13:01 PM</span>
-<span class='badge badge-danger'>11.21.2025 9:13:12 PM</span>
-<span class='badge badge-default'>00:00:10:491</span>
+<h5 class="test-status text-fail">Interact with Testimonials page element and validate result</h5>
+<span class='badge badge-success'>11.30.2025 7:59:24 PM</span>
+<span class='badge badge-danger'>11.30.2025 7:59:39 PM</span>
+<span class='badge badge-default'>00:00:14:903</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -407,77 +308,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:01 PM</td>
+        <td>7:59:24 PM</td>
         <td>
           🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:08 PM</td>
+        <td>7:59:32 PM</td>
         <td>
-          🌐 Navigated to: https://www.catalystlegalnurse.com/contact.html
+          🌐 Navigated to: https://www.catalystlegalnurse.com/testimonials.html
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:59:37 PM</td>
+        <td>
+          ❌ Failed to confirm page load for: Testimonials — Expected condition failed: waiting for presence of element located by: By.xpath: //h1[contains(text(),'Testimonials')] (tried for 5 second(s) with 500 milliseconds interval)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:08 PM</td>
-        <td>
-          ✅ Page heading loaded: //h1[contains(text(),'Contact')]
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:08 PM</td>
-        <td>
-          📦 Locator JSON loaded successfully for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:08 PM</td>
-        <td>
-          📦 Loaded XPath repository for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:08 PM</td>
-        <td>
-          ✅ Found element for key: NavServicesLink — Tag: <a>, Outer HTML: <a href="services.html">Services</a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:09 PM</td>
-        <td>
-          🖱️ Clicked element for key: NavServicesLink
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:09 PM</td>
-        <td>
-          Validating navigation for key: NavServicesLink
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:13:09 PM</td>
-        <td>
-          ✅ Navigation validated for key: NavServicesLink → URL contains: services.html
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:12 PM</td>
+        <td>7:59:39 PM</td>
         <td>
           🧹 WebDriver quit successfully.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:12 PM</td>
+        <td>7:59:39 PM</td>
         <td>
           🧹 WebDriver session closed after scenario.
         </td>
@@ -487,25 +346,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="5"
+        <li class="test-item"  status="fail" test-id="5"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Interact with Contact page element and validate result</p>
+            <p class="name">Interact with Testimonials page element and validate result</p>
             <p class="text-sm">
-              <span>9:13:12 PM</span> / <span>00:00:12:652</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:59:39 PM</span> / <span>00:00:17:197</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with Contact page element and validate result</h5>
-<span class='badge badge-success'>11.21.2025 9:13:12 PM</span>
-<span class='badge badge-danger'>11.21.2025 9:13:24 PM</span>
-<span class='badge badge-default'>00:00:12:652</span>
+<h5 class="test-status text-fail">Interact with Testimonials page element and validate result</h5>
+<span class='badge badge-success'>11.30.2025 7:59:39 PM</span>
+<span class='badge badge-danger'>11.30.2025 7:59:56 PM</span>
+<span class='badge badge-default'>00:00:17:197</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -517,77 +376,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:12 PM</td>
+        <td>7:59:39 PM</td>
         <td>
           🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:19 PM</td>
+        <td>7:59:47 PM</td>
         <td>
-          🌐 Navigated to: https://www.catalystlegalnurse.com/contact.html
+          🌐 Navigated to: https://www.catalystlegalnurse.com/testimonials.html
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:59:53 PM</td>
+        <td>
+          ❌ Failed to confirm page load for: Testimonials — Expected condition failed: waiting for presence of element located by: By.xpath: //h1[contains(text(),'Testimonials')] (tried for 5 second(s) with 500 milliseconds interval)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:19 PM</td>
-        <td>
-          ✅ Page heading loaded: //h1[contains(text(),'Contact')]
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:19 PM</td>
-        <td>
-          📦 Locator JSON loaded successfully for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:19 PM</td>
-        <td>
-          📦 Loaded XPath repository for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:19 PM</td>
-        <td>
-          ✅ Found element for key: NavTestimonialsLink — Tag: <a>, Outer HTML: <a href="testimonials.html">Testimonials</a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:20 PM</td>
-        <td>
-          🖱️ Clicked element for key: NavTestimonialsLink
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:20 PM</td>
-        <td>
-          Validating navigation for key: NavTestimonialsLink
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:13:20 PM</td>
-        <td>
-          ✅ Navigation validated for key: NavTestimonialsLink → URL contains: testimonials.html
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:24 PM</td>
+        <td>7:59:56 PM</td>
         <td>
           🧹 WebDriver quit successfully.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:24 PM</td>
+        <td>7:59:56 PM</td>
         <td>
           🧹 WebDriver session closed after scenario.
         </td>
@@ -597,25 +414,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="6"
+        <li class="test-item"  status="fail" test-id="6"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Interact with Contact page element and validate result</p>
+            <p class="name">Interact with Testimonials page element and validate result</p>
             <p class="text-sm">
-              <span>9:13:24 PM</span> / <span>00:00:09:715</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:59:56 PM</span> / <span>00:00:16:308</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with Contact page element and validate result</h5>
-<span class='badge badge-success'>11.21.2025 9:13:24 PM</span>
-<span class='badge badge-danger'>11.21.2025 9:13:34 PM</span>
-<span class='badge badge-default'>00:00:09:715</span>
+<h5 class="test-status text-fail">Interact with Testimonials page element and validate result</h5>
+<span class='badge badge-success'>11.30.2025 7:59:56 PM</span>
+<span class='badge badge-danger'>11.30.2025 8:00:13 PM</span>
+<span class='badge badge-default'>00:00:16:308</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -627,77 +444,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:24 PM</td>
+        <td>7:59:56 PM</td>
         <td>
           🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:31 PM</td>
+        <td>8:00:04 PM</td>
         <td>
-          🌐 Navigated to: https://www.catalystlegalnurse.com/contact.html
+          🌐 Navigated to: https://www.catalystlegalnurse.com/testimonials.html
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:00:09 PM</td>
+        <td>
+          ❌ Failed to confirm page load for: Testimonials — Expected condition failed: waiting for presence of element located by: By.xpath: //h1[contains(text(),'Testimonials')] (tried for 5 second(s) with 500 milliseconds interval)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:31 PM</td>
-        <td>
-          ✅ Page heading loaded: //h1[contains(text(),'Contact')]
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:31 PM</td>
-        <td>
-          📦 Locator JSON loaded successfully for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:31 PM</td>
-        <td>
-          📦 Loaded XPath repository for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:31 PM</td>
-        <td>
-          ✅ Found element for key: NavUploadLink — Tag: <a>, Outer HTML: <a href="upload.html">Upload</a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:32 PM</td>
-        <td>
-          🖱️ Clicked element for key: NavUploadLink
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:32 PM</td>
-        <td>
-          Validating navigation for key: NavUploadLink
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:13:32 PM</td>
-        <td>
-          ✅ Navigation validated for key: NavUploadLink → URL contains: upload.html
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:34 PM</td>
+        <td>8:00:13 PM</td>
         <td>
           🧹 WebDriver quit successfully.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:34 PM</td>
+        <td>8:00:13 PM</td>
         <td>
           🧹 WebDriver session closed after scenario.
         </td>
@@ -707,25 +482,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="7"
+        <li class="test-item"  status="fail" test-id="7"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Interact with Contact page element and validate result</p>
+            <p class="name">Interact with Testimonials page element and validate result</p>
             <p class="text-sm">
-              <span>9:13:34 PM</span> / <span>00:00:09:370</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:00:13 PM</span> / <span>00:00:17:432</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with Contact page element and validate result</h5>
-<span class='badge badge-success'>11.21.2025 9:13:34 PM</span>
-<span class='badge badge-danger'>11.21.2025 9:13:43 PM</span>
-<span class='badge badge-default'>00:00:09:370</span>
+<h5 class="test-status text-fail">Interact with Testimonials page element and validate result</h5>
+<span class='badge badge-success'>11.30.2025 8:00:13 PM</span>
+<span class='badge badge-danger'>11.30.2025 8:00:30 PM</span>
+<span class='badge badge-default'>00:00:17:432</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -737,77 +512,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:34 PM</td>
+        <td>8:00:13 PM</td>
         <td>
           🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:41 PM</td>
+        <td>8:00:20 PM</td>
         <td>
-          🌐 Navigated to: https://www.catalystlegalnurse.com/contact.html
+          🌐 Navigated to: https://www.catalystlegalnurse.com/testimonials.html
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:00:26 PM</td>
+        <td>
+          ❌ Failed to confirm page load for: Testimonials — Expected condition failed: waiting for presence of element located by: By.xpath: //h1[contains(text(),'Testimonials')] (tried for 5 second(s) with 500 milliseconds interval)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:41 PM</td>
-        <td>
-          ✅ Page heading loaded: //h1[contains(text(),'Contact')]
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:41 PM</td>
-        <td>
-          📦 Locator JSON loaded successfully for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:41 PM</td>
-        <td>
-          📦 Loaded XPath repository for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:41 PM</td>
-        <td>
-          ✅ Found element for key: NavContactLink — Tag: <a>, Outer HTML: <a href="contact.html">Contact</a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:41 PM</td>
-        <td>
-          🖱️ Clicked element for key: NavContactLink
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:41 PM</td>
-        <td>
-          Validating navigation for key: NavContactLink
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:13:41 PM</td>
-        <td>
-          ✅ Navigation validated for key: NavContactLink → URL contains: contact.html
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:43 PM</td>
+        <td>8:00:30 PM</td>
         <td>
           🧹 WebDriver quit successfully.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:43 PM</td>
+        <td>8:00:30 PM</td>
         <td>
           🧹 WebDriver session closed after scenario.
         </td>
@@ -817,25 +550,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="8"
+        <li class="test-item"  status="fail" test-id="8"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Interact with Contact page element and validate result</p>
+            <p class="name">Interact with Testimonials page element and validate result</p>
             <p class="text-sm">
-              <span>9:13:44 PM</span> / <span>00:00:16:297</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:00:30 PM</span> / <span>00:00:19:582</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with Contact page element and validate result</h5>
-<span class='badge badge-success'>11.21.2025 9:13:44 PM</span>
-<span class='badge badge-danger'>11.21.2025 9:14:00 PM</span>
-<span class='badge badge-default'>00:00:16:297</span>
+<h5 class="test-status text-fail">Interact with Testimonials page element and validate result</h5>
+<span class='badge badge-success'>11.30.2025 8:00:30 PM</span>
+<span class='badge badge-danger'>11.30.2025 8:00:50 PM</span>
+<span class='badge badge-default'>00:00:19:582</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -847,77 +580,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:44 PM</td>
+        <td>8:00:30 PM</td>
         <td>
           🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:51 PM</td>
+        <td>8:00:40 PM</td>
         <td>
-          🌐 Navigated to: https://www.catalystlegalnurse.com/contact.html
+          🌐 Navigated to: https://www.catalystlegalnurse.com/testimonials.html
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:00:45 PM</td>
+        <td>
+          ❌ Failed to confirm page load for: Testimonials — Expected condition failed: waiting for presence of element located by: By.xpath: //h1[contains(text(),'Testimonials')] (tried for 5 second(s) with 500 milliseconds interval)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:51 PM</td>
-        <td>
-          ✅ Page heading loaded: //h1[contains(text(),'Contact')]
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:51 PM</td>
-        <td>
-          📦 Locator JSON loaded successfully for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:51 PM</td>
-        <td>
-          📦 Loaded XPath repository for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:51 PM</td>
-        <td>
-          ✅ Found element for key: NavPrivacyLink — Tag: <a>, Outer HTML: <a href="privacy.html">Privacy</a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:52 PM</td>
-        <td>
-          🖱️ Clicked element for key: NavPrivacyLink
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:13:52 PM</td>
-        <td>
-          Validating navigation for key: NavPrivacyLink
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:13:52 PM</td>
-        <td>
-          ✅ Navigation validated for key: NavPrivacyLink → URL contains: privacy.html
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:00 PM</td>
+        <td>8:00:50 PM</td>
         <td>
           🧹 WebDriver quit successfully.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:00 PM</td>
+        <td>8:00:50 PM</td>
         <td>
           🧹 WebDriver session closed after scenario.
         </td>
@@ -927,25 +618,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="9"
+        <li class="test-item"  status="fail" test-id="9"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Interact with Contact page element and validate result</p>
+            <p class="name">Interact with Testimonials page element and validate result</p>
             <p class="text-sm">
-              <span>9:14:00 PM</span> / <span>00:00:13:073</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:00:50 PM</span> / <span>00:00:21:951</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with Contact page element and validate result</h5>
-<span class='badge badge-success'>11.21.2025 9:14:00 PM</span>
-<span class='badge badge-danger'>11.21.2025 9:14:13 PM</span>
-<span class='badge badge-default'>00:00:13:073</span>
+<h5 class="test-status text-fail">Interact with Testimonials page element and validate result</h5>
+<span class='badge badge-success'>11.30.2025 8:00:50 PM</span>
+<span class='badge badge-danger'>11.30.2025 8:01:12 PM</span>
+<span class='badge badge-default'>00:00:21:951</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -957,77 +648,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:00 PM</td>
+        <td>8:00:50 PM</td>
         <td>
           🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:07 PM</td>
+        <td>8:01:01 PM</td>
         <td>
-          🌐 Navigated to: https://www.catalystlegalnurse.com/contact.html
+          🌐 Navigated to: https://www.catalystlegalnurse.com/testimonials.html
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:01:06 PM</td>
+        <td>
+          ❌ Failed to confirm page load for: Testimonials — Expected condition failed: waiting for presence of element located by: By.xpath: //h1[contains(text(),'Testimonials')] (tried for 5 second(s) with 500 milliseconds interval)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:07 PM</td>
-        <td>
-          ✅ Page heading loaded: //h1[contains(text(),'Contact')]
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:07 PM</td>
-        <td>
-          📦 Locator JSON loaded successfully for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:07 PM</td>
-        <td>
-          📦 Loaded XPath repository for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:07 PM</td>
-        <td>
-          ✅ Found element for key: NavFAQLink — Tag: <a>, Outer HTML: <a href="faq.html">FAQ</a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:07 PM</td>
-        <td>
-          🖱️ Clicked element for key: NavFAQLink
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:07 PM</td>
-        <td>
-          Validating navigation for key: NavFAQLink
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:14:07 PM</td>
-        <td>
-          ✅ Navigation validated for key: NavFAQLink → URL contains: faq.html
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:13 PM</td>
+        <td>8:01:12 PM</td>
         <td>
           🧹 WebDriver quit successfully.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:13 PM</td>
+        <td>8:01:12 PM</td>
         <td>
           🧹 WebDriver session closed after scenario.
         </td>
@@ -1037,25 +686,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="10"
+        <li class="test-item"  status="fail" test-id="10"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Interact with Contact page element and validate result</p>
+            <p class="name">Interact with Testimonials page element and validate result</p>
             <p class="text-sm">
-              <span>9:14:13 PM</span> / <span>00:00:10:116</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:01:12 PM</span> / <span>00:00:18:441</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with Contact page element and validate result</h5>
-<span class='badge badge-success'>11.21.2025 9:14:13 PM</span>
-<span class='badge badge-danger'>11.21.2025 9:14:23 PM</span>
-<span class='badge badge-default'>00:00:10:116</span>
+<h5 class="test-status text-fail">Interact with Testimonials page element and validate result</h5>
+<span class='badge badge-success'>11.30.2025 8:01:12 PM</span>
+<span class='badge badge-danger'>11.30.2025 8:01:30 PM</span>
+<span class='badge badge-default'>00:00:18:441</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -1067,70 +716,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:13 PM</td>
+        <td>8:01:12 PM</td>
         <td>
           🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:20 PM</td>
+        <td>8:01:22 PM</td>
         <td>
-          🌐 Navigated to: https://www.catalystlegalnurse.com/contact.html
+          🌐 Navigated to: https://www.catalystlegalnurse.com/testimonials.html
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:01:28 PM</td>
+        <td>
+          ❌ Failed to confirm page load for: Testimonials — Expected condition failed: waiting for presence of element located by: By.xpath: //h1[contains(text(),'Testimonials')] (tried for 5 second(s) with 500 milliseconds interval)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:20 PM</td>
-        <td>
-          ✅ Page heading loaded: //h1[contains(text(),'Contact')]
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:20 PM</td>
-        <td>
-          📦 Locator JSON loaded successfully for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:20 PM</td>
-        <td>
-          📦 Loaded XPath repository for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:20 PM</td>
-        <td>
-          🔍 No interaction required for action: assert (key: PageTitleContact)
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:20 PM</td>
-        <td>
-          Validating result for key: PageTitleContact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:14:20 PM</td>
-        <td>
-          ✅ Text matches for key: PageTitleContact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:23 PM</td>
+        <td>8:01:30 PM</td>
         <td>
           🧹 WebDriver quit successfully.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:23 PM</td>
+        <td>8:01:30 PM</td>
         <td>
           🧹 WebDriver session closed after scenario.
         </td>
@@ -1145,9 +759,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Interact with Contact page element and validate result</p>
+            <p class="name">Interact with Testimonials page element and validate result</p>
             <p class="text-sm">
-              <span>9:14:23 PM</span> / <span>00:00:27:290</span>
+              <span>8:01:30 PM</span> / <span>00:00:17:639</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -1155,10 +769,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Interact with Contact page element and validate result</h5>
-<span class='badge badge-success'>11.21.2025 9:14:23 PM</span>
-<span class='badge badge-danger'>11.21.2025 9:14:51 PM</span>
-<span class='badge badge-default'>00:00:27:290</span>
+<h5 class="test-status text-fail">Interact with Testimonials page element and validate result</h5>
+<span class='badge badge-success'>11.30.2025 8:01:30 PM</span>
+<span class='badge badge-danger'>11.30.2025 8:01:48 PM</span>
+<span class='badge badge-default'>00:00:17:639</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -1170,77 +784,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:23 PM</td>
+        <td>8:01:30 PM</td>
         <td>
           🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:30 PM</td>
+        <td>8:01:41 PM</td>
         <td>
-          🌐 Navigated to: https://www.catalystlegalnurse.com/contact.html
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:30 PM</td>
-        <td>
-          ✅ Page heading loaded: //h1[contains(text(),'Contact')]
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:30 PM</td>
-        <td>
-          📦 Locator JSON loaded successfully for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:30 PM</td>
-        <td>
-          📦 Loaded XPath repository for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:30 PM</td>
-        <td>
-          ✅ Found element for key: ContactEmailLink — Tag: <a>, Outer HTML: <a href="mailto:janet@catalystlegalnurse.com">janet@catalystlegalnurse.com</a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:31 PM</td>
-        <td>
-          🖱️ Clicked element for key: ContactEmailLink
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:31 PM</td>
-        <td>
-          Validating navigation for key: ContactEmailLink
+          🌐 Navigated to: https://www.catalystlegalnurse.com/testimonials.html
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:14:31 PM</td>
+        <td>8:01:46 PM</td>
         <td>
-          ❌ Navigation failed for key: ContactEmailLink. Expected URL to contain: "mailto:janet@catalystlegalnurse.com", but got: "https://www.catalystlegalnurse.com/contact.html"
+          ❌ Failed to confirm page load for: Testimonials — Expected condition failed: waiting for presence of element located by: By.xpath: //h1[contains(text(),'Testimonials')] (tried for 5 second(s) with 500 milliseconds interval)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:51 PM</td>
+        <td>8:01:48 PM</td>
         <td>
           🧹 WebDriver quit successfully.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:51 PM</td>
+        <td>8:01:48 PM</td>
         <td>
           🧹 WebDriver session closed after scenario.
         </td>
@@ -1255,9 +827,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Interact with Contact page element and validate result</p>
+            <p class="name">Interact with Testimonials page element and validate result</p>
             <p class="text-sm">
-              <span>9:14:51 PM</span> / <span>00:00:21:063</span>
+              <span>8:01:48 PM</span> / <span>00:00:17:248</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -1265,10 +837,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Interact with Contact page element and validate result</h5>
-<span class='badge badge-success'>11.21.2025 9:14:51 PM</span>
-<span class='badge badge-danger'>11.21.2025 9:15:12 PM</span>
-<span class='badge badge-default'>00:00:21:063</span>
+<h5 class="test-status text-fail">Interact with Testimonials page element and validate result</h5>
+<span class='badge badge-success'>11.30.2025 8:01:48 PM</span>
+<span class='badge badge-danger'>11.30.2025 8:02:05 PM</span>
+<span class='badge badge-default'>00:00:17:248</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -1280,70 +852,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:14:51 PM</td>
+        <td>8:01:48 PM</td>
         <td>
           🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:01 PM</td>
+        <td>8:01:57 PM</td>
         <td>
-          🌐 Navigated to: https://www.catalystlegalnurse.com/contact.html
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:01 PM</td>
-        <td>
-          ✅ Page heading loaded: //h1[contains(text(),'Contact')]
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:01 PM</td>
-        <td>
-          📦 Locator JSON loaded successfully for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:01 PM</td>
-        <td>
-          📦 Loaded XPath repository for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:01 PM</td>
-        <td>
-          🔍 No interaction required for action: assert (key: ContactPhoneNumber)
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:01 PM</td>
-        <td>
-          Validating result for key: ContactPhoneNumber
+          🌐 Navigated to: https://www.catalystlegalnurse.com/testimonials.html
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:15:01 PM</td>
+        <td>8:02:03 PM</td>
         <td>
-          ❌ Text mismatch for key: ContactPhoneNumber. Expected: "(803) 740-9964", Found: "Phone: (803) 740-9964"
+          ❌ Failed to confirm page load for: Testimonials — Expected condition failed: waiting for presence of element located by: By.xpath: //h1[contains(text(),'Testimonials')] (tried for 5 second(s) with 500 milliseconds interval)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:12 PM</td>
+        <td>8:02:05 PM</td>
         <td>
           🧹 WebDriver quit successfully.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:12 PM</td>
+        <td>8:02:05 PM</td>
         <td>
           🧹 WebDriver session closed after scenario.
         </td>
@@ -1358,9 +895,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Interact with Contact page element and validate result</p>
+            <p class="name">Interact with Testimonials page element and validate result</p>
             <p class="text-sm">
-              <span>9:15:12 PM</span> / <span>00:00:15:753</span>
+              <span>8:02:06 PM</span> / <span>00:00:16:479</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -1368,10 +905,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Interact with Contact page element and validate result</h5>
-<span class='badge badge-success'>11.21.2025 9:15:12 PM</span>
-<span class='badge badge-danger'>11.21.2025 9:15:28 PM</span>
-<span class='badge badge-default'>00:00:15:753</span>
+<h5 class="test-status text-fail">Interact with Testimonials page element and validate result</h5>
+<span class='badge badge-success'>11.30.2025 8:02:06 PM</span>
+<span class='badge badge-danger'>11.30.2025 8:02:22 PM</span>
+<span class='badge badge-default'>00:00:16:479</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -1383,77 +920,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:12 PM</td>
+        <td>8:02:06 PM</td>
         <td>
           🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:19 PM</td>
+        <td>8:02:13 PM</td>
         <td>
-          🌐 Navigated to: https://www.catalystlegalnurse.com/contact.html
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:19 PM</td>
-        <td>
-          ✅ Page heading loaded: //h1[contains(text(),'Contact')]
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:19 PM</td>
-        <td>
-          📦 Locator JSON loaded successfully for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:19 PM</td>
-        <td>
-          📦 Loaded XPath repository for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:19 PM</td>
-        <td>
-          ✅ Found element for key: BusinessCardDownloadLink — Tag: <a>, Outer HTML: <a href="assets/business-card.svg" target="_blank" rel="noopener">Download Janet’s Business Card</a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:19 PM</td>
-        <td>
-          🖱️ Clicked element for key: BusinessCardDownloadLink
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:19 PM</td>
-        <td>
-          Validating navigation for key: BusinessCardDownloadLink
+          🌐 Navigated to: https://www.catalystlegalnurse.com/testimonials.html
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:15:19 PM</td>
+        <td>8:02:18 PM</td>
         <td>
-          ❌ Navigation failed for key: BusinessCardDownloadLink. Expected URL to contain: "downloads business-card.svg", but got: "https://www.catalystlegalnurse.com/contact.html"
+          ❌ Failed to confirm page load for: Testimonials — Expected condition failed: waiting for presence of element located by: By.xpath: //h1[contains(text(),'Testimonials')] (tried for 5 second(s) with 500 milliseconds interval)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:28 PM</td>
+        <td>8:02:22 PM</td>
         <td>
           🧹 WebDriver quit successfully.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:28 PM</td>
+        <td>8:02:22 PM</td>
         <td>
           🧹 WebDriver session closed after scenario.
         </td>
@@ -1468,9 +963,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Interact with Contact page element and validate result</p>
+            <p class="name">Interact with Testimonials page element and validate result</p>
             <p class="text-sm">
-              <span>9:15:28 PM</span> / <span>00:00:10:301</span>
+              <span>8:02:22 PM</span> / <span>00:00:15:770</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -1478,10 +973,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Interact with Contact page element and validate result</h5>
-<span class='badge badge-success'>11.21.2025 9:15:28 PM</span>
-<span class='badge badge-danger'>11.21.2025 9:15:38 PM</span>
-<span class='badge badge-default'>00:00:10:301</span>
+<h5 class="test-status text-fail">Interact with Testimonials page element and validate result</h5>
+<span class='badge badge-success'>11.30.2025 8:02:22 PM</span>
+<span class='badge badge-danger'>11.30.2025 8:02:38 PM</span>
+<span class='badge badge-default'>00:00:15:770</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -1493,70 +988,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:28 PM</td>
+        <td>8:02:22 PM</td>
         <td>
           🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:34 PM</td>
+        <td>8:02:31 PM</td>
         <td>
-          🌐 Navigated to: https://www.catalystlegalnurse.com/contact.html
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:34 PM</td>
-        <td>
-          ✅ Page heading loaded: //h1[contains(text(),'Contact')]
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:34 PM</td>
-        <td>
-          📦 Locator JSON loaded successfully for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:34 PM</td>
-        <td>
-          📦 Loaded XPath repository for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:34 PM</td>
-        <td>
-          🔍 No interaction required for action: assert (key: FooterCopyright)
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:34 PM</td>
-        <td>
-          Validating result for key: FooterCopyright
+          🌐 Navigated to: https://www.catalystlegalnurse.com/testimonials.html
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:15:34 PM</td>
+        <td>8:02:36 PM</td>
         <td>
-          ❌ Text mismatch for key: FooterCopyright. Expected: "© 2025 Catalyst Legal Nurse Consulting", Found: "© 2025 Catalyst Legal Nurse Consulting of SC, LLC"
+          ❌ Failed to confirm page load for: Testimonials — Expected condition failed: waiting for presence of element located by: By.xpath: //h1[contains(text(),'Testimonials')] (tried for 5 second(s) with 500 milliseconds interval)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:38 PM</td>
+        <td>8:02:38 PM</td>
         <td>
           🧹 WebDriver quit successfully.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:38 PM</td>
+        <td>8:02:38 PM</td>
         <td>
           🧹 WebDriver session closed after scenario.
         </td>
@@ -1566,25 +1026,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="15"
+        <li class="test-item"  status="fail" test-id="15"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Interact with Contact page element and validate result</p>
+            <p class="name">Interact with Testimonials page element and validate result</p>
             <p class="text-sm">
-              <span>9:15:38 PM</span> / <span>00:00:10:436</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:02:38 PM</span> / <span>00:00:15:502</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Interact with Contact page element and validate result</h5>
-<span class='badge badge-success'>11.21.2025 9:15:38 PM</span>
-<span class='badge badge-danger'>11.21.2025 9:15:48 PM</span>
-<span class='badge badge-default'>00:00:10:436</span>
+<h5 class="test-status text-fail">Interact with Testimonials page element and validate result</h5>
+<span class='badge badge-success'>11.30.2025 8:02:38 PM</span>
+<span class='badge badge-danger'>11.30.2025 8:02:54 PM</span>
+<span class='badge badge-default'>00:00:15:502</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -1596,70 +1056,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:38 PM</td>
+        <td>8:02:38 PM</td>
         <td>
           🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:45 PM</td>
+        <td>8:02:46 PM</td>
         <td>
-          🌐 Navigated to: https://www.catalystlegalnurse.com/contact.html
+          🌐 Navigated to: https://www.catalystlegalnurse.com/testimonials.html
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:02:51 PM</td>
+        <td>
+          ❌ Failed to confirm page load for: Testimonials — Expected condition failed: waiting for presence of element located by: By.xpath: //h1[contains(text(),'Testimonials')] (tried for 5 second(s) with 500 milliseconds interval)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:45 PM</td>
-        <td>
-          ✅ Page heading loaded: //h1[contains(text(),'Contact')]
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:45 PM</td>
-        <td>
-          📦 Locator JSON loaded successfully for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:45 PM</td>
-        <td>
-          📦 Loaded XPath repository for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:45 PM</td>
-        <td>
-          🔍 No interaction required for action: assert_exists (key: MainContentArea)
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:45 PM</td>
-        <td>
-          Validating result for key: MainContentArea
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:15:45 PM</td>
-        <td>
-          ✅ Element exists for key: MainContentArea
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:48 PM</td>
+        <td>8:02:54 PM</td>
         <td>
           🧹 WebDriver quit successfully.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:48 PM</td>
+        <td>8:02:54 PM</td>
         <td>
           🧹 WebDriver session closed after scenario.
         </td>
@@ -1674,9 +1099,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Interact with Contact page element and validate result</p>
+            <p class="name">Interact with Testimonials page element and validate result</p>
             <p class="text-sm">
-              <span>9:15:48 PM</span> / <span>00:00:16:015</span>
+              <span>8:02:54 PM</span> / <span>00:00:18:390</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -1684,10 +1109,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Interact with Contact page element and validate result</h5>
-<span class='badge badge-success'>11.21.2025 9:15:48 PM</span>
-<span class='badge badge-danger'>11.21.2025 9:16:04 PM</span>
-<span class='badge badge-default'>00:00:16:015</span>
+<h5 class="test-status text-fail">Interact with Testimonials page element and validate result</h5>
+<span class='badge badge-success'>11.30.2025 8:02:54 PM</span>
+<span class='badge badge-danger'>11.30.2025 8:03:12 PM</span>
+<span class='badge badge-default'>00:00:18:390</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -1699,70 +1124,307 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:48 PM</td>
+        <td>8:02:54 PM</td>
         <td>
           🎨 Report theme loaded from config: STANDARD
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:55 PM</td>
+        <td>8:03:04 PM</td>
         <td>
-          🌐 Navigated to: https://www.catalystlegalnurse.com/contact.html
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:55 PM</td>
-        <td>
-          ✅ Page heading loaded: //h1[contains(text(),'Contact')]
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:55 PM</td>
-        <td>
-          📦 Locator JSON loaded successfully for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:55 PM</td>
-        <td>
-          📦 Loaded XPath repository for page: Contact
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:55 PM</td>
-        <td>
-          🔍 No interaction required for action: assert (key: ContactInstructionsText)
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:15:55 PM</td>
-        <td>
-          Validating result for key: ContactInstructionsText
+          🌐 Navigated to: https://www.catalystlegalnurse.com/testimonials.html
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:15:55 PM</td>
+        <td>8:03:10 PM</td>
         <td>
-          ❌ Text mismatch for key: ContactInstructionsText. Expected: "To discuss your case or request a consultation", Found: "To discuss your case or request a consultation, please reach out using the information below:"
+          ❌ Failed to confirm page load for: Testimonials — Expected condition failed: waiting for presence of element located by: By.xpath: //h1[contains(text(),'Testimonials')] (tried for 5 second(s) with 500 milliseconds interval)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:16:04 PM</td>
+        <td>8:03:12 PM</td>
         <td>
           🧹 WebDriver quit successfully.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:16:04 PM</td>
+        <td>8:03:12 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="17"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with Testimonials page element and validate result</p>
+            <p class="text-sm">
+              <span>8:03:12 PM</span> / <span>00:00:19:855</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Interact with Testimonials page element and validate result</h5>
+<span class='badge badge-success'>11.30.2025 8:03:12 PM</span>
+<span class='badge badge-danger'>11.30.2025 8:03:32 PM</span>
+<span class='badge badge-default'>00:00:19:855</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:12 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:22 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com/testimonials.html
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:03:28 PM</td>
+        <td>
+          ❌ Failed to confirm page load for: Testimonials — Expected condition failed: waiting for presence of element located by: By.xpath: //h1[contains(text(),'Testimonials')] (tried for 5 second(s) with 500 milliseconds interval)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:32 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:32 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with Testimonials page element and validate result</p>
+            <p class="text-sm">
+              <span>8:03:32 PM</span> / <span>00:00:19:159</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Interact with Testimonials page element and validate result</h5>
+<span class='badge badge-success'>11.30.2025 8:03:32 PM</span>
+<span class='badge badge-danger'>11.30.2025 8:03:51 PM</span>
+<span class='badge badge-default'>00:00:19:159</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:32 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:43 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com/testimonials.html
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:03:48 PM</td>
+        <td>
+          ❌ Failed to confirm page load for: Testimonials — Expected condition failed: waiting for presence of element located by: By.xpath: //h1[contains(text(),'Testimonials')] (tried for 5 second(s) with 500 milliseconds interval)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:51 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:51 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="19"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with Testimonials page element and validate result</p>
+            <p class="text-sm">
+              <span>8:03:51 PM</span> / <span>00:00:17:298</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Interact with Testimonials page element and validate result</h5>
+<span class='badge badge-success'>11.30.2025 8:03:51 PM</span>
+<span class='badge badge-danger'>11.30.2025 8:04:09 PM</span>
+<span class='badge badge-default'>00:00:17:298</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:51 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:01 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com/testimonials.html
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:04:06 PM</td>
+        <td>
+          ❌ Failed to confirm page load for: Testimonials — Expected condition failed: waiting for presence of element located by: By.xpath: //h1[contains(text(),'Testimonials')] (tried for 5 second(s) with 500 milliseconds interval)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:09 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:09 PM</td>
+        <td>
+          🧹 WebDriver session closed after scenario.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="20"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interact with Testimonials page element and validate result</p>
+            <p class="text-sm">
+              <span>8:04:09 PM</span> / <span>00:00:20:500</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Interact with Testimonials page element and validate result</h5>
+<span class='badge badge-success'>11.30.2025 8:04:09 PM</span>
+<span class='badge badge-danger'>11.30.2025 8:04:29 PM</span>
+<span class='badge badge-default'>00:00:20:500</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:09 PM</td>
+        <td>
+          🎨 Report theme loaded from config: STANDARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:19 PM</td>
+        <td>
+          🌐 Navigated to: https://www.catalystlegalnurse.com/testimonials.html
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:04:24 PM</td>
+        <td>
+          ❌ Failed to confirm page load for: Testimonials — Expected condition failed: waiting for presence of element located by: By.xpath: //h1[contains(text(),'Testimonials')] (tried for 5 second(s) with 500 milliseconds interval)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:29 PM</td>
+        <td>
+          🧹 WebDriver quit successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:29 PM</td>
         <td>
           🧹 WebDriver session closed after scenario.
         </td>
@@ -1786,25 +1448,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 21, 2025 09:12:19 PM</h3>
+<h3>Nov 30, 2025 07:58:36 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 21, 2025 09:16:04 PM</h3>
+<h3>Nov 30, 2025 08:04:29 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>11</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>5</h3>
+<h3>20</h3>
 </div></div>
 </div>
 </div>
@@ -1820,12 +1482,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='68%'>
-<b>11</b> tests passed
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='31%'><b>5</b> tests failed,
+<small data-tooltip='100%'><b>20</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -1843,10 +1505,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='5%'><b>10</b> events passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='2%'><b>5</b> events failed,
-<b data-tooltip='%'>152</b> others
+<small data-tooltip='20%'><b>20</b> events failed,
+<b data-tooltip='%'>80</b> others
 </small>
 </div>
 </div>
@@ -1862,7 +1524,7 @@
 </div></div>
 <script>
 var timeline = {
-"Interact with Contact page element and validate result":13.947,"Interact with Contact page element and validate result":13.329,"Interact with Contact page element and validate result":12.949,"Interact with Contact page element and validate result":10.491,"Interact with Contact page element and validate result":12.652,"Interact with Contact page element and validate result":9.715,"Interact with Contact page element and validate result":9.37,"Interact with Contact page element and validate result":16.297,"Interact with Contact page element and validate result":13.073,"Interact with Contact page element and validate result":10.116,"Interact with Contact page element and validate result":27.29,"Interact with Contact page element and validate result":21.063,"Interact with Contact page element and validate result":15.753,"Interact with Contact page element and validate result":10.301,"Interact with Contact page element and validate result":10.436,"Interact with Contact page element and validate result":16.015
+"Interact with Testimonials page element and validate result":17.081,"Interact with Testimonials page element and validate result":14.513,"Interact with Testimonials page element and validate result":13.846,"Interact with Testimonials page element and validate result":14.903,"Interact with Testimonials page element and validate result":17.197,"Interact with Testimonials page element and validate result":16.308,"Interact with Testimonials page element and validate result":17.432,"Interact with Testimonials page element and validate result":19.582,"Interact with Testimonials page element and validate result":21.951,"Interact with Testimonials page element and validate result":18.441,"Interact with Testimonials page element and validate result":17.639,"Interact with Testimonials page element and validate result":17.248,"Interact with Testimonials page element and validate result":16.479,"Interact with Testimonials page element and validate result":15.77,"Interact with Testimonials page element and validate result":15.502,"Interact with Testimonials page element and validate result":18.39,"Interact with Testimonials page element and validate result":19.855,"Interact with Testimonials page element and validate result":19.159,"Interact with Testimonials page element and validate result":17.298,"Interact with Testimonials page element and validate result":20.5
 };
 </script>
 <div class="row">
@@ -1885,8 +1547,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 11,
-failParent: 5,
+passParent: 0,
+failParent: 20,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -1902,11 +1564,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 10,
-failEvents: 5,
+passEvents: 0,
+failEvents: 20,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 152
+infoEvents: 80
 };
 </script>        </div>
       </div>

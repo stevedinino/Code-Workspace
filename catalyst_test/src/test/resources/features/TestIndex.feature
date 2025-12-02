@@ -1,6 +1,6 @@
 Feature: Validate Index page elements using semantic keys
 
-  @Skip
+  @Smoke
   Scenario Outline: Interact with Index page element and validate result
     Given the user launches Catalyst "index" page
     And the XPath repository for "Index" is loaded

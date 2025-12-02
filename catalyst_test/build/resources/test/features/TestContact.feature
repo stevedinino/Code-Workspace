@@ -15,7 +15,7 @@ Feature: Validate Contact page elements using semantic keys
     | FooterCopyright        |
 
 
-  @Smoke
+  @Regression
   Scenario Outline: Interact with Contact page element and validate result
     Given the user launches Catalyst "Contact" page
     And the XPath repository for "Contact" is loaded

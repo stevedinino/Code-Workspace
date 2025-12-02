@@ -1,6 +1,6 @@
 Feature: Validate About page elements using semantic keys
 
-  @Skip
+  @Smoke
   Scenario Outline: Interact with About page element and validate result
     Given the user launches Catalyst "About" page
     And the XPath repository for "About" is loaded
