@@ -1,45 +1,202 @@
 /* ============================ Base Layout ============================ */
 
+:root {
+  --container-width: 1000px;
+  --accent: #628141;
+  --accent-hover: #7a9a5a;
+  --bg: #fdf6f0;
+  --card-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  --elevated-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+  --nav-font-size: 16px;
+  --nav-line-height: 1.2;
+  --nav-gap: 20px;
+  --nav-horizontal-padding: 20px;
+
+  /* Single source of truth for header height (keeps mobile and desktop identical) */
+  --nav-height: 48px;
+}
+
+html {
+  font-size: 16px;
+  scrollbar-gutter: stable;
+  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #fdf6f0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-    overflow-x: hidden; /* allow vertical scroll globally */
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  background-color: var(--bg);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  /* Optional: enable to reserve scrollbar space on all pages */
+  /* overflow-y: scroll; */
 }
 
-.container {
-    width: 100%;
-    text-align: center;
-    padding: 20px;
+/* Shared content wrapper */
+.content-wrapper {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/* Flyer image */
-img {
-    width: 80%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+/* ============================ Top navigation ============================ */
+
+header {
+  width: 100%;
+  background: var(--bg);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Use locked height so mobile and desktop navs match */
+.nav-wrapper {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--nav-horizontal-padding);
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: var(--nav-height);
+  min-height: var(--nav-height);
+}
+
+/* Order ensures nav links left, hamburger right */
+.main-nav {
+  order: 1;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+
+  font-size: var(--nav-font-size);
+  line-height: var(--nav-line-height);
+}
+
+.main-nav .nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--nav-gap);
+  margin: 0;
+  padding: 0;
+  align-items: center; /* vertically center links inside locked height */
+}
+
+.main-nav .nav-links a {
+  font-size: var(--nav-font-size);
+  line-height: var(--nav-line-height);
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--accent);
+  transition: color 0.2s ease;
+  white-space: nowrap;
+  letter-spacing: 0;
+  padding: 0 4px; /* small horizontal hit area without increasing header height */
+}
+
+/* Underline current page link (supports aria-current or .active) */
+.main-nav .nav-links a[aria-current="page"],
+.main-nav .nav-links a.active {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+  color: var(--accent);
+}
+
+/* Focus style for keyboard users */
+.main-nav .nav-links a:focus {
+  outline: 2px solid rgba(98,129,65,0.18);
+  outline-offset: 3px;
+}
+
+.menu-toggle {
+  order: 2;
+  margin-left: 12px;
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: var(--accent);
+  cursor: pointer;
+  height: var(--nav-height);
+  line-height: var(--nav-height);
+  padding: 0 8px; /* comfortable hit area without growing header */
+}
+
+/* Mobile nav dropdown */
+@media (max-width: 768px) {
+  .main-nav .nav-links {
+    display: none;
+    flex-direction: column;
+    background: var(--bg);
+    position: absolute;
+    /* dropdown sits just below the locked header */
+    top: calc(var(--nav-height) + 8px);
+    right: var(--nav-horizontal-padding);
+    padding: 12px 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    animation: slideDown 0.25s ease forwards;
+    gap: 12px;
+  }
+
+  .main-nav .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================ Flyer & images ============================ */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: var(--elevated-shadow);
+}
+
+.flyer {
+  width: 80%;
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .flyer {
+    width: 95%;
+    max-width: none;
+  }
 }
 
 /* ============================ Buttons ============================ */
 
-.button-row {
-    margin-top: 20px;
-}
-
-/* Shared button style for anchors and buttons */
 .btn {
   display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  background-color: #4CAF50;
+  margin: 8px 0;
+  padding: 10px;
+  background-color: var(--accent);
   color: white;
   text-decoration: none;
   border: none;
@@ -47,249 +204,135 @@ img {
   font-weight: bold;
   cursor: pointer;
   line-height: 1.2;
-  vertical-align: middle;
-  box-sizing: border-box;
-
-  /* ✅ Force consistent text size and alignment */
   font-size: 16px;
   text-align: center;
 }
 
-
 .btn:hover {
-    background-color: #45a049;
+  background-color: var(--accent-hover);
 }
 
-/* ============================ Modal Popovers ============================ */
-
-.modal-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 999;
+.btn.full-width {
+  width: 100%;
+  display: block;
+  margin: 8px 0;
+  padding: 10px;
 }
 
-.modal-content {
-    background-color: #fff;
-    max-width: 700px;
-    margin: 5% auto;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    position: relative;
-    text-align: left;
-    max-height: 80vh;
-    overflow-y: auto;
-}
-
-.modal-content h2 {
-    margin-top: 0;
-    text-align: center;
-}
-
-.modal-content p,
-.modal-content li {
-    line-height: 1.6;
-    font-size: 1.05em;
-}
-
-.modal-content ul {
-    padding-left: 20px;
-}
-
-.modal-content hr {
-    margin: 20px 0;
-    border: none;
-    border-top: 1px solid #ccc;
-}
-
-/* Close icon */
-.close-icon {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    background: none;
-    border: none;
-    font-size: 24px;
-    font-weight: bold;
-    color: #888;
-    cursor: pointer;
-}
-
-/* ============================ QR Code Block ============================ */
-
-.qr-code {
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.qr-code img {
-    width: 130px;
-    height: auto;
-}
-
-.qr-code p {
-    font-size: 13px;
-    color: #555;
-    margin-top: 5px;
-}
-
-/* ============================ Form Elements ============================ */
-
-input,
-textarea,
-button[type="submit"] {
-    width: 100%;
-    padding: 8px;
-    margin-top: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 15px;
-    box-sizing: border-box;
-}
-
-button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-top: 12px;
-}
-
-button[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-/* ============================ Cancellation Page ============================ */
-
-.page-container {
-    max-width: 800px;
-    margin: 40px auto;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    color: #333;
-}
+/* ============================ Page headings ============================ */
 
 .page-container h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  color: var(--accent);
 }
 
 .page-container h2 {
-    margin-top: 30px;
-    font-size: 1.3em;
+  margin-top: 30px;
+  font-size: 1.3rem;
+  color: var(--accent);
 }
 
-.footer-link {
-    text-align: center;
-    margin-top: 40px;
+/* ============================ Cancellation & About pages ============================ */
+
+.page-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+  color: #333;
 }
 
-.footer-link a {
-    color: #4CAF50;
-    text-decoration: none;
-    font-weight: bold;
+/* ============================ Register page ============================ */
+
+.form-container {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  max-width: 420px;
+  margin: 40px auto;
 }
 
-.footer-link a:hover {
-    text-decoration: underline;
+.form-container h2 {
+  text-align: center;
+  margin: 0 0 18px;
+  font-size: 1.6rem;
+  color: var(--accent);
 }
 
-/* ============================ Success Message (register.php) ============================ */
-
-.message-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.form-container .qr-code {
+  text-align: center;
+  margin-bottom: 18px;
 }
 
-.message {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    text-align: center;
+.form-container .qr-code img {
+  width: 120px;
+  height: auto;
 }
 
-/* ============================ Guests Page (ourguests.php) ============================ */
-
-.guests-wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px;
+.form-container .qr-code a {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--accent);
+  text-decoration: none;
 }
 
-.guests-wrapper h2 {
-    text-align: center;
-    margin-bottom: 20px;
+.form-container .qr-code a:hover {
+  text-decoration: underline;
 }
 
-.guests-wrapper table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+.form-container input,
+.form-container textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
 }
 
-.guests-wrapper th,
-.guests-wrapper td {
-    padding: 12px;
-    border: 1px solid #ccc;
-    text-align: left;
-}
-
-.guests-wrapper th {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.button-container {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.button-container input[type="text"] {
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 250px;
-}
-
-.button-container button {
-    background-color: #d9534f;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.button-container button:hover {
-    background-color: #c9302c;
-}
-
-/* ============================ Responsive Tweaks ============================ */
+/* ============================ Responsive tweaks ============================ */
 
 @media (max-height: 600px) {
-    .modal-content {
-        padding: 20px;
-    }
-}
-
-@media (max-width: 600px) {
-  .btn {
-    padding: 8px 16px;
-    font-size: 14px;
+  .form-container {
+    margin-top: 24px;
+    padding: 16px;
   }
 }
+
+@media (max-width: 768px) {
+  .form-container {
+    width: 95%;
+    max-width: 360px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    width: 98%;
+    max-width: none;
+    padding: 16px;
+  }
+
+  .form-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .form-container input,
+  .form-container textarea,
+  .btn.full-width {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* ============================ Notes on changes ============================ */
+/* - Added --nav-height and used it to lock header height across viewports.
+   - Kept hamburger right-aligned via flex order and ensured its height/line-height match the header.
+   - Added accessible current-link underline using aria-current or .active.
+   - Removed heavy debugging overrides and !important rules for a clean, maintainable stylesheet. */
